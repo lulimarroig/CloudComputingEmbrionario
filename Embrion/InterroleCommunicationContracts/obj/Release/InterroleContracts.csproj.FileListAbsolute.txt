@@ -1,0 +1,6 @@
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\InterroleCommunicationContracts\bin\Release\InterroleContracts.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\InterroleCommunicationContracts\bin\Release\InterroleContracts.pdb
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\InterroleCommunicationContracts\bin\Release\System.Json.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\InterroleCommunicationContracts\bin\Release\System.Json.xml
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\InterroleCommunicationContracts\obj\Release\InterroleContracts.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\InterroleCommunicationContracts\obj\Release\InterroleContracts.pdb

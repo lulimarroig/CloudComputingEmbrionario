@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="053bfc6f-96ae-41ef-ad24-1050b2f578fd"
+  name="Table"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0e0f849e-4568-4b59-824f-c677764db0b7"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.WindowsAzure.Storage.Table"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="36123015-b7ba-42b8-bdd3-b8e6023b03b9"
+        name="TableEntity"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="26fecc96-ad7c-4686-b978-95c898e46637"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLu%2FDocuments%2FVisual Studio 2012%2FProjects%2Fembrion%2Fpackages%2FWindowsAzure.Storage.4.0.1%2Flib%2Fnet40%2FMicrosoft.WindowsAzure.Storage.dll&quot; Namespace%3DMicrosoft.WindowsAzure.Storage.Table Type%3DTableEntity"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5b978897-77c7-4448-ac83-237d434ba419"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4e83105f-b5dd-49a6-9e31-c4ea27908711">
+                <propertyInstance
+                  Id="bc24bd88-9c62-4d06-963e-d5e5ce1be1ae"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="878e3444-0fe2-4da3-b2f4-7ba75b62a9a7">
+                <propertyInstance
+                  Id="571b8878-621f-4fdc-b1e2-c256c0040c16"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="adcf0454-4981-4bf4-aed7-369d1922504e">
+                <propertyInstance
+                  Id="ddeca8ae-6c95-4475-9603-c76094f6e835"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6646752f-9247-4dad-b019-4e8c10df5b7f">
+                <propertyInstance
+                  Id="d779c8ae-fd24-4aca-b553-ae2ddbd2e447"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bd995c1e-3937-41af-9c0e-154c0e40d494">
+                <propertyInstance
+                  Id="1ea8f75d-56de-444f-9789-699befeec4e3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

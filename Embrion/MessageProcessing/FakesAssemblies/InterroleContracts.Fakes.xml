@@ -1,0 +1,794 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InterroleContracts.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:InterroleContracts.Fakes.ShimBoxParameters">
+            <summary>Shim type of InterroleContracts.BoxParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimBoxParameters.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimBoxParameters.#ctor(InterroleContracts.BoxParameters)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimBoxParameters.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimBoxParameters.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimBoxParameters.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimBoxParameters.Constructor">
+            <summary>Sets the shim of BoxParameters.BoxParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimBoxParameters.StaticConstructor">
+            <summary>Sets the shim of BoxParameters.BoxParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimBoxParameters.aspectRatioGet">
+            <summary>Sets the shim of BoxParameters.get_aspectRatio()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimBoxParameters.aspectRatioSetDouble">
+            <summary>Sets the shim of BoxParameters.set_aspectRatio(Double value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimBoxParameters.cornersGet">
+            <summary>Sets the shim of BoxParameters.get_corners()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimBoxParameters.cornersSetListOfArrayList">
+            <summary>Sets the shim of BoxParameters.set_corners(List`1&lt;ArrayList&gt; value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimBoxParameters.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimBoxParameters.AllInstances.aspectRatioGet">
+            <summary>Sets the shim of BoxParameters.get_aspectRatio()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimBoxParameters.AllInstances.aspectRatioSetDouble">
+            <summary>Sets the shim of BoxParameters.set_aspectRatio(Double value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimBoxParameters.AllInstances.cornersGet">
+            <summary>Sets the shim of BoxParameters.get_corners()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimBoxParameters.AllInstances.cornersSetListOfArrayList">
+            <summary>Sets the shim of BoxParameters.set_corners(List`1&lt;ArrayList&gt; value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimClientInputMessage">
+            <summary>Shim type of InterroleContracts.ClientInputMessage</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimClientInputMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimClientInputMessage.#ctor(InterroleContracts.ClientInputMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimClientInputMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimClientInputMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimClientInputMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimClientInputMessage.Constructor">
+            <summary>Sets the shim of ClientInputMessage.ClientInputMessage()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimClientInputMessage.idUsuarioGet">
+            <summary>Sets the shim of ClientInputMessage.get_idUsuario()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimClientInputMessage.idUsuarioSetString">
+            <summary>Sets the shim of ClientInputMessage.set_idUsuario(String value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimClientInputMessage.messageGet">
+            <summary>Sets the shim of ClientInputMessage.get_message()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimClientInputMessage.messageSetString">
+            <summary>Sets the shim of ClientInputMessage.set_message(String value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimClientInputMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimClientInputMessage.AllInstances.idUsuarioGet">
+            <summary>Sets the shim of ClientInputMessage.get_idUsuario()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimClientInputMessage.AllInstances.idUsuarioSetString">
+            <summary>Sets the shim of ClientInputMessage.set_idUsuario(String value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimClientInputMessage.AllInstances.messageGet">
+            <summary>Sets the shim of ClientInputMessage.get_message()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimClientInputMessage.AllInstances.messageSetString">
+            <summary>Sets the shim of ClientInputMessage.set_message(String value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimFernetParameters">
+            <summary>Shim type of InterroleContracts.FernetParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimFernetParameters.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimFernetParameters.#ctor(InterroleContracts.FernetParameters)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimFernetParameters.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimFernetParameters.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimFernetParameters.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimFernetParameters.Constructor">
+            <summary>Sets the shim of FernetParameters.FernetParameters()</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimFernetParameters.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimGeometriaParameters">
+            <summary>Shim type of InterroleContracts.GeometriaParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimGeometriaParameters.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimGeometriaParameters.#ctor(InterroleContracts.GeometriaParameters)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimGeometriaParameters.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimGeometriaParameters.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimGeometriaParameters.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimGeometriaParameters.Constructor">
+            <summary>Sets the shim of GeometriaParameters.GeometriaParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimGeometriaParameters.StaticConstructor">
+            <summary>Sets the shim of GeometriaParameters.GeometriaParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimGeometriaParameters.boxGet">
+            <summary>Sets the shim of GeometriaParameters.get_box()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimGeometriaParameters.boxSetBoxParameters">
+            <summary>Sets the shim of GeometriaParameters.set_box(BoxParameters value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimGeometriaParameters.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimGeometriaParameters.AllInstances.boxGet">
+            <summary>Sets the shim of GeometriaParameters.get_box()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimGeometriaParameters.AllInstances.boxSetBoxParameters">
+            <summary>Sets the shim of GeometriaParameters.set_box(BoxParameters value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimInitParameters">
+            <summary>Shim type of InterroleContracts.InitParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimInitParameters.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimInitParameters.#ctor(InterroleContracts.InitParameters)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimInitParameters.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimInitParameters.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimInitParameters.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimInitParameters.Constructor">
+            <summary>Sets the shim of InitParameters.InitParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimInitParameters.StaticConstructor">
+            <summary>Sets the shim of InitParameters.InitParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimInitParameters.iterationsGet">
+            <summary>Sets the shim of InitParameters.get_iterations()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimInitParameters.iterationsSetInt32">
+            <summary>Sets the shim of InitParameters.set_iterations(Int32 value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimInitParameters.timeStepGet">
+            <summary>Sets the shim of InitParameters.get_timeStep()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimInitParameters.timeStepSetDouble">
+            <summary>Sets the shim of InitParameters.set_timeStep(Double value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimInitParameters.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimInitParameters.AllInstances.iterationsGet">
+            <summary>Sets the shim of InitParameters.get_iterations()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimInitParameters.AllInstances.iterationsSetInt32">
+            <summary>Sets the shim of InitParameters.set_iterations(Int32 value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimInitParameters.AllInstances.timeStepGet">
+            <summary>Sets the shim of InitParameters.get_timeStep()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimInitParameters.AllInstances.timeStepSetDouble">
+            <summary>Sets the shim of InitParameters.set_timeStep(Double value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimJobSubmissionMessage">
+            <summary>Shim type of InterroleContracts.JobSubmissionMessage</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimJobSubmissionMessage.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimJobSubmissionMessage.#ctor(InterroleContracts.JobSubmissionMessage)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimJobSubmissionMessage.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimJobSubmissionMessage.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.Constructor">
+            <summary>Sets the shim of JobSubmissionMessage.JobSubmissionMessage()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.idUsuarioGet">
+            <summary>Sets the shim of JobSubmissionMessage.get_idUsuario()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.idUsuarioSetString">
+            <summary>Sets the shim of JobSubmissionMessage.set_idUsuario(String value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.nomEntradaGet">
+            <summary>Sets the shim of JobSubmissionMessage.get_nomEntrada()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.nomEntradaSetString">
+            <summary>Sets the shim of JobSubmissionMessage.set_nomEntrada(String value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.subIdUsuarioGet">
+            <summary>Sets the shim of JobSubmissionMessage.get_subIdUsuario()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.subIdUsuarioSetString">
+            <summary>Sets the shim of JobSubmissionMessage.set_subIdUsuario(String value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimJobSubmissionMessage.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.AllInstances.idUsuarioGet">
+            <summary>Sets the shim of JobSubmissionMessage.get_idUsuario()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.AllInstances.idUsuarioSetString">
+            <summary>Sets the shim of JobSubmissionMessage.set_idUsuario(String value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.AllInstances.nomEntradaGet">
+            <summary>Sets the shim of JobSubmissionMessage.get_nomEntrada()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.AllInstances.nomEntradaSetString">
+            <summary>Sets the shim of JobSubmissionMessage.set_nomEntrada(String value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.AllInstances.subIdUsuarioGet">
+            <summary>Sets the shim of JobSubmissionMessage.get_subIdUsuario()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimJobSubmissionMessage.AllInstances.subIdUsuarioSetString">
+            <summary>Sets the shim of JobSubmissionMessage.set_subIdUsuario(String value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimMoleculaParameters">
+            <summary>Shim type of InterroleContracts.MoleculaParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimMoleculaParameters.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimMoleculaParameters.#ctor(InterroleContracts.MoleculaParameters)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimMoleculaParameters.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimMoleculaParameters.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.Constructor">
+            <summary>Sets the shim of MoleculaParameters.MoleculaParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.StaticConstructor">
+            <summary>Sets the shim of MoleculaParameters.MoleculaParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.cantidadGet">
+            <summary>Sets the shim of MoleculaParameters.get_cantidad()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.cantidadSetInt32">
+            <summary>Sets the shim of MoleculaParameters.set_cantidad(Int32 value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.difusion2DGet">
+            <summary>Sets the shim of MoleculaParameters.get_difusion2D()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.difusion2DSetDouble">
+            <summary>Sets the shim of MoleculaParameters.set_difusion2D(Double value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.difusion3DGet">
+            <summary>Sets the shim of MoleculaParameters.get_difusion3D()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.difusion3DSetDouble">
+            <summary>Sets the shim of MoleculaParameters.set_difusion3D(Double value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.nombreGet">
+            <summary>Sets the shim of MoleculaParameters.get_nombre()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.nombreSetString">
+            <summary>Sets the shim of MoleculaParameters.set_nombre(String value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimMoleculaParameters.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.AllInstances.nombreGet">
+            <summary>Sets the shim of MoleculaParameters.get_nombre()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculaParameters.AllInstances.nombreSetString">
+            <summary>Sets the shim of MoleculaParameters.set_nombre(String value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimMoleculasParameters">
+            <summary>Shim type of InterroleContracts.MoleculasParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimMoleculasParameters.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimMoleculasParameters.#ctor(InterroleContracts.MoleculasParameters)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimMoleculasParameters.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimMoleculasParameters.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculasParameters.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculasParameters.Constructor">
+            <summary>Sets the shim of MoleculasParameters.MoleculasParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculasParameters.StaticConstructor">
+            <summary>Sets the shim of MoleculasParameters.MoleculasParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculasParameters.defineMoleculasGet">
+            <summary>Sets the shim of MoleculasParameters.get_defineMoleculas()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculasParameters.defineMoleculasSetListOfMoleculaParameters">
+            <summary>Sets the shim of MoleculasParameters.set_defineMoleculas(List`1&lt;MoleculaParameters&gt; value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimMoleculasParameters.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculasParameters.AllInstances.defineMoleculasGet">
+            <summary>Sets the shim of MoleculasParameters.get_defineMoleculas()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimMoleculasParameters.AllInstances.defineMoleculasSetListOfMoleculaParameters">
+            <summary>Sets the shim of MoleculasParameters.set_defineMoleculas(List`1&lt;MoleculaParameters&gt; value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimRateParameters">
+            <summary>Shim type of InterroleContracts.RateParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimRateParameters.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimRateParameters.#ctor(InterroleContracts.RateParameters)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimRateParameters.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimRateParameters.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.Constructor">
+            <summary>Sets the shim of RateParameters.RateParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.rateFinGet">
+            <summary>Sets the shim of RateParameters.get_rateFin()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.rateFinSetDouble">
+            <summary>Sets the shim of RateParameters.set_rateFin(Double value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.rateInicioGet">
+            <summary>Sets the shim of RateParameters.get_rateInicio()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.rateInicioSetDouble">
+            <summary>Sets the shim of RateParameters.set_rateInicio(Double value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.rateStepGet">
+            <summary>Sets the shim of RateParameters.get_rateStep()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.rateStepSetDouble">
+            <summary>Sets the shim of RateParameters.set_rateStep(Double value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimRateParameters.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.AllInstances.rateFinGet">
+            <summary>Sets the shim of RateParameters.get_rateFin()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.AllInstances.rateFinSetDouble">
+            <summary>Sets the shim of RateParameters.set_rateFin(Double value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.AllInstances.rateInicioGet">
+            <summary>Sets the shim of RateParameters.get_rateInicio()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.AllInstances.rateInicioSetDouble">
+            <summary>Sets the shim of RateParameters.set_rateInicio(Double value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.AllInstances.rateStepGet">
+            <summary>Sets the shim of RateParameters.get_rateStep()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimRateParameters.AllInstances.rateStepSetDouble">
+            <summary>Sets the shim of RateParameters.set_rateStep(Double value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimReaccionesParameters">
+            <summary>Shim type of InterroleContracts.ReaccionesParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimReaccionesParameters.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimReaccionesParameters.#ctor(InterroleContracts.ReaccionesParameters)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimReaccionesParameters.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimReaccionesParameters.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimReaccionesParameters.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimReaccionesParameters.Constructor">
+            <summary>Sets the shim of ReaccionesParameters.ReaccionesParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimReaccionesParameters.StaticConstructor">
+            <summary>Sets the shim of ReaccionesParameters.ReaccionesParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimReaccionesParameters.rateGet">
+            <summary>Sets the shim of ReaccionesParameters.get_rate()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimReaccionesParameters.rateSetRateParameters">
+            <summary>Sets the shim of ReaccionesParameters.set_rate(RateParameters value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimReaccionesParameters.reaccionGet">
+            <summary>Sets the shim of ReaccionesParameters.get_reaccion()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimReaccionesParameters.reaccionSetString">
+            <summary>Sets the shim of ReaccionesParameters.set_reaccion(String value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimReaccionesParameters.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimReaccionesParameters.AllInstances.rateGet">
+            <summary>Sets the shim of ReaccionesParameters.get_rate()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimReaccionesParameters.AllInstances.rateSetRateParameters">
+            <summary>Sets the shim of ReaccionesParameters.set_rate(RateParameters value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimReaccionesParameters.AllInstances.reaccionGet">
+            <summary>Sets the shim of ReaccionesParameters.get_reaccion()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimReaccionesParameters.AllInstances.reaccionSetString">
+            <summary>Sets the shim of ReaccionesParameters.set_reaccion(String value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimSimulacionParameters">
+            <summary>Shim type of InterroleContracts.SimulacionParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimSimulacionParameters.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimSimulacionParameters.#ctor(InterroleContracts.SimulacionParameters)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimSimulacionParameters.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.ShimSimulacionParameters.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.Constructor">
+            <summary>Sets the shim of SimulacionParameters.SimulacionParameters()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.fernetGet">
+            <summary>Sets the shim of SimulacionParameters.get_fernet()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.fernetSetFernetParameters">
+            <summary>Sets the shim of SimulacionParameters.set_fernet(FernetParameters value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.geometriaGet">
+            <summary>Sets the shim of SimulacionParameters.get_geometria()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.geometriaSetGeometriaParameters">
+            <summary>Sets the shim of SimulacionParameters.set_geometria(GeometriaParameters value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.initGet">
+            <summary>Sets the shim of SimulacionParameters.get_init()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.initSetInitParameters">
+            <summary>Sets the shim of SimulacionParameters.set_init(InitParameters value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.moleculasGet">
+            <summary>Sets the shim of SimulacionParameters.get_moleculas()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.moleculasSetMoleculasParameters">
+            <summary>Sets the shim of SimulacionParameters.set_moleculas(MoleculasParameters value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.reaccionesGet">
+            <summary>Sets the shim of SimulacionParameters.get_reacciones()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.reaccionesSetListOfReaccionesParameters">
+            <summary>Sets the shim of SimulacionParameters.set_reacciones(List`1&lt;ReaccionesParameters&gt; value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.ShimSimulacionParameters.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.AllInstances.fernetGet">
+            <summary>Sets the shim of SimulacionParameters.get_fernet()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.AllInstances.fernetSetFernetParameters">
+            <summary>Sets the shim of SimulacionParameters.set_fernet(FernetParameters value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.AllInstances.geometriaGet">
+            <summary>Sets the shim of SimulacionParameters.get_geometria()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.AllInstances.geometriaSetGeometriaParameters">
+            <summary>Sets the shim of SimulacionParameters.set_geometria(GeometriaParameters value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.AllInstances.initGet">
+            <summary>Sets the shim of SimulacionParameters.get_init()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.AllInstances.initSetInitParameters">
+            <summary>Sets the shim of SimulacionParameters.set_init(InitParameters value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.AllInstances.moleculasGet">
+            <summary>Sets the shim of SimulacionParameters.get_moleculas()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.AllInstances.moleculasSetMoleculasParameters">
+            <summary>Sets the shim of SimulacionParameters.set_moleculas(MoleculasParameters value)</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.AllInstances.reaccionesGet">
+            <summary>Sets the shim of SimulacionParameters.get_reacciones()</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.ShimSimulacionParameters.AllInstances.reaccionesSetListOfReaccionesParameters">
+            <summary>Sets the shim of SimulacionParameters.set_reacciones(List`1&lt;ReaccionesParameters&gt; value)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubBoxParameters">
+            <summary>Stub type of InterroleContracts.BoxParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubBoxParameters.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubBoxParameters.InitializeStub">
+            <summary>Initializes a new instance of type StubBoxParameters</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubBoxParameters.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubBoxParameters.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubBoxParameters.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubClientInputMessage">
+            <summary>Stub type of InterroleContracts.ClientInputMessage</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubClientInputMessage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubClientInputMessage.InitializeStub">
+            <summary>Initializes a new instance of type StubClientInputMessage</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubClientInputMessage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubClientInputMessage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubClientInputMessage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubFernetParameters">
+            <summary>Stub type of InterroleContracts.FernetParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubFernetParameters.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubFernetParameters.InitializeStub">
+            <summary>Initializes a new instance of type StubFernetParameters</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubFernetParameters.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubFernetParameters.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubFernetParameters.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubGeometriaParameters">
+            <summary>Stub type of InterroleContracts.GeometriaParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubGeometriaParameters.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubGeometriaParameters.InitializeStub">
+            <summary>Initializes a new instance of type StubGeometriaParameters</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubGeometriaParameters.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubGeometriaParameters.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubGeometriaParameters.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubIReceiveJobSubmission">
+            <summary>Stub type of InterroleContracts.IReceiveJobSubmission</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubIReceiveJobSubmission.#ctor">
+            <summary>Initializes a new instance of type StubIReceiveJobSubmission</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubIReceiveJobSubmission.ic::InterroleContracts#IReceiveJobSubmission#ReceiveJobSubmitionMessage(InterroleContracts.JobSubmissionMessage)">
+            <summary>Sets the stub of IReceiveJobSubmission.ReceiveJobSubmitionMessage(JobSubmissionMessage message)</summary>
+        </member>
+        <member name="F:InterroleContracts.Fakes.StubIReceiveJobSubmission.ReceiveJobSubmitionMessageJobSubmissionMessage">
+            <summary>Sets the stub of IReceiveJobSubmission.ReceiveJobSubmitionMessage(JobSubmissionMessage message)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubIReceiveMessageFromClient">
+            <summary>Stub type of InterroleContracts.IReceiveMessageFromClient</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubIReceiveMessageFromClient.#ctor">
+            <summary>Initializes a new instance of type StubIReceiveMessageFromClient</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubIReceiveMessageFromClient.ic::InterroleContracts#IReceiveMessageFromClient#ReceiveClientInputMessage(InterroleContracts.ClientInputMessage)">
+            <summary>Sets the stub of IReceiveMessageFromClient.ReceiveClientInputMessage(ClientInputMessage message)</summary>
+        </member>
+        <member name="F:InterroleContracts.Fakes.StubIReceiveMessageFromClient.ReceiveClientInputMessageClientInputMessage">
+            <summary>Sets the stub of IReceiveMessageFromClient.ReceiveClientInputMessage(ClientInputMessage message)</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubInitParameters">
+            <summary>Stub type of InterroleContracts.InitParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubInitParameters.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubInitParameters.InitializeStub">
+            <summary>Initializes a new instance of type StubInitParameters</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubInitParameters.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubInitParameters.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubInitParameters.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubJobSubmissionMessage">
+            <summary>Stub type of InterroleContracts.JobSubmissionMessage</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubJobSubmissionMessage.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubJobSubmissionMessage.InitializeStub">
+            <summary>Initializes a new instance of type StubJobSubmissionMessage</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubJobSubmissionMessage.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubJobSubmissionMessage.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubJobSubmissionMessage.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubMoleculaParameters">
+            <summary>Stub type of InterroleContracts.MoleculaParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubMoleculaParameters.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubMoleculaParameters.InitializeStub">
+            <summary>Initializes a new instance of type StubMoleculaParameters</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubMoleculaParameters.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubMoleculaParameters.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubMoleculaParameters.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubMoleculasParameters">
+            <summary>Stub type of InterroleContracts.MoleculasParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubMoleculasParameters.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubMoleculasParameters.InitializeStub">
+            <summary>Initializes a new instance of type StubMoleculasParameters</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubMoleculasParameters.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubMoleculasParameters.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubMoleculasParameters.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubRateParameters">
+            <summary>Stub type of InterroleContracts.RateParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubRateParameters.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubRateParameters.InitializeStub">
+            <summary>Initializes a new instance of type StubRateParameters</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubRateParameters.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubRateParameters.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubRateParameters.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubReaccionesParameters">
+            <summary>Stub type of InterroleContracts.ReaccionesParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubReaccionesParameters.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubReaccionesParameters.InitializeStub">
+            <summary>Initializes a new instance of type StubReaccionesParameters</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubReaccionesParameters.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubReaccionesParameters.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubReaccionesParameters.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:InterroleContracts.Fakes.StubSimulacionParameters">
+            <summary>Stub type of InterroleContracts.SimulacionParameters</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubSimulacionParameters.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:InterroleContracts.Fakes.StubSimulacionParameters.InitializeStub">
+            <summary>Initializes a new instance of type StubSimulacionParameters</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubSimulacionParameters.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubSimulacionParameters.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:InterroleContracts.Fakes.StubSimulacionParameters.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

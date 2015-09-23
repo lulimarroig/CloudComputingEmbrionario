@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6e1748d6-94e6-4cc3-83bd-d287dc7bca7d"
+  name="Storage"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="2bcade76-4bcd-490e-a489-c694dc266b6e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.WindowsAzure.Storage"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bb1830c6-5888-4019-9bd1-1b6a32b6e1e5"
+        LastKnownName="Blob"
+        LastKnownLocation="Package23_1140.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7ef7a221-8a41-41f2-ba78-7a18615f89b6"
+        name="CloudStorageAccount"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="29929453-5e96-4dd4-b82d-7bdf37105579"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLu%2FDocuments%2FVisual Studio 2012%2FProjects%2Fembrion%2Fpackages%2FWindowsAzure.Storage.4.0.1%2Flib%2Fnet40%2FMicrosoft.WindowsAzure.Storage.dll&quot; Namespace%3DMicrosoft.WindowsAzure.Storage Type%3DCloudStorageAccount"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e2d53fd9-c8aa-4486-8f48-5ebfbee822d4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e4489f5a-08ed-47bd-83cb-6b29baf96656">
+                <propertyInstance
+                  Id="8df53dd0-23ff-493c-a44b-0833405ab038"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cde183b0-82c6-422b-92b3-b3dc5e9be6ba">
+                <propertyInstance
+                  Id="afe74532-2525-477d-a16c-a15304f54603"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f04ac702-7e4a-424f-9131-639e7ec0603c">
+                <propertyInstance
+                  Id="8b125ba7-b22e-4bbe-a6de-c735816e8ff2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8061382b-dd92-4e91-87b5-a29f76e7a4cb">
+                <propertyInstance
+                  Id="ba686616-47df-4fdc-b308-a6556c3e88bd"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fa2ea516-7ed4-48e1-8df4-6bd47e96834e">
+                <propertyInstance
+                  Id="80b93473-0409-448c-afa8-ac101f822e86"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="053bfc6f-96ae-41ef-ad24-1050b2f578fd"
+        LastKnownName="Table"
+        LastKnownLocation="Package25_1140.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

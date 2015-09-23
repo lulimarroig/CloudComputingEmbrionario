@@ -1,0 +1,1040 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.WindowsAzure.Management.HDInsight.Framework</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CodeGen.CompileException">
+            <summary>
+            Thrown when dynamic compilation fails.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CodeGen.CompileException._results">
+            <summary>
+            The _results.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CodeGen.CompileException.#ctor(System.String,System.CodeDom.Compiler.CompilerResults)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CodeGen.CompileException"/> class.
+            </summary>
+            <param name="message">
+            The message.
+            </param>
+            <param name="results">
+            The results.
+            </param>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CodeGen.CompileException.Results">
+            <summary>
+            Gets the compiler results.
+            </summary>
+            <value>The results.</value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CodeGen.HttpRestClientCodeGenerator">
+            <summary>
+            This is the class responsible for creating the concrete implementations of interface types.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CodeGen.HttpRestClientCodeGenerator.CompileCode(System.CodeDom.Compiler.CodeDomProvider,System.CodeDom.CodeCompileUnit,System.String)">
+            <summary>
+            Compiles the codedom compile unit into C#. If the output <paramref name="outputAssemblyPath"/> is null the the code assembly is generated in memory.
+            </summary>
+            <param name="provider">The provider.</param>
+            <param name="unit">The unit.</param>
+            <param name="outputAssemblyPath">The output assembly path.</param>
+            <returns>The results of compilation.</returns>
+            <exception cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CodeGen.CompileException">Is thrown when the compiler has encountered an error.</exception>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CodeGen.HttpRestClientCodeGenerator.GenerateCSharpCode(System.String,System.String,System.String)">
+            <summary>
+            Generates the C sharp code that concretely implements the proxy.
+            </summary>
+            <param name="targetNamespace">The target namespace.</param>
+            <param name="className">Name of the class.</param>
+            <param name="outputFilePath">The output file path.</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CodeGen.HttpRestClientCodeGenerator.GenerateCSharpCode(System.String,System.String,System.IO.StreamWriter)">
+            <summary>
+            Generates the C sharp code that conretely implements the proxy.
+            </summary>
+            <param name="targetNamespace">The target namespace.</param>
+            <param name="className">Name of the class.</param>
+            <param name="outputWriter">The output writer.</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CodeGen.HttpRestClientCodeGenerator.GenerateAssembly(System.String,System.String,System.String)">
+            <summary>
+            Generates the assembly containing the proxy.
+            </summary>
+            <param name="targetNamespace">The target namespace.</param>
+            <param name="className">Name of the class.</param>
+            <param name="assemblyOutpath">The assembly outpath. Defaults to null.</param>
+            <returns>An assembly containing the generated type.</returns>
+            <remarks>
+            If null, the assembly is generated in memory.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Contract">
+            <summary>
+            A contracts class that mimics the functionality of <see cref="N:System.Diagnostics.Contracts"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Contract.Requires``1(System.Boolean,System.String)">
+            <summary>
+            Wrapper for the CodeContract Requries method.
+            </summary>
+            <typeparam name="T">Exception type to be thrown.</typeparam>
+            <param name="condition">Whether the condition was true or false.</param>
+            <param name="message">The message to be set in the exception.</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Contract.Assume(System.Boolean,System.String)">
+            <summary>
+            Assumes the specified condition.
+            </summary>
+            <param name="condition">If set to <c>true</c> [condition].</param>
+            <param name="message">The message.</param>
+            <exception cref="T:System.IO.InvalidDataException">Thrown when <paramref name="condition"/> is false.</exception>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Contract.Assert(System.Boolean,System.String)">
+            <summary>
+            Asserts the specified condition.
+            </summary>
+            <param name="condition">If set to <c>true</c> [condition].</param>
+            <param name="message">The message.</param>
+            <exception cref="T:System.IO.InvalidDataException">Thrown when the condition is failed.</exception>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Contract.AssertNotNull(System.Object,System.String)">
+            <summary>
+            Asserts the not null.
+            </summary>
+            <param name="arg">The arg.</param>
+            <param name="message">The message.</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Contract.AssertArgNotNull(System.Object,System.String)">
+            <summary>
+            Asserts the arg not null.
+            </summary>
+            <param name="arg">The arg.</param>
+            <param name="argName">The argName.</param>
+            <exception cref="T:System.ArgumentNullException">When arg is null.</exception>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Contract.AssertArgNotNullOrEmpty(System.String,System.String)">
+            <summary>
+            Asserts the arg not null or empty.
+            </summary>
+            <param name="arg">The arg.</param>
+            <param name="argname">The argName.</param>
+            <exception cref="T:System.ArgumentNullException">When arg is null or empty.</exception>
+            <exception cref="T:System.ArgumentException">Argument cannot be empty</exception>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CustomMessageHandlers.HttpLoggingHandler">
+            <summary>
+            This is a logging handler that would log all http requests and responses.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Formatters.JsonRequestFormatter">
+            <summary>
+            The default JSON serializer for the <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestRequestFormatterAttributebase">
+            <summary>
+            A class to derive from for concrete implementations of <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IRequestFormatter"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IRequestFormatter">
+            <summary>
+            This is the interface responsible for converting the the http message content to bytes on the network.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IRequestFormatter.RequestFormatter">
+            <summary>
+            Gets the request formatter used to serialize the <see cref="T:Microsoft.HDInsight.Net.Http.Formatting.ObjectContent"/>.
+            </summary>
+            <value>
+            The request formatter.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestRequestFormatterAttributebase.RequestFormatter">
+            <summary>
+            Gets the request formatter used to serialize the object content.
+            </summary>
+            <value>
+            The request formatter.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Formatters.JsonResponseFormatter">
+            <summary>
+            The default json serializer for the <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestResponseFormatterAttributebase">
+            <summary>
+            A base class to implement custom response content deserialization.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IResponseFormatter">
+            <summary>
+            This is interface responsible deserializing the HttpResponseMessage content. You can specify
+            multiple formatters in <see cref="T:Microsoft.HDInsight.Net.Http.Formatting.Formatting.MediaTypeFormatterCollection"/> and the runtime will pick the correct one.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IResponseFormatter.ResponseFormatters">
+            <summary>
+            Gets the response formatters.
+            </summary>
+            <value>
+            The response formatters.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestResponseFormatterAttributebase.ResponseFormatters">
+            <summary>
+            Gets the response formatters.
+            </summary>
+            <value>
+            The response formatters.
+            </value>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Formatters.JsonResponseFormatter.DefaultFormattersCollection">
+            <summary>
+            The default formatters collection.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Formatters.JsonResponseFormatter.ResponseFormatters">
+            <summary>
+            Gets the request formatter used to serialize the <see cref="T:Microsoft.HDInsight.Net.Http.Formatting.ObjectContent"/>.
+            </summary>
+            <value>
+            The request formatter.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Formatters.XmlOrJsonResponseFormatter">
+            <summary>
+            An Xml or JSON response formatter.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Formatters.XmlOrJsonResponseFormatter.ResponseFormatters">
+            <summary>
+            Gets the response formatters.
+            </summary>
+            <value>
+            The response formatters.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Formatters.XmlRequestFormatter">
+            <summary>
+            This is the default xml request formatter for <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1"/>.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Formatters.XmlRequestFormatter._mediaTypeFormatter">
+            <summary>
+            The media type formatter.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Formatters.XmlRequestFormatter.RequestFormatter">
+            <summary>
+            Gets the request formatter used to serialize the object content.
+            </summary>
+            <value>
+            The request formatter.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Formatters.XmlResponseFormatter">
+            <summary>
+            An XML response formatter for Rest Requests.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Formatters.XmlResponseFormatter.ResponseFormatters">
+            <summary>
+            Gets the response formatters.
+            </summary>
+            <value>
+            The response formatters.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters">
+            <summary>
+            An internal class to store the parameters of a request obtained via reflection on the interface methods.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters.#ctor(System.String,System.UriTemplate,Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IRequestFormatter,Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IResponseFormatter,System.Collections.Generic.IEnumerable{Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IHttpMessageProcessingHandler})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters"/> class.
+            </summary>
+            <param name="verb">The verb.</param>
+            <param name="template">The template.</param>
+            <param name="requestFormatter">The request formatter.</param>
+            <param name="responseFormatter">The response formatter.</param>
+            <param name="cutomMessageProcessingHandler">The cutom message processing handler.</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters.FromMethodInfo(System.Reflection.MethodInfo)">
+            <summary>
+            Froms the method info.
+            </summary>
+            <param name="interFaceMethod">The inter face method.</param>
+            <returns>Creates an HttpRequestParameters from an instance.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters.CreateRequestParametersUsingReflection(System.Reflection.MethodInfo)">
+            <summary>
+            Gets the request parameters from attribute.
+            </summary>
+            <param name="interfaceMethod">The class verb.</param>
+            <returns>
+            The target uri to execute the get or invoke against.
+            </returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters.BindUri(System.Uri,System.Reflection.MethodInfo,System.Object[],System.Collections.Generic.List{System.String}@,System.Threading.CancellationToken@)">
+            <summary>
+            Binds the URI Template to a Uri based off the binding parameters.
+            </summary>
+            <param name="baseUri">The base URI.</param>
+            <param name="method">The verb.</param>
+            <param name="methodArgumentsInOrder">The verb arguments in order.</param>
+            <param name="methodParamsUseForUriBinding">The method params use for URI binding.</param>
+            <param name="token">The token.</param>
+            <returns>
+            A full uri with the parameters substituted.
+            </returns>
+            <exception cref="T:System.ArgumentException">Not all uri template variables were bound.</exception>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters.HttpMethod">
+            <summary>
+            Gets the HTTP method.
+            </summary>
+            <value>
+            The HTTP method.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters.UriTemplate">
+            <summary>
+            Gets the URI template.
+            </summary>
+            <value>
+            The URI template.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters.RequestFormatter">
+            <summary>
+            Gets the request serializer.
+            </summary>
+            <value>
+            The request serializer.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters.ResponseFormatter">
+            <summary>
+            Gets the response serializer.
+            </summary>
+            <value>
+            The response serializer.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters.CutomMessageProcessingHandlers">
+            <summary>
+            Gets the cutom message processing handler.
+            </summary>
+            <value>
+            The cutom message processing handler.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1">
+            <summary>
+            An abstract class to inherit from to write a rest proxy against a service interface. 
+            internal class DeploymentServiceProxy : RestProxy&lt;IDeploymentService &gt;.
+            </summary>
+            <typeparam name="TServiceInterface">The type of the service interface for which you need the proxy for.</typeparam>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1.#ctor(System.Uri,Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1"/> class.
+            </summary>
+            <param name="baseUri">The base URI.</param>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1.CreateHttpClient(Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRequestParameters)">
+            <summary>
+            Creates the HTTP client by chaining all the handlers found in the interface method attributes and the http
+            client configuration.
+            </summary>
+            <param name="parameters">The parameters.</param>
+            <returns>An instance of HttpClient.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1.InvokeHttpRestRequest``1(System.Reflection.MethodInfo,System.Object[])">
+            <summary>
+            Creates the and invoke rest request for caller based of its interface implementation.
+            </summary>
+            <typeparam name="T">The return type.</typeparam>
+            <param name="classMethod">The class verb.</param>
+            <param name="methodArgumentsInOrder">The verb arguments in order.</param>
+            <returns>A task.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1.CreateAndInvokeRestRequestForParentMethodAsync``1(System.Object[])">
+            <summary>
+            Creates and invokes the rest request for caller based of its interface definition.
+            </summary>
+            <param name="orderedArgumentsOfTheParentMethod">The ordered arguments of the parent verb.</param>
+            <returns>A task.</returns>
+            <remarks>Please be sure to dispose the HttpWebResponseObject after you are done with it.</remarks>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1.CreateAndInvokeRestRequestForParentMethodAsync(System.Object[])">
+            <summary>
+            Creates and invokes the rest request for caller based of its interface definition.
+            </summary>
+            <param name="orderedArgumentsOfTheParentMethod">The ordered arguments of the parent verb.</param>
+            <returns>A task.</returns>
+            <remarks>Please be sure to dispose the HttpWebResponseObject after you are done with it.</remarks>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1.CreateAndInvokeRestRequestForParentMethod(System.Object[])">
+            <summary>
+            Creates and invokes the rest request for caller based of its interface definition.
+            </summary>
+            <param name="orderedArgumentsOfTheParentMethod">The ordered arguments of the parent verb.</param>
+            <returns>A task.</returns>
+            <remarks>Please be sure to dispose the HttpWebResponseObject after you are done with it.</remarks>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1.BaseServiceUri">
+            <summary>
+            Gets the base service URI.
+            </summary>
+            <value>The base service URI.</value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientConfiguration">
+            <summary>
+            A configuration object for <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClient`1"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientConfiguration.#ctor(System.Net.Http.HttpMessageHandler,System.Collections.Generic.IEnumerable{System.Net.Http.DelegatingHandler},Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IRetryPolicy,System.Nullable{System.TimeSpan})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientConfiguration"/> class.
+            </summary>
+            <param name="defaultHttpClientHandler">The default HTTP client handler.</param>
+            <param name="messageProcessingHandlers">The message processing handlers.</param>
+            <param name="retryPolicy">The retry policy.</param>
+            <param name="httpRequestTimeout">The HTTP request timeout. Defaults to 1 minute.</param>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientConfiguration.RootHandler">
+            <summary>
+            Gets the root handler in the Http handler chain.
+            </summary>
+            <value>
+            The root handler.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientConfiguration.RetryPolicy">
+            <summary>
+            Gets the retry policy.
+            </summary>
+            <value>
+            The retry policy.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientConfiguration.HttpMessageHandler">
+            <summary>
+            Gets the default HTTP client handler.
+            </summary>
+            <value>
+            The default HTTP client handler.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientConfiguration.DelegatingHandlers">
+            <summary>
+            Gets the delegating handlers.
+            </summary>
+            <value>
+            The delegating handlers.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientConfiguration.HttpRequestTimeout">
+            <summary>
+            Gets the HTTP request timeout. The default value is 1 minute. This conforms to the HttpClient RequestTimeout default.
+            </summary>
+            <value>
+            The HTTP request timeout.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientFactory">
+            <summary>
+            A factory class to create and instantiate Concrete proxy implementations based off of a service interface at runtime.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientFactory.generatedImplemenationCache">
+            <summary>
+            We keep a cache of generated interface implemenations in this dictionary so that we don't have to regenerate them.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientFactory.CreateClient``1(System.Uri,Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientConfiguration)">
+            <summary>
+            Creates the Rest Client associated with the interface.
+            </summary>
+            <typeparam name="T">The REST interface.</typeparam>
+            <param name="baseUri">The base URI.</param>
+            <param name="configuration">The configuration.</param>
+            <returns>An instance of the rest client.</returns>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestDefinitionAttribute">
+            <summary>
+            Marks an interface as a Rest interface for Codegen.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode">
+            <summary>
+            These are the validation error codes associated with validating an interface used to generate 
+            the rest client for.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.IsNotInterfaceType">
+            <summary>
+            The type is not interface type.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.VariableIsNotBound">
+            <summary>
+            The variable is not bound.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodContainsGenericTypeArguments">
+            <summary>
+            The method contains generic type arguments.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodDoesNotHaveARestInvokeAttribute">
+            <summary>
+            The method does not have a rest invoke attribute.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.RestInvokeAttributeHasANullOrEmptyForHttpMethod">
+            <summary>
+            The rest invoke attribute has a null or emty for HTTP method.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodHasAnUnboundUriParameterInTemplate">
+            <summary>
+            The method has an unbound URI parameter in template.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.RestInvokeAttributeHasANonStringParamUsedForUriBinding">
+            <summary>
+            The rest invoke attribute has a non string parameter used for URI binding.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodHasNoRequestFormatter">
+            <summary>
+            The method has no request formatter.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodHasNoResponseFormatter">
+            <summary>
+            The method has no response formatter.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodContainsOptParameter">
+            <summary>
+            The method contains optional parameter.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodContainsOutParameter">
+            <summary>
+            The method contains out parameter.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodContainsRefParameter">
+            <summary>
+            The method contains reference parameter.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.InterfaceDoesNotHaveRestDefinitionAttribute">
+            <summary>
+            The interface does not have rest definition attribute.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.InterfaceInheritsFromOthers">
+            <summary>
+            The interface inherits from others.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.InterfaceContainsPropertyDefinitions">
+            <summary>
+            The interface contains property definitions.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodHasMoreThanOneResponseFormatter">
+            <summary>
+            The method has more than one response formatter.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodHasMoreThaneOneRequestFormatter">
+            <summary>
+            The method has more thane one request formatter.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodHasMoreThanOneCancellationToken">
+            <summary>
+            The method has more than one cancellation token.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.MethodHasUnboundParameters">
+            <summary>
+            The method has unbound parameters.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode.InterfaceContainersOverloads">
+            <summary>
+            The interface containers overloads.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationException">
+            <summary>
+            An exception thrown when interface validation fails.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationException._errorCode">
+            <summary>
+            The error code.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationException.#ctor(Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationException"/> class.
+            </summary>
+            <param name="errorCode">The error code.</param>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationException.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+            <PermissionSet>
+              <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" PathDiscovery="*AllFiles*"/>
+            </PermissionSet>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationException.ErrorCode">
+            <summary>
+            Gets the error code.
+            </summary>
+            <value>
+            The error code.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidator">
+            <summary>
+            A class to validate the interface for which a proxy would be generated for.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidator.WriteErrorMessageToList(System.Boolean,Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationErrorCode,System.String,System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            Writes the error message to list.
+            </summary>
+            <param name="isNotError">If set to <c>true</c> [is not error].</param>
+            <param name="errorCode">The error code.</param>
+            <param name="errorMessage">The error message.</param>
+            <param name="messages">The messages.</param>
+            <param name="throwOnError">If set to <c>true</c> [throw on error].</param>
+            <exception cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidationException">When throwOnError is true and isNotError is false.</exception>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidator.ValidateInterfaceMethod(System.Reflection.MethodInfo,System.Collections.Generic.List{System.String}@,System.Boolean)">
+            <summary>
+            Validates the interface method.
+            </summary>
+            <param name="methodInfo">The method info.</param>
+            <param name="validationErrorMessages">The validation error messages.</param>
+            <param name="throwOnError">If set to <c>true</c> [throw on error].</param>
+            <returns>True if the method is valid.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidator.ValidateInterfaceMethod(System.Reflection.MethodInfo,System.Boolean)">
+            <summary>
+            Returns true if the Interface method is proxy genration compliant.
+            </summary>
+            <param name="methodInfo">The method info.</param>
+            <param name="throwOnError">If set to <c>true</c> [throw on error].</param>
+            <returns>True if the interface method is valid.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidator.ValidateInterface``1(System.Collections.Generic.List{System.String}@,System.Boolean)">
+            <summary>
+            Validates the interface to be conformant to automatic proxy generation.
+            </summary>
+            <typeparam name="T">An interface type.</typeparam>
+            <param name="validationErrors">The validation errors.</param>
+            <param name="throwOnError">If set to <c>true</c> [throw on error].</param>
+            <returns>A boolean indicating whether the interface is valid.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidator.ValidateInterface(System.Type,System.Collections.Generic.List{System.String}@,System.Boolean)">
+            <summary>
+            Validates the interface to be conformant to automatic proxy generation.
+            </summary>
+            <param name="interfaceType">Type of the interface.</param>
+            <param name="validationErrors">The validation errors.</param>
+            <param name="throwOnError">If set to <c>true</c> [throw on error].</param>
+            <returns>Returns true if the interface is valid.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidator.ValidateInterface``1(System.Boolean)">
+            <summary>
+            Validates the interface.
+            </summary>
+            <typeparam name="T">Interface type.</typeparam>
+            <param name="throwOnError">If set to <c>true</c> [throw on error].</param>
+            <returns>True if the interface is valid.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInterfaceValidator.ValidateInterface(System.Type,System.Boolean)">
+            <summary>
+            Validates the interface.
+            </summary>
+            <param name="interfaceType">Type of the interface.</param>
+            <param name="throwOnError">If set to <c>true</c> [throw on error].</param>
+            <returns>Bool indicating whether the validation succeeded.</returns>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInvoke">
+            <summary>
+            Rest Invoke attribute describes a Rest call on an interface method.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInvoke.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInvoke"/> class.
+            </summary>
+            <param name="httpMethod">The HTTP method.</param>
+            <param name="uriTemplate">The URI template.</param>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInvoke.UriTemplate">
+            <summary>
+            Gets the URI template.
+            </summary>
+            <value>
+            The URI template.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestInvoke.HttpMethod">
+            <summary>
+            Gets the HTTP method.
+            </summary>
+            <value>
+            The HTTP method.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IHttpMessageProcessingHandler">
+            <summary>
+            This interface gives you the ability to intercept and modify <see cref="T:System.Net.Http.HttpRequestMessage"/> and <see cref="T:System.Net.Http.HttpResponseMessage"/>  objects 
+            for the proxy
+            Once can implement this interface for logging etc. adding custom header to http request, performing validations etc.
+            </summary>
+            <remarks>
+            There are two ways to use this. 
+            1. Inherit from this interface and create an attribute, then tag the appropriate interface method with the attribute. Refer to the implementation of <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CustomMessageHandlers.ExpectedStatusCodeValidatorAttribute"/>
+            2. Inheit from this interface and add an instance of this to the MessageProcessingHandlers collection in <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.HttpRestClientConfiguration"/>.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IHttpMessageProcessingHandler.CreateHandler">
+            <summary>
+            Gets the message processing handler.
+            </summary>
+            <returns>A new instance of the message processing handler.</returns>
+            <remarks>
+            This method should return a new handler every time for it to be thread safe.
+            </remarks>
+            <value>
+            The message processing handler.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IRetryPolicy">
+            <summary>
+            Describes a retry policy for rest requests.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.IRetryPolicy.ShouldRetry(System.Exception,System.Int32,System.TimeSpan@)">
+            <summary>
+            Determines whether the exception should be retried.
+            </summary>
+            <param name="exception">The exception.</param>
+            <param name="attempt">The attempt. The first attempt will be 1.</param>
+            <param name="delay">The delay.</param>
+            <returns>Bool indicating whether the exception should be retried.</returns>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CustomMessageHandlers.CustomHeaderAttribute">
+            <summary>
+            This attribute adds a custom header each of othe the http requests. 
+            To add multiple headers add multiple copies of this attribute to the interface method.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CustomMessageHandlers.CustomHeaderAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CustomMessageHandlers.CustomHeaderAttribute"/> class.
+            </summary>
+            <param name="headerName">Name of the header.</param>
+            <param name="headerValue">The header value.</param>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CustomMessageHandlers.ExpectedStatusCodeValidatorAttribute">
+            <summary>
+            This is an attribute that can be used to validate the returned HttpStatusCode of RestCall.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CustomMessageHandlers.ExpectedStatusCodeValidatorAttribute.#ctor(System.Net.HttpStatusCode[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CustomMessageHandlers.ExpectedStatusCodeValidatorAttribute"/> class.
+            </summary>
+            <param name="codes">The expected status codes.</param>
+            <exception cref="T:System.ArgumentException">Status code validation is only done for non error status codes [100,400).</exception>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CustomMessageHandlers.ExpectedStatusCodeValidatorAttribute.CreateHandler">
+            <summary>
+            Gets the message processing handler.
+            </summary>
+            <returns>A DelegatingHandler.</returns>
+            <value>
+            The message processing handler.
+              </value>
+            <remarks>
+            This method should return a new handler every time for it to be thread safe.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CustomMessageHandlers.ExpectedStatusCodeValidatorAttribute.ExpectedStatusCodes">
+            <summary>
+            Gets the expected status codes.
+            </summary>
+            <value>
+            The expected status codes.
+            </value>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.CustomMessageHandlers.InvalidExpectedStatusCodeException">
+            <summary>
+            An exception that is thrown when the web reponse status code does not match 
+            the expected http statuscode for the response.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Retries.HttpRestClientRetryPolicy">
+            <summary>
+            A retry policy for the Rest client derived from the user provided retry policy.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Retries.NoRetryPolicy">
+            <summary>
+            A retry policy that would never retry.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.Rest.Retries.NoRetryPolicy.ShouldRetry(System.Exception,System.Int32,System.TimeSpan@)">
+            <summary>
+            Determines whether the exception should be retried.
+            </summary>
+            <param name="exception">The exception.</param>
+            <param name="attempt">The attempt.</param>
+            <param name="delay">The delay.</param>
+            <returns>A boolean indicating whether the exception must be retried.</returns>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IRegisteringService">
+            <summary>
+                Allows a service to provide additional registrations when it is registered with the ServiceLocator.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IRegisteringService.Register(Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationRuntimeManager,Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocator)">
+            <summary>
+                Allows a service to provide additional registrations when it is registered with the ServiceLocator.
+            </summary>
+            <param name="manager">
+                The runtime service location manager to use to register additional services.
+            </param>
+            <param name="locator">
+            The service locator to use.
+            </param>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationSimulationManager">
+            <summary>
+                Provides services to fake out service location during debugging and test scenarios.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationManager">
+            <summary>
+                Locates services that ViewModels need.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationManager.RegisterInstance``1(``0)">
+            <summary>
+                Registers a new instance with of a service with the container.
+            </summary>
+            <typeparam name="TService">
+                The type to register.
+            </typeparam>
+            <param name="instance">
+                The instance to register.
+            </param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationManager.RegisterInstance(System.Type,System.Object)">
+            <summary>
+                Registers a new instance with of a service with the container.
+            </summary>
+            <param name="type">
+                The type to register.
+            </param>
+            <param name="instance">
+                The instance to register.
+            </param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationManager.RegisterType``1(System.Type)">
+            <summary>
+                Register type.
+            </summary>
+            <typeparam name="T">Type to map.</typeparam>
+            <param name="type">Type to map to.</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationManager.RegisterType``2">
+            <summary>
+                Register type.
+            </summary>
+            <typeparam name="TInterface">The service interface.</typeparam>
+            <typeparam  name="TConcretion">The implementation type.</typeparam>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationManager.RegisterType(System.Type,System.Type)">
+            <summary>
+                Register type.
+            </summary>
+            <param name="type">Type to map.</param>
+            <param name="registrationValue">Type to map to.</param>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationSimulationManager.MockingLevel">
+            <summary>
+            Gets or sets the mocking level to use when performing service location.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationRuntimeManager">
+            <summary>
+                Provides services to provide additional service locations for the runtime.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationIndividualTestManager">
+            <summary>
+                Provides services to override a service location for a single test.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationIndividualTestManager.Override``1(``0)">
+            <summary>
+                Override default interface-to-implementation association.
+            </summary>
+            <typeparam name="T"> Interface to override. </typeparam>
+            <param name="overrideValue"> Value to override with. </param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationIndividualTestManager.Override(System.Type,System.Object)">
+            <summary>
+                Override default interface-to-implementation association.
+            </summary>
+            <param name="type"> Interface to override. </param>
+            <param name="overrideValue"> Value to override with. </param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationIndividualTestManager.Reset">
+            <summary>
+                Resets the overrides.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocator">
+            <summary>
+                Locates services that ViewModels need.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocator.Locate``1">
+            <summary>
+                Locates an instance that implements the specified interface.
+            </summary>
+            <typeparam name="T"> Interface to locate. </typeparam>
+            <returns> Instance of the interface. </returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocator.Locate(System.Type)">
+            <summary>
+                Locates an instance that implements the specified interface.
+            </summary>
+            <param name="type"> Interface to locate. </param>
+            <returns> Instance of the interface. </returns>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator">
+            <summary>
+                The main service locator for any application.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator.#ctor">
+            <summary>
+                Prevents a default instance of the ServiceLocator class from being created.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator.Locate``1">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator.Locate(System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator.Instance">
+            <summary>
+                Gets the singleton instance of the ServiceLocator.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator.ServiceLocationManager.RegisterInstance``1(``0)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator.ServiceLocationManager.RegisterInstance(System.Type,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator.ServiceLocationManager.RegisterType``1(System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator.ServiceLocationManager.RegisterType``2">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator.ServiceLocationManager.RegisterType(System.Type,System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator.ServiceLocationRuntimeManager.RegisterInstance(System.Type,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocator.ServiceLocationSimulationManager.RegisterInstance(System.Type,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocationMockingLevel">
+            <summary>
+            Test Mocking Levels, which control how the service locator should work in 
+            a test environment.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocationMockingLevel.ApplyFullMocking">
+            <summary>
+            Apply Full Mocking, All mocking levels should be respected.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocationMockingLevel.ApplyIndividualTestMockingOnly">
+            <summary>
+            Apply Individual Test Mocking only.  Only individual test overrides
+            should be respected.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocationMockingLevel.ApplyTestRunMockingOnly">
+            <summary>
+            Apply Test Run Mocking Only.  Only full test run overrides should 
+            be respected.
+            </summary>
+        </member>
+        <member name="F:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.ServiceLocationMockingLevel.ApplyNoMocking">
+            <summary>
+            Apply No Mocking.  No mocking should be respected and only runtime
+            objects should be utilized.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationRegistrar">
+            <summary>
+            Allows an assembly to register services with the IoC container.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.FrameworkServiceLocationRegistrar">
+            <summary>
+            Registers services with the IOC for use by this assembly.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.FrameworkServiceLocationRegistrar.Register(Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationRuntimeManager,Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocator)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

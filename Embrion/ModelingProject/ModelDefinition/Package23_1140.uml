@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bb1830c6-5888-4019-9bd1-1b6a32b6e1e5"
+  name="Blob"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="895e260f-6489-468e-b77a-310d0cff5f8b"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.WindowsAzure.Storage.Blob"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="1d623e89-a38a-4408-83d3-5842a3e82dbf"
+        name="CloudBlobClient"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e461020e-9e86-4667-bf93-1fe961aa0725"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLu%2FDocuments%2FVisual Studio 2012%2FProjects%2Fembrion%2Fpackages%2FWindowsAzure.Storage.4.0.1%2Flib%2Fnet40%2FMicrosoft.WindowsAzure.Storage.dll&quot; Namespace%3DMicrosoft.WindowsAzure.Storage.Blob Type%3DCloudBlobClient"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b6cedaea-fee7-43d7-9d46-ee5ae39c5ab3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="91dbdeda-554e-44ec-a328-4d24fc2e061e">
+                <propertyInstance
+                  Id="dc3bb7b0-add3-4868-8ce0-e0ff18aab05f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f439cf2c-13fe-47a7-bb95-355f1f75599e">
+                <propertyInstance
+                  Id="52887538-6848-4ae7-aae0-d222658809d4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1474ab0f-91a0-4d27-94a6-99f5073e2fa1">
+                <propertyInstance
+                  Id="9f9c0ba2-2503-47c9-af82-287e3da68aa3"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e4a92c4d-0e06-4f4b-9948-a9886429eb1d">
+                <propertyInstance
+                  Id="192cb2d6-e174-4dfd-ab77-a87ac73fb104"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b378f3be-4c70-4215-b660-a493ad6cafff">
+                <propertyInstance
+                  Id="2e66bd6d-0e92-4e8b-bd47-c5aece4e4f17"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f7e02998-0f02-47ed-8906-419cb83c7479"
+        name="CloudBlobContainer"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c249f50f-4df9-4d75-9805-514dbbdb148e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLu%2FDocuments%2FVisual Studio 2012%2FProjects%2Fembrion%2Fpackages%2FWindowsAzure.Storage.4.0.1%2Flib%2Fnet40%2FMicrosoft.WindowsAzure.Storage.dll&quot; Namespace%3DMicrosoft.WindowsAzure.Storage.Blob Type%3DCloudBlobContainer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e5bcd640-e802-48e5-ad84-45f31e8d5011"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="842b91df-29d1-4f32-9717-4796127d942c">
+                <propertyInstance
+                  Id="5cd42ca4-05f2-4cf4-9a6a-c400ba7d7c15"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8515261c-800c-41b4-b072-90a5e8009c56">
+                <propertyInstance
+                  Id="ce5a33bf-dd33-47fb-b8b8-ac35024bc083"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="95503041-4609-485f-b5cd-280dfa2ddd15">
+                <propertyInstance
+                  Id="be34830b-4b0e-41ad-912b-4b771a99a15c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0cceb69c-3ecf-4a29-9029-5e54a329ce7d">
+                <propertyInstance
+                  Id="ead5b69d-b2aa-4d7b-991a-c2b55c723369"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e3ad7f0d-71b3-43a8-8b43-e093fb804273">
+                <propertyInstance
+                  Id="b7fa5017-0acd-4d71-8d8a-b2b96235a9b6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

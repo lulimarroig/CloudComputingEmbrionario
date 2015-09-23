@@ -1,0 +1,65 @@
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\App_Data\parametrosmap.properties
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Web Role.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Web Role.pdb
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.Data.Edm.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.Data.OData.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.Data.Services.Client.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\MsgPack.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Newtonsoft.Json.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Newtonsoft.Msgpack.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\System.Spatial.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.Data.Edm.xml
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.Data.OData.xml
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.Data.Services.Client.xml
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\MsgPack.xml
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\Newtonsoft.Json.xml
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\System.Spatial.xml
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\de\System.Spatial.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\es\System.Spatial.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\fr\System.Spatial.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\it\System.Spatial.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ja\System.Spatial.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ko\System.Spatial.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\ru\System.Spatial.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\obj\Release\Web Role.csprojResolveAssemblyReference.cache
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\obj\Release\Web_Role.Properties.Resources.resources
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\obj\Release\Web Role.csproj.GenerateResource.Cache
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\obj\Release\Web Role.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\obj\Release\Web Role.pdb
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\InterroleCommons.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\Web Role\bin\InterroleCommons.pdb

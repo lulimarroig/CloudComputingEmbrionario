@@ -1,0 +1,1662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a8cd0e1d-f422-456d-bbb9-870492ab703c" name="UMLClassDiagram1" linkedPackageId="962cf932-45b1-4838-924e-8f60227abe47" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c76ced1f-0bde-4d55-bbe1-886a8bb9807c">
+      <profileInstance Id="f1d7cd1e-4f2c-462b-a490-fa189a2abfb1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="716da74d-7668-4b43-b991-74692532f3f3">
+      <profileInstance Id="f3c50412-9629-4f6a-ba97-f7b1e6cc3f89" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="71e87aa2-9fe4-48f3-a7c7-2d52c70c2b4e">
+      <profileInstance Id="125c5b69-e546-4a40-bfae-bc2bcb9e8a06" name="CSharpProfile">
+        <elementDefinition Id="8e0055c7-52ff-470b-b28d-86fb1cee3276" />
+      </profileInstance>
+      <elementDefinition Id="5e6c573d-f1cb-47ee-a13d-f1a7fba28b9d" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="b8d17e3d-68b8-4579-8ec2-f60995e164c3" name="IReceiveJobSubmission" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="4bd6ca91-6484-4c5b-a354-4d71b1ff542e" handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DIReceiveJobSubmission" tag="ViewCode">
+            <elementDefinition Id="804b7aa7-9024-4e67-984b-754b7d715f64" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="c824f78c-a5ea-4ca5-90b6-dc28bc791e70" name="interface" profile="CSharpProfile">
+            <elementDefinition Id="3c633ee7-eea5-4d7c-9384-7a2cd4e9ef94" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="2aa73fad-3922-4345-9676-623574335f71">
+                <propertyInstance Id="883a6f84-f65e-42d7-af6f-4dbe07672313" name="ClrAttributes">
+                  <elementDefinition Id="c01fcd1f-5638-4015-9d2f-746f861a0ecc" />
+                </propertyInstance>
+                <elementDefinition Id="40829066-1d03-47d3-979c-b9dd8b1e5ca0" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="b837b1fb-e7d3-44f5-b824-04c868210fae">
+                <propertyInstance Id="bfe54b53-eb87-4e62-9ae0-aa0fe5845776" name="IsPartial" value="false">
+                  <elementDefinition Id="c98bfbf9-3e8a-4457-ae48-b293bfa4a4c4" />
+                </propertyInstance>
+                <elementDefinition Id="5707a79b-db40-460e-a752-85cc6d987bef" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="5bc216b3-3272-4fc5-b727-27dfdaa282e2">
+                <propertyInstance Id="cf39aaa4-468b-40d0-a12c-39cd5eab607d" name="IsUnsafe" value="false">
+                  <elementDefinition Id="993c9112-80fa-420f-9bb8-8295e411562d" />
+                </propertyInstance>
+                <elementDefinition Id="4523c76d-985d-43f5-9adf-a869aa8b34fc" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9ff25d63-6663-433c-a5f1-a300316a96fe">
+                <propertyInstance Id="cd9c7dcd-51a3-42cf-bb1a-1c35b2d72b2d" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="7344f5ee-bc82-4c92-b9ac-af456434d520" />
+                </propertyInstance>
+                <elementDefinition Id="e44dde67-4b1c-45b8-a3f2-96699ee44cab" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="4a0811e2-42e0-4d27-897f-cbabffb6d322" />
+        <ownedOperations>
+          <operation Id="2e18cc5c-bb36-420b-84e1-cf36e447ae28" name="ReceiveJobSubmitionMessage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="821dc1f4-15e7-4c67-9a07-6a065d8bd358" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DIReceiveJobSubmission Member%3D(Name%3DReceiveJobSubmitionMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)])" tag="ViewCode">
+                <elementDefinition Id="53a1307e-4a1b-4ab2-a39f-63bc06af9f81" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="f015c1ba-b440-452d-9965-190b0aed6c49" name="method" profile="CSharpProfile">
+                <elementDefinition Id="223ce5c2-5d39-4378-a48b-7f75286a06ca" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="77314fc5-d162-4b79-bde9-ca00f897a94d">
+                    <propertyInstance Id="d5b96a96-1755-4d01-b21f-94c146903c95" name="ClrAttributes">
+                      <elementDefinition Id="6cadbba0-1532-4526-b5dd-b549a5618091" />
+                    </propertyInstance>
+                    <elementDefinition Id="c90da37f-9fac-4b8d-bbf7-7856c0dd351a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3f933dd6-738a-4f97-b1df-9e169133c338">
+                    <propertyInstance Id="ca5ab076-c1b3-4171-b2bd-d395b6dbce5e" name="IsPartial" value="false">
+                      <elementDefinition Id="47751847-ceb7-476b-b193-4736029be9a9" />
+                    </propertyInstance>
+                    <elementDefinition Id="d120c4a6-0dac-4eea-a339-027897281f54" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="34f29634-5b70-480d-9525-fa588aa9333c">
+                    <propertyInstance Id="a01f2dbf-0caf-46a3-bc8b-128b1e9466b8" name="IsUnsafe" value="false">
+                      <elementDefinition Id="b727c290-eaa0-4b99-a7a6-08f8abd8ec94" />
+                    </propertyInstance>
+                    <elementDefinition Id="51a9891b-dee6-49c9-964e-b0c23a79938a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ca54898e-3f52-44d6-adeb-b48d8b9066e9">
+                    <propertyInstance Id="a206c47e-d34c-4680-8d41-90187138692d" name="Inheritance" value="none">
+                      <elementDefinition Id="0c16f51d-7475-4cbc-80ce-599b16a3effd" />
+                    </propertyInstance>
+                    <elementDefinition Id="350f8ebc-d2ef-49cd-84d0-0cf69cc9783b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b11d06a6-1743-47b6-aab7-22e7a092382b">
+                    <propertyInstance Id="1921f24c-e063-4531-8441-02c2d4e3fe9c" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7192ac50-7e2f-4254-896f-8bb8df3e5469" />
+                    </propertyInstance>
+                    <elementDefinition Id="8503e7cb-405f-4b19-9600-08b546e16a2d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c8ee5019-ef0b-40ff-a94b-e7e5a8a43013">
+                    <propertyInstance Id="d60832f4-14c0-48ab-8025-fcf11d2268b1" name="params" value="false">
+                      <elementDefinition Id="c6f1cb71-5eac-4f44-bdcc-e08e4658bd04" />
+                    </propertyInstance>
+                    <elementDefinition Id="b75b30f1-045e-44f0-93b8-a3021d51cc8c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="88974ef2-5e48-4a4a-8bc6-c26b8aff63f2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8c86754a-7fa3-4368-a28d-a8c3de5b7f12" name="message" direction="In">
+                  <referencesInternal>
+                    <reference Id="8773c7ac-1c2c-4883-a87d-961604306938" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DIReceiveJobSubmission Member%3D(Name%3DReceiveJobSubmitionMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)]) ParameterIdentifier%3Dmessage" tag="ViewCode">
+                      <elementDefinition Id="05362b57-5930-4fee-8054-781598d9b74b" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="192eb4b2-703a-4b7a-aad7-b3fafb220d9c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="52bcad95-2093-4b5c-9f3f-ab8dbed17ed5" LastKnownName="JobSubmissionMessage" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="52bcad95-2093-4b5c-9f3f-ab8dbed17ed5" name="JobSubmissionMessage" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::InterroleCommons::JobSubmissionMessage">
+        <elementDefinition Id="4345a3b3-8266-402d-8782-05c2f9bebc64" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="680c0792-9fcf-4b77-b943-15a4219d3898" name="JobSubmissionMessage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="df61b72b-2e21-48d9-99d7-d180c033bc74" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage" tag="ViewCode">
+            <elementDefinition Id="63d4a928-d8e5-49c8-9d54-37a2008e7e1f" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="b8448f00-1aeb-4d5b-a725-12b17b12db76" name="class" profile="CSharpProfile">
+            <elementDefinition Id="e6340ca2-afc0-40d4-bfbb-a45ebeb104da" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ef4e195d-bc41-452d-9431-b5337bdd586e">
+                <propertyInstance Id="0cd9bcab-d1c5-4809-8718-a6cbc1464621" name="ClrAttributes">
+                  <elementDefinition Id="bda432ab-b007-47ef-b92f-47240308773a" />
+                </propertyInstance>
+                <elementDefinition Id="ea9cb3f8-554e-4e35-bbbd-aaa4b90ebcbf" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="375d7718-62ba-459a-9ccb-9e41af5f5599">
+                <propertyInstance Id="7424b50c-323e-4088-980b-1f77f38bde7c" name="IsPartial" value="false">
+                  <elementDefinition Id="b24e5409-ab94-4245-a5c5-e088499b4df6" />
+                </propertyInstance>
+                <elementDefinition Id="23907313-e697-4ebf-a42d-db61f11ee94f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="156fa69a-da0b-462a-b591-400e133facdb">
+                <propertyInstance Id="39b5d068-4f64-4353-be2a-4d7a9a76ecb1" name="IsStatic" value="False">
+                  <elementDefinition Id="be4caed6-3c27-47f8-9190-7c4df15f16bc" />
+                </propertyInstance>
+                <elementDefinition Id="4a5167ea-71fc-49d7-99ea-98c36a86b6de" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="32b82665-e2b4-4a75-aa44-9d6ab29b483c">
+                <propertyInstance Id="26534e5f-5956-4ec7-8519-4b1e4de8ee59" name="IsUnsafe" value="false">
+                  <elementDefinition Id="a65a4f64-6575-4ffc-b9e0-c095932ce1e5" />
+                </propertyInstance>
+                <elementDefinition Id="b3c208d9-59cf-4650-b63a-98a21c32a7d7" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="352617ac-925d-4247-a036-c8282403a6d5">
+                <propertyInstance Id="652cd3f9-571d-4a70-b558-78e99e4ee080" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="32b605c4-43ae-4407-8261-e780a11d384a" />
+                </propertyInstance>
+                <elementDefinition Id="bad83b15-4db4-44bd-8079-8baccd263b61" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="4345a3b3-8266-402d-8782-05c2f9bebc64" />
+        <ownedAttributesInternal>
+          <property Id="e6ed3159-019c-40dd-8a9f-63ee48d00f0c" name="idUsuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="ddc2f36f-c0a1-4114-8317-3381e5909580" handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage Member%3DidUsuario" tag="ViewCode">
+                <elementDefinition Id="52ba2c07-e302-47f4-8be1-7d694cbc12a4" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8ff6be67-bc63-4342-a139-3bba3208b0d2" name="property" profile="CSharpProfile">
+                <elementDefinition Id="10c8915a-9191-4c1f-930d-95af037d7b7e" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="665ac7b5-e65c-49f7-82bb-1029f4b9ccb8">
+                    <propertyInstance Id="99680bfb-85de-4eac-b8f8-158365b82ace" name="ClrAttributes">
+                      <elementDefinition Id="84b71b17-2945-4c76-9c1b-ef29d5b977aa" />
+                    </propertyInstance>
+                    <elementDefinition Id="6c20a05c-1243-4cf3-a5dd-da485c4f826d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c18517df-bbfb-4596-8efb-5e521f6bab3b">
+                    <propertyInstance Id="8a0106f9-30f7-4e8f-89c8-32eaedba69d6" name="Get" value="public">
+                      <elementDefinition Id="77f8a3bb-61c8-4c65-b8be-1e8711974a28" />
+                    </propertyInstance>
+                    <elementDefinition Id="33497654-cdbb-4790-adee-95e20a3eb40b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f7cfb4b8-6659-48d0-841c-8cc667ab435f">
+                    <propertyInstance Id="4f0eed4b-3b94-4bd7-a14b-16d41c9359e1" name="HasBody" value="false">
+                      <elementDefinition Id="ffafe223-8ffd-427e-a7e0-c74b0bc1b848" />
+                    </propertyInstance>
+                    <elementDefinition Id="dfefc0aa-35da-420c-8ed6-ef147d529014" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="894d5f4f-3899-40b7-b25d-e8dda24e1f7c">
+                    <propertyInstance Id="c9d7e456-7855-4e8f-8c05-05406e4bfe1c" name="IsUnsafe" value="false">
+                      <elementDefinition Id="107548b1-4133-489b-aea4-cd1e6ef34a47" />
+                    </propertyInstance>
+                    <elementDefinition Id="700439b9-8abe-49b4-9355-d27aa938f85d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6c9fec18-5ae1-4cfc-8a3a-7de72d21426a">
+                    <propertyInstance Id="d48d2e4c-b5e2-4cc8-8b0e-55e95864f33c" name="Inheritance" value="none">
+                      <elementDefinition Id="1d13cef7-951c-4c73-b720-1404e74b87d3" />
+                    </propertyInstance>
+                    <elementDefinition Id="8e7162f8-e51c-4350-a600-32cec362d75f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f93b6a09-9fd9-4d55-88d3-03067b10beac">
+                    <propertyInstance Id="fe266560-6fb1-415f-9f0c-5351262d5580" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7b32ca38-d04f-4c11-a77a-243209ccecc5" />
+                    </propertyInstance>
+                    <elementDefinition Id="596dd5ed-9287-440e-aa19-a48ae60f6ba1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8c23c8f0-383d-4d20-b6b9-e5ed9f2bc2fa">
+                    <propertyInstance Id="0e9d6ad2-f8a8-474c-95a3-691e8f2321f8" name="Set" value="public">
+                      <elementDefinition Id="0015c156-82f8-490b-9503-356a19be01d2" />
+                    </propertyInstance>
+                    <elementDefinition Id="36e2f784-9dda-453c-8487-dd653b99051b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="5ba2cae9-8f26-425c-af8e-7e55ec872e84" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0821adf1-c0d2-47b2-b87d-e10cb789f0c8" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="ff7177f0-0dee-4b58-9083-74ef490877fd" name="nomEntrada" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="0c5f5f4c-837b-4a10-b7cb-254b128eb73b" handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage Member%3DnomEntrada" tag="ViewCode">
+                <elementDefinition Id="3768b465-83e2-4f57-82c7-73c8a0523226" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c8039277-f730-4f87-85d7-41a3d18ebb91" name="property" profile="CSharpProfile">
+                <elementDefinition Id="63d1b235-927f-466e-8bd0-849a2e5767ce" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ee710616-a667-4b1d-9084-531d1e70021d">
+                    <propertyInstance Id="c3fd29b0-8b46-4727-81df-456e49ee340f" name="ClrAttributes">
+                      <elementDefinition Id="9ee7c6f0-2a9c-44c3-81f1-af0b6057b4f2" />
+                    </propertyInstance>
+                    <elementDefinition Id="bfd0e937-6a81-42b7-a46d-02d491aae287" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1deb1461-2d12-4d93-9b26-b5fb3eedfc25">
+                    <propertyInstance Id="40fd8bd0-4843-4037-8aab-47820a45104d" name="Get" value="public">
+                      <elementDefinition Id="4419710e-f47f-4365-9aeb-6e81afd94083" />
+                    </propertyInstance>
+                    <elementDefinition Id="9b98efdd-c4e3-4af3-a021-3cf0f6ea2dd3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9c7cb796-64b0-4243-bf84-888fa836d16d">
+                    <propertyInstance Id="20b24984-ef0c-4c13-b4d6-74a53ecf2fa3" name="HasBody" value="false">
+                      <elementDefinition Id="c54c7851-e5d4-4aba-93ca-915c7b1495b1" />
+                    </propertyInstance>
+                    <elementDefinition Id="1455b003-7203-414e-b66c-9c59240ea1e9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="006500ca-a232-4588-b304-1f1ccc78ab74">
+                    <propertyInstance Id="0eb2ab99-47d8-445e-aa67-1a320cbe736c" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f06f8712-8b32-4207-9635-74388538b072" />
+                    </propertyInstance>
+                    <elementDefinition Id="4b07d98b-e18e-4d81-9a3b-e750aae22969" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b300e7eb-15a5-4bfb-8c73-33904c432c32">
+                    <propertyInstance Id="efa1a3e3-6e1f-4009-ba99-59a9354c73d4" name="Inheritance" value="none">
+                      <elementDefinition Id="4098082b-202d-4862-afc1-5e5547f27b4d" />
+                    </propertyInstance>
+                    <elementDefinition Id="449c6b4b-57ac-4fea-b4b6-dbf23dc49e8f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8db0d6ed-20ad-4d29-a3ec-1a409f5dc19f">
+                    <propertyInstance Id="b94deb0f-4e3b-4908-bf14-c87233470327" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="49847cbb-ab84-4407-a636-aa6e23eb2d8b" />
+                    </propertyInstance>
+                    <elementDefinition Id="10539de1-4d40-4975-8278-41b2950053ce" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1fcc0fe2-494d-470b-a59a-1b6c952e35e5">
+                    <propertyInstance Id="e38a1eca-4543-402a-bad8-12f9ea49b606" name="Set" value="public">
+                      <elementDefinition Id="f3a39919-36c2-4e9e-a4f7-683b37448ecc" />
+                    </propertyInstance>
+                    <elementDefinition Id="9ec156b9-c808-4b47-b2aa-b3b6bd2ac42a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="a5620c69-4478-447f-9b62-7ae8f4ce38dc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0821adf1-c0d2-47b2-b87d-e10cb789f0c8" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="ce85ab1e-26df-4770-a39c-9dc3d44386e8" name="subIdUsuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="185915e1-64d0-480b-b452-795b6a5cf0ed" handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage Member%3DsubIdUsuario" tag="ViewCode">
+                <elementDefinition Id="1928c0b2-a6f0-4783-bc5f-6ec3f8b5ff91" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="28fa1995-09c1-41bc-ad4d-17e8582b3f1b" name="property" profile="CSharpProfile">
+                <elementDefinition Id="f76da2e5-d573-42fb-b92d-a0e976841348" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ce4e3373-ada0-4e56-9964-acaba8c65225">
+                    <propertyInstance Id="1bcd61f4-3543-46a0-b169-5dea9725fd83" name="ClrAttributes">
+                      <elementDefinition Id="5c0c90fb-430b-46ac-b2a4-d9b4787d8bfc" />
+                    </propertyInstance>
+                    <elementDefinition Id="3c939aae-76fc-4225-a07a-28651fde9e1d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7c277865-6727-4b6e-976d-1122a2b10379">
+                    <propertyInstance Id="5650f32c-04a6-4bea-9cbc-8ddd73b80243" name="Get" value="public">
+                      <elementDefinition Id="2a7c2735-cc7e-48bf-95b8-f57408ad16d1" />
+                    </propertyInstance>
+                    <elementDefinition Id="d7118b9e-35c9-4bab-8761-1bdcb9ef5f03" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c489425d-0052-46d4-9c89-5ba5327077b0">
+                    <propertyInstance Id="890c2e15-0b62-457f-b469-e4a3f3de5b68" name="HasBody" value="false">
+                      <elementDefinition Id="a524149f-679e-479f-b7af-021cb577c3a8" />
+                    </propertyInstance>
+                    <elementDefinition Id="dd02996b-2a25-4e20-a17d-a0571ccd3e38" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9d6bd7c1-f118-4ec3-b714-0a5872d86e58">
+                    <propertyInstance Id="80e01705-c8a0-431c-b672-4f831ebf66c7" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d15857ff-7ff9-4a86-8a1c-eed62f790854" />
+                    </propertyInstance>
+                    <elementDefinition Id="49fc12a8-00ac-428f-aa5b-2d67507adf55" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ef6247ba-af61-429f-91cf-f0d64c4a327b">
+                    <propertyInstance Id="ebc6ca01-ac06-4f8b-8325-4a0450260a61" name="Inheritance" value="none">
+                      <elementDefinition Id="c72c1fed-89ac-4578-8414-7cb42321e5fc" />
+                    </propertyInstance>
+                    <elementDefinition Id="2d068872-adc9-4930-98e9-1301f904066f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ccf24eb3-73d6-4031-9550-298d6a9ae901">
+                    <propertyInstance Id="478f3b27-970c-4fb7-96d1-7f55952feeed" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="911681ae-3ca3-4a57-b3fa-7b6a7a08544f" />
+                    </propertyInstance>
+                    <elementDefinition Id="2c8d95d6-976a-425b-935b-5a216ec0ee79" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1a639bce-f0e0-4d75-baf5-85f4734c2802">
+                    <propertyInstance Id="eadb9683-15f0-4d76-b972-5e25d626bcba" name="Set" value="public">
+                      <elementDefinition Id="31f6e1db-706d-4d4d-a4eb-1b73f452cd34" />
+                    </propertyInstance>
+                    <elementDefinition Id="3968f76c-8569-40e8-a06e-b49c6f525cae" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c772bd52-a83a-4202-a3ae-45a59e68d2e2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0821adf1-c0d2-47b2-b87d-e10cb789f0c8" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="4a2da6eb-0d64-4f7f-b5f5-0a8124eb53e9" name="JobSubmissionMessage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="839bcc33-5f18-4e47-8fcd-7908b4c87900" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="6bd41bde-8bb8-4442-afe2-2cedd626e193" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a69ce0fc-6c93-4d53-82cd-7d7b150c4000" name="method" profile="CSharpProfile">
+                <elementDefinition Id="f1af00f1-50fe-49ee-b525-de515542b8b0" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="56288cd1-09b3-40ed-b16d-8ed12aa99277">
+                    <propertyInstance Id="6d483428-df4c-4efe-8392-1ca4feb1ff54" name="ClrAttributes">
+                      <elementDefinition Id="3f749dea-f0ef-467f-9e90-43af50e3b2f5" />
+                    </propertyInstance>
+                    <elementDefinition Id="f5a967cc-635e-4831-8525-8b4ca7edb820" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5f0fb447-1013-43d9-9f0d-95c85e48a78b">
+                    <propertyInstance Id="5544396b-2ae0-4b6b-b54e-c65cc8b5f18b" name="IsPartial" value="false">
+                      <elementDefinition Id="3c3cda0e-8790-4a06-a8a2-c187d86e42f0" />
+                    </propertyInstance>
+                    <elementDefinition Id="f944096a-f0ed-4be0-a1b2-7e827589e937" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2b1189fe-c7dc-4295-ab1e-eb23ec91ec67">
+                    <propertyInstance Id="f2b1df84-0eec-47fa-b453-c0b47530671f" name="IsUnsafe" value="false">
+                      <elementDefinition Id="452df96f-1b9b-4d2e-aa1b-945de8c1ef24" />
+                    </propertyInstance>
+                    <elementDefinition Id="c45fcf36-966c-4150-9208-0dc241e27f8f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3d2197cf-665f-4d32-b0d1-d7714f4299f0">
+                    <propertyInstance Id="c1b508ed-e5dc-42b8-9c22-f6e42af4d471" name="Inheritance" value="none">
+                      <elementDefinition Id="a4f62309-85ed-4e9d-b638-08a18a9ac3d6" />
+                    </propertyInstance>
+                    <elementDefinition Id="c8f76306-7217-40a4-afca-b4ef7589e889" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="66e8c1e6-b1ae-402b-9b01-fc80a52b3aec">
+                    <propertyInstance Id="3d758b20-50e9-4f72-8aca-5bdc54efe2b0" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="738f6051-2eab-4c26-b3b3-c03780990a05" />
+                    </propertyInstance>
+                    <elementDefinition Id="de4487e4-9872-48cd-b1a8-44e85322f71c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6db7b4af-6a7b-4188-ad87-5564de3e77cc">
+                    <propertyInstance Id="cf643dcc-c8dd-4731-a2ff-1f0481f0c36b" name="params" value="false">
+                      <elementDefinition Id="4de40321-7f01-4600-a6c0-4e0afbd1aaf2" />
+                    </propertyInstance>
+                    <elementDefinition Id="50309118-0a9c-4055-be11-b1ddbf8ead72" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="2caed0ad-7b1a-49bf-b3c6-ddeb6f05b6a0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="0821adf1-c0d2-47b2-b87d-e10cb789f0c8" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4eda2d83-1d1e-4737-82e1-6a0f70a57bf1" name="JobSubmissionRecievedEventHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="2d6dcadb-66ba-44f8-b7fc-632e4bd1a11e" handle="viewcode://./CodeSchema_Delegate?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DJobSubmissionRecievedEventHandler" tag="ViewCode">
+            <elementDefinition Id="9caf578c-09f8-480d-8f3a-5759cea989a3" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="6021004a-045e-4ad4-bff8-cb77b869926b" name="delegate" profile="CSharpProfile">
+            <elementDefinition Id="5739a946-cad7-492a-8971-50ccf747ee0a" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="c4d441d9-2a0e-47d5-b34b-d9fc78af02eb">
+                <propertyInstance Id="87305574-76f6-4507-8588-7692f333a0cf" name="ClrAttributes">
+                  <elementDefinition Id="acae6a07-2467-4416-9d90-13f2fb4daf4d" />
+                </propertyInstance>
+                <elementDefinition Id="50585ec9-8377-46f6-8e1c-2720b78b15c7" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="89f9a49c-e14e-4588-b6b4-c2a3ed271eb6">
+                <propertyInstance Id="7a28229a-28eb-44a3-bb72-18785b95e3f6" name="IsUnsafe" value="false">
+                  <elementDefinition Id="161a74f2-2312-4fca-a2fe-4252ffcfa016" />
+                </propertyInstance>
+                <elementDefinition Id="55381cc8-7024-4c23-b3d8-2ec9847d41d6" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e3d35bde-6bff-41f5-acad-99044219775a">
+                <propertyInstance Id="95e115ec-2175-4197-bca2-82be4d95fb69" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="7b9a1ec5-6144-4bd3-8fcc-3c304a381e3a" />
+                </propertyInstance>
+                <elementDefinition Id="0aeed740-851a-4a6e-a817-8271db50e457" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="c9abb366-0aaa-4141-9697-398ee98d5876" />
+        <ownedOperationsInternal>
+          <operation Id="03f58af0-9f86-4e5f-9c98-f879222f7c07" name="Invoke" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="c046a80b-b3ad-4452-aba4-48602c309830" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DJobSubmissionRecievedEventHandler Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)])" tag="ViewCode">
+                <elementDefinition Id="48fc0a5e-640e-4d53-9b8b-e1cb7ccaf1b5" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c85d2f44-8f2f-458b-a8ce-673de5a4d99e" name="method" profile="CSharpProfile">
+                <elementDefinition Id="7d214c9e-7dba-4e14-96e8-eec6db3d42f4" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="73cb5e4d-d072-48da-9b28-d2bd40217557">
+                    <propertyInstance Id="f9cec7bb-e6db-4098-8546-ce3966d99e86" name="ClrAttributes">
+                      <elementDefinition Id="03460f95-5278-4d9f-963c-627ef0a2222d" />
+                    </propertyInstance>
+                    <elementDefinition Id="b993582e-75f4-4e78-a3bc-b9d5747ce292" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f0635496-f23e-41f0-980f-70fb139f752a">
+                    <propertyInstance Id="08393449-1e3f-4a63-97f8-f5e76809d8d6" name="IsPartial" value="false">
+                      <elementDefinition Id="a1ddb1a7-85aa-4952-b5a2-aaf458750c14" />
+                    </propertyInstance>
+                    <elementDefinition Id="5636fef9-548b-4121-b477-3beac9e3599d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="445fd4ef-d6bf-4220-9179-c4175bf32994">
+                    <propertyInstance Id="4e56882a-6b1f-4049-a5ae-962e29f773c2" name="IsUnsafe" value="false">
+                      <elementDefinition Id="14b1a654-79d8-4a53-9dbb-8391281cf524" />
+                    </propertyInstance>
+                    <elementDefinition Id="0e7e7d4d-4b51-4de2-878a-9e39ca580b4a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b707ec31-2ff6-4ec3-bdfd-dc04923ebae6">
+                    <propertyInstance Id="ed2f8bae-8be9-479c-9917-1820002e8230" name="Inheritance" value="none">
+                      <elementDefinition Id="d59d7074-73c2-4688-9172-b6fd4cba3801" />
+                    </propertyInstance>
+                    <elementDefinition Id="cda43451-1c13-4864-8b60-8f6f57462142" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a76d5340-5bc4-4ebd-9100-482e4c235405">
+                    <propertyInstance Id="0c03ab77-b6a8-4467-86da-9921cfaf23ac" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="17a578f0-7261-49b2-9cd8-d3c697b9abc6" />
+                    </propertyInstance>
+                    <elementDefinition Id="160d64bf-dd9f-463b-9c3a-cfcfb4724e31" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b3050059-dce1-44cf-9be3-5342f82d7137">
+                    <propertyInstance Id="82afc52b-81e1-4a96-8553-a56289b36c5d" name="params" value="false">
+                      <elementDefinition Id="9a6c32ea-4752-417f-9138-5ae86a5210ec" />
+                    </propertyInstance>
+                    <elementDefinition Id="6b7867e8-aca3-40e8-846e-b0b88833238a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b28c6dae-3c49-4d24-a33b-c14e9b9d4bda" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ba588907-75a8-487e-ad53-d468ce70f6b3" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="9a6ade20-c1c6-4d02-8784-1949098c6369" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DJobSubmissionRecievedEventHandler Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="b4ffad8e-d92c-44e6-8b3d-c1f229eba3dd" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="1be8ad5f-8ba6-4b71-a02d-243d0b79d6be" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="452a3b6e-4c0f-48bc-9c9b-2c470fa23263" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f76f54d5-c9cc-4812-ae23-b61fe406be30" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="81d1ee53-48b9-4151-9aa1-4140b60682b1" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DJobSubmissionRecievedEventHandler Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="7721230d-6d80-4230-ba4c-b84ef7ae010d" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="9a470334-57dd-446e-b333-9f69176a82a1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="52bcad95-2093-4b5c-9f3f-ab8dbed17ed5" LastKnownName="JobSubmissionMessage" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="452a3b6e-4c0f-48bc-9c9b-2c470fa23263" name="Object" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::System::Object">
+        <elementDefinition Id="4c2c0729-8f13-4985-90cf-94b56a0ad051" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3025f2f3-9452-42d6-813c-4cb79b0c765f" name="JobSubmissionServiceHost" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="001b745a-962f-47ef-a788-e1d16e2d153e" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DJobSubmissionServiceHost" tag="ViewCode">
+            <elementDefinition Id="0e77ef5c-1046-47fc-ba50-f0c09952c7c7" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="a4e859ba-c917-4aca-89ac-4d9ec2e89d05" name="class" profile="CSharpProfile">
+            <elementDefinition Id="b0fcfbef-5f6e-4356-9880-f456d6a0afec" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="2a85f415-d679-4bad-9475-2c961cd81e2f">
+                <propertyInstance Id="78e987e6-2a93-4147-8c8f-fe5915ba0605" name="ClrAttributes">
+                  <elementDefinition Id="04893f7f-0b6f-4fbf-ac75-b3d66b4dac21" />
+                </propertyInstance>
+                <elementDefinition Id="bef1a0b7-6287-44cd-95f7-0771a30f958f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e7ceca4d-d4b5-42d3-acca-5c1bb8b0794a">
+                <propertyInstance Id="08e81548-3c97-4df5-98f3-a062c1bc7225" name="IsPartial" value="false">
+                  <elementDefinition Id="2529a701-5b57-4af4-a7cf-4c8395ecf325" />
+                </propertyInstance>
+                <elementDefinition Id="ab2f0f8b-afae-404e-ba33-ed4ef4cd2ae4" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="168bb2c2-4c26-4b47-ae53-b3e013c503b4">
+                <propertyInstance Id="dd833b91-c22c-4212-be6a-fa109c951e06" name="IsStatic" value="False">
+                  <elementDefinition Id="272da9b3-7c2d-4e80-bb36-e8d356ac809f" />
+                </propertyInstance>
+                <elementDefinition Id="17907035-b4dc-4712-b51c-499618f367fc" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a9306c56-fe14-4b65-8e17-f324577b9c09">
+                <propertyInstance Id="e54ae41a-90c8-4bfb-9cda-adb82b6c09c6" name="IsUnsafe" value="false">
+                  <elementDefinition Id="d3f1df86-8dfe-4051-a437-2e8dbe7bfa93" />
+                </propertyInstance>
+                <elementDefinition Id="74bd9c7f-c7c8-4264-803d-37b1fb5ce6ec" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="7ec6353c-8d59-4f21-aff2-209b818dd8cd">
+                <propertyInstance Id="1b29ca31-ad12-4e17-b2b4-ffd71a023873" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="5f5eac4f-aa10-4e9d-97ca-aaa3397ca74f" />
+                </propertyInstance>
+                <elementDefinition Id="e3c18b4c-c382-4026-9072-669e8d59604e" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="d4858616-e840-4e08-9993-15a8c2db27af" />
+        <suppliersInternal>
+          <interfaceRealization Id="c381eba6-04f1-4019-9f61-95ba42e5b8bb">
+            <interfaceMoniker Id="b8d17e3d-68b8-4579-8ec2-f60995e164c3" LastKnownName="IReceiveJobSubmission" />
+            <elementDefinition Id="b2107a90-b3c0-417c-9264-362ff3a3c64a" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="2fd8869b-808a-4c56-b18d-56c504cae61a" name="JobSubmissionRecieved" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="5102cbe8-685b-4529-96eb-ca825689e605" handle="viewcode://./CodeSchema_Event?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DJobSubmissionServiceHost Member%3DJobSubmissionRecieved" tag="ViewCode">
+                <elementDefinition Id="5bcb70fd-4b4d-4054-9305-ca83d36c079e" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="f902c372-e092-450d-8e1b-72bc8cd32b34" name="event" profile="CSharpProfile">
+                <elementDefinition Id="0e0f12dc-a4d9-4db0-96d3-6d9b1aa1bc2f" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="331db5d5-fa51-4a31-8896-278fd1bb3df7">
+                    <propertyInstance Id="8f3fc518-bf8d-49c7-92c7-f05071929332" name="Add" value="false">
+                      <elementDefinition Id="c97944d1-1b73-43fc-bcf2-8e5206e15670" />
+                    </propertyInstance>
+                    <elementDefinition Id="d9e8b3dc-8a8e-4037-a390-ed5b53c9d50c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1911f472-a3b9-4585-8635-ba63cbc97445">
+                    <propertyInstance Id="73952a2f-2f93-45cc-a370-874da62a31a8" name="ClrAttributes">
+                      <elementDefinition Id="04be6829-868a-4706-812f-55f36d3bfdcb" />
+                    </propertyInstance>
+                    <elementDefinition Id="17e6cc23-216d-4334-9914-3b293fa2352f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e1832d42-a975-4211-bd28-15826cf13566">
+                    <propertyInstance Id="374a0ba0-ebfd-414b-8b7e-fbe41e991fee" name="IsUnsafe" value="false">
+                      <elementDefinition Id="6a4be72b-abfb-442b-9566-983cb168f950" />
+                    </propertyInstance>
+                    <elementDefinition Id="ee5d8b18-2e2a-41ec-9b19-8d0967f2d117" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a23061fe-b19c-4f58-8bdb-259e2733b0a2">
+                    <propertyInstance Id="5f1aa92d-baf7-4ae6-9623-bd2a974034b0" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="bfb1d31f-e89e-4dba-bff5-d04e16cf6412" />
+                    </propertyInstance>
+                    <elementDefinition Id="642d5ea3-e956-4e96-b393-b8be7e9224e0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fa35455a-4bce-43ab-ad05-e93088c46ffd">
+                    <propertyInstance Id="5dad6a14-ebce-45be-bb89-7547c2a13fdb" name="Remove" value="false">
+                      <elementDefinition Id="4a7bed1f-d1ac-42ae-9f0b-c82fb25c8451" />
+                    </propertyInstance>
+                    <elementDefinition Id="d01041db-c7d6-4970-8562-88bda96559c2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="e3c30510-701e-4908-8288-a24c32ca765b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0b7eceb8-6a47-4254-a2d1-2c435712c434" LastKnownName="JobSubmissionRecievedEventHandler" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6f6ab691-6c62-4c7b-a030-2c8083f88729" name="OnJobSubmissionRecieved" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="3b29edfe-9f93-4250-b8ac-4a7fb0eb1ff4" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DJobSubmissionServiceHost Member%3D(Name%3DOnJobSubmissionRecieved OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)])" tag="ViewCode">
+                <elementDefinition Id="ef52d88d-195d-4cfa-b891-a912378ef1de" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="bb92c42e-7ae3-4107-803f-8e2af951da42" name="method" profile="CSharpProfile">
+                <elementDefinition Id="71370019-b868-4f68-8218-da6b09752f3b" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c437d668-c8f4-46cd-826c-b7986ef21ed3">
+                    <propertyInstance Id="30e4035d-a9c6-4531-84a6-eee644e40128" name="ClrAttributes">
+                      <elementDefinition Id="b5cc2f15-02f1-4388-a87a-80083c77730b" />
+                    </propertyInstance>
+                    <elementDefinition Id="7646f7f7-f05a-4aac-9ee2-298b3072ac8f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="69d4abcb-8219-4e93-8e96-107922e969a2">
+                    <propertyInstance Id="72a0a44b-4562-4f68-835b-a2f1af219565" name="IsPartial" value="false">
+                      <elementDefinition Id="f68a1c2a-c4c5-41fa-884e-f2235e1446df" />
+                    </propertyInstance>
+                    <elementDefinition Id="f2e133a5-453f-458a-923d-b661d88bd513" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="36d00efb-01b7-4a77-9c6d-5db0c393b74a">
+                    <propertyInstance Id="77208955-479b-4117-8d74-1cc003db3f78" name="IsUnsafe" value="false">
+                      <elementDefinition Id="e9949a75-7509-43ae-8508-5138d788de5a" />
+                    </propertyInstance>
+                    <elementDefinition Id="319bf208-282e-4f9d-b76f-f19cdf5c5c76" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f6d0f0bb-8b7c-422e-a6ba-27a141605fda">
+                    <propertyInstance Id="2854c20a-d94b-4b21-b6c3-46ebea6e24bf" name="Inheritance" value="none">
+                      <elementDefinition Id="51f09fa0-42e2-4483-bc33-c58eb9dc0674" />
+                    </propertyInstance>
+                    <elementDefinition Id="5feac6d8-370f-448a-813d-fe835bfb6b6e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9a55132c-1f04-4c23-afb2-e242aebae81c">
+                    <propertyInstance Id="e3f50bc3-ab4d-4510-b57e-e188f21dd20f" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="12a6694d-98a0-4208-84f0-2b1460bebf08" />
+                    </propertyInstance>
+                    <elementDefinition Id="969e8005-c356-4a81-908a-4f4a2e0928d5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7c265484-4e7d-4492-b31e-f25004dc7940">
+                    <propertyInstance Id="4b57fba5-89b7-40e2-bd6a-f864c4a3384d" name="params" value="false">
+                      <elementDefinition Id="a14bee85-da7c-4d7d-8589-7122495fb068" />
+                    </propertyInstance>
+                    <elementDefinition Id="93129bce-66e8-41ab-a62d-1e29c80acfe1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="56bfcf37-185f-4c74-b2f3-a7c8f8a1759a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9ca83c14-6d83-4903-b733-ae61653e23d9" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="a5c7811b-c25f-4b7b-b1ef-620deec64da5" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DJobSubmissionServiceHost Member%3D(Name%3DOnJobSubmissionRecieved OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="3c938fef-14a7-485d-ae2e-8c5291c6d34d" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="9f4890e5-867b-4087-8ff9-5893b0261567" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="52bcad95-2093-4b5c-9f3f-ab8dbed17ed5" LastKnownName="JobSubmissionMessage" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="07ff2cf4-0637-425d-a673-79e61b65657b" name="ReceiveJobSubmitionMessage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="5a14198c-0df9-4133-9dc6-9313c628ca57" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DJobSubmissionServiceHost Member%3D(Name%3DReceiveJobSubmitionMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)])" tag="ViewCode">
+                <elementDefinition Id="f30a7778-a969-48e6-950f-3389f1add496" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a54f1083-ac6e-451f-ba66-b3b4b0f7f744" name="method" profile="CSharpProfile">
+                <elementDefinition Id="29f7df7b-2ffc-4228-9283-41b0ffd72ed7" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c0fe75e6-f7f4-4caf-8df9-dc65ae316cd3">
+                    <propertyInstance Id="14da9fec-68c6-42d5-bcad-8ef6e4c32f85" name="ClrAttributes">
+                      <elementDefinition Id="902b44ff-7e65-43aa-a8e0-6ec3172c7801" />
+                    </propertyInstance>
+                    <elementDefinition Id="ca2c9625-0256-4949-8954-e27bc2d832bd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0aefd364-ed08-40f0-93df-c45e0a4ad39e">
+                    <propertyInstance Id="3c1ea4cf-2db0-44d2-b45b-835e901f23d0" name="IsPartial" value="false">
+                      <elementDefinition Id="2155fab9-48be-44ab-8a74-c0db866c98af" />
+                    </propertyInstance>
+                    <elementDefinition Id="fba02476-c7da-4b82-901e-6d3d321aee12" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="de4fb573-9132-4d39-bf1f-2f396b6d134b">
+                    <propertyInstance Id="0d510438-d79f-4c55-b1b0-5d28a32b5aa7" name="IsUnsafe" value="false">
+                      <elementDefinition Id="74eaf44b-a79e-4d0e-94f9-988040291284" />
+                    </propertyInstance>
+                    <elementDefinition Id="d740c1bb-7b76-4559-ab82-23754fce9b67" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="53a37d16-9f39-43e0-a489-117aeece8b5b">
+                    <propertyInstance Id="9ec86979-4f79-45e4-b500-a4c615695065" name="Inheritance" value="none">
+                      <elementDefinition Id="5dc982c0-0e19-40b8-bac8-65b453e1d6f0" />
+                    </propertyInstance>
+                    <elementDefinition Id="022ddc67-3700-48d8-8c0c-74f3a1893f17" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1911240a-c649-4cd1-a90c-e59baded9267">
+                    <propertyInstance Id="573aa2de-1c28-4297-9ec1-c4be87072aac" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="869cc63c-4272-478f-8d7b-6e4e0964127d" />
+                    </propertyInstance>
+                    <elementDefinition Id="48f94703-033f-4cd5-b893-7735c0d96c2e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bdef9e9d-a5ca-432d-9954-2193b6933745">
+                    <propertyInstance Id="8078d2b0-39a2-4910-bb4b-3725d3f50048" name="params" value="false">
+                      <elementDefinition Id="8e38ffc7-875e-4cdf-82c2-9b49a13b8844" />
+                    </propertyInstance>
+                    <elementDefinition Id="6cb35164-e5ad-45f6-a54f-735e7d8dda72" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8fcfc008-b032-45d6-94cf-2b1886b5a760" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9bb57dd6-250a-494a-bedf-e9721c12dd3c" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="5739a208-6130-463c-8dee-c437767ea175" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DJobSubmissionServiceHost Member%3D(Name%3DReceiveJobSubmitionMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="296dcc52-3b1d-4f99-a038-758fbad29fec" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="91500550-ff8b-4fb7-a8c8-47ac408e8278" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="52bcad95-2093-4b5c-9f3f-ab8dbed17ed5" LastKnownName="JobSubmissionMessage" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="52e10eec-bbca-4897-86ef-91df18396cad" name="JobSubmissionServiceHost" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="3337eb64-0556-46e8-bd01-1df2e73a3302" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DJobSubmissionServiceHost Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="17e71a4f-b375-49c5-bce0-985080fe0e51" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="4ffb4cec-412d-4216-b7a2-865d692e1aa8" name="method" profile="CSharpProfile">
+                <elementDefinition Id="12c673ba-26fa-4535-bddf-0fc36c2618e1" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8c000888-4005-4085-9a3a-ecb48ee359de">
+                    <propertyInstance Id="68517b96-5c1f-44da-84d7-378044de3753" name="ClrAttributes">
+                      <elementDefinition Id="dcdcad80-808e-4100-8f9e-94796e7c3cfb" />
+                    </propertyInstance>
+                    <elementDefinition Id="93f6f3d7-1660-44a5-acef-c241718d2d03" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ae831b3f-0b63-4346-b128-6a963def584c">
+                    <propertyInstance Id="d1fa6619-fe66-4669-8c30-297dd20e51f6" name="IsPartial" value="false">
+                      <elementDefinition Id="445b6b8c-f943-45e6-8371-ac9c22d38ca3" />
+                    </propertyInstance>
+                    <elementDefinition Id="cee48030-70a8-46b6-abe3-a113ef6a35d5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9f5937c5-3b19-4f5e-8fe0-e027c931ac5e">
+                    <propertyInstance Id="22343221-0bb5-4e3a-8533-a6eb83ed4144" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f554fa34-1baa-4f2a-8df3-94a24d102110" />
+                    </propertyInstance>
+                    <elementDefinition Id="7efa826a-3549-469e-8d09-a63ddf653b95" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="33fb923b-57ea-49b8-a2f0-2f4e43592224">
+                    <propertyInstance Id="883f617b-b494-4114-ad43-99f4a8a3f11f" name="Inheritance" value="none">
+                      <elementDefinition Id="f267b468-5d75-4496-a429-7996892135db" />
+                    </propertyInstance>
+                    <elementDefinition Id="e84930dd-e7a9-488b-8249-a50a1cd7a9b8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ffd6a3d1-1bb1-44d2-b0ea-3eb4be127e21">
+                    <propertyInstance Id="4235cea2-95a1-49e1-a8d4-6fa03263f400" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="4dfd3f81-a919-4be8-9479-ca7a7727563a" />
+                    </propertyInstance>
+                    <elementDefinition Id="bed208f7-4623-47c5-955a-da6ab04b3c85" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2ba1403d-19bd-4313-afac-ce914ae2ed70">
+                    <propertyInstance Id="e34a5bf8-9216-4d7c-8cd2-197183466e02" name="params" value="false">
+                      <elementDefinition Id="86faeceb-c28e-48ac-b4b3-f1099f1c97f8" />
+                    </propertyInstance>
+                    <elementDefinition Id="073f251c-d043-43a3-a18e-a06873be4773" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="46e89cc1-f243-45fc-803c-12b1055825d2" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="0b7eceb8-6a47-4254-a2d1-2c435712c434" name="JobSubmissionRecievedEventHandler" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::JobCreation::JobSubmissionRecievedEventHandler">
+        <elementDefinition Id="c9abb366-0aaa-4141-9697-398ee98d5876" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b1bcfe74-91f3-47db-95d6-32e5a02182b5" name="CancellationTokenSource" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::System::Threading::CancellationTokenSource">
+        <elementDefinition Id="166bd02c-7420-4acf-9c2b-eecfcfe93224" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="52b2a19b-a983-4ff1-b0dd-c6896d13ffca" name="ManualResetEvent" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::System::Threading::ManualResetEvent">
+        <elementDefinition Id="3583c0a9-f6a9-4a0c-ac13-f0b714b3961e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3f59cb17-857c-44fe-819d-272c63bd3246" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9cfa43dd-8c51-4652-ad4c-72fd6397670a" name="WorkerRole" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="d1965b2a-9177-482d-bb52-6941b8194bc0" handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole" tag="ViewCode">
+            <elementDefinition Id="b1e2be9d-fcf3-4117-977e-cdbef7f9c31c" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="f66c3d01-7d10-45ac-a55e-1c98f306f70b" name="class" profile="CSharpProfile">
+            <elementDefinition Id="580770e8-6c87-48fc-9d22-78603964379a" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="85ff8527-4234-4b33-aea3-b7596335939b">
+                <propertyInstance Id="e2058a8b-855a-413c-9d36-e8f747ee1ccf" name="ClrAttributes">
+                  <elementDefinition Id="26224c56-3699-42e7-a977-d237e5d6650a" />
+                </propertyInstance>
+                <elementDefinition Id="9d582bbb-0a08-49d9-9b66-14e57179734b" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1d35549d-0b45-4bf2-bb59-52dccc1d65bb">
+                <propertyInstance Id="caa21f32-52ea-46c7-8237-a0c429c7c610" name="IsPartial" value="false">
+                  <elementDefinition Id="fbc37fde-caa0-4c1d-8c05-dc611aeea808" />
+                </propertyInstance>
+                <elementDefinition Id="1881e917-3d90-452a-95ff-a329a7e77527" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8421b455-3fe1-452f-93d8-266fe8a34aab">
+                <propertyInstance Id="bb69e4ed-c9a5-4acc-8093-c3cdb44982fa" name="IsStatic" value="False">
+                  <elementDefinition Id="9119cf80-ea1b-4a13-8416-2f4128c52d85" />
+                </propertyInstance>
+                <elementDefinition Id="943bf82e-677a-4cf7-8b92-9877d06444df" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="fd0b9f4f-7557-4860-824c-09a2dfc982ce">
+                <propertyInstance Id="c04f190c-b583-44fa-bfdd-9ff87e2187c6" name="IsUnsafe" value="false">
+                  <elementDefinition Id="06299f45-374a-42e8-8720-71fdbd203f95" />
+                </propertyInstance>
+                <elementDefinition Id="59e314f2-cade-434c-9f58-c2937361933d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="74169c17-d49d-45ac-85cb-ad9cbc5811f1">
+                <propertyInstance Id="584c89fd-de91-46dc-9de6-c7e306f92d8a" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="3a2c278c-c0ee-4ca7-bb83-bd1ff7533d07" />
+                </propertyInstance>
+                <elementDefinition Id="de00be0f-9496-4bbb-848a-4cc89deb9c4c" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="4d9fa37c-fac7-4cba-9e59-ad649694b5a5" />
+        <ownedAttributesInternal>
+          <property Id="414f7228-686f-4850-9a59-089c9c3277e0" name="ServiceHost" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="8ed72f62-ada9-4a41-a395-7f53c9bb9e0c" handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3DServiceHost" tag="ViewCode">
+                <elementDefinition Id="e4b692b6-a8c2-4d04-a649-07f3746599eb" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="2665037c-7192-484a-ac8a-47070a9d1555" name="property" profile="CSharpProfile">
+                <elementDefinition Id="38729dd8-5c9b-4287-bdd3-667e1b08051d" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c15b046e-1f29-489c-9d1a-1691c3c00e7a">
+                    <propertyInstance Id="b4f1d4ba-7041-48ff-b495-bd7b48ae3232" name="ClrAttributes">
+                      <elementDefinition Id="8f4dc1d3-0889-4699-affc-fd0536dc9b0c" />
+                    </propertyInstance>
+                    <elementDefinition Id="5e3ea5d0-1e75-49b9-9d57-f9fa924f2458" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eb360072-f511-4ae0-813f-31f5063e974a">
+                    <propertyInstance Id="ab499b61-51bd-46c5-9ecd-028bb2516730" name="Get" value="public">
+                      <elementDefinition Id="e1b694cb-ff9a-4a31-aa19-48e458eb81bf" />
+                    </propertyInstance>
+                    <elementDefinition Id="7b76f12f-956d-45fc-9644-2b1f4d493077" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ada04140-40c1-4e8e-b4fe-f9eb85476e73">
+                    <propertyInstance Id="4af8d579-5f34-40c6-aef4-efad18ded912" name="HasBody" value="false">
+                      <elementDefinition Id="e11fd5a8-b9c5-4950-9d22-249811fb3345" />
+                    </propertyInstance>
+                    <elementDefinition Id="eb9bc24b-c2c2-472b-8204-63b7a490b395" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c90f2d53-5970-414c-b53a-2a2c41b09241">
+                    <propertyInstance Id="cf939aa0-8cf6-496c-9412-1d6562db840a" name="IsUnsafe" value="false">
+                      <elementDefinition Id="786ad811-5d44-42e0-9621-a8488ca0c974" />
+                    </propertyInstance>
+                    <elementDefinition Id="3ba846ec-a6c7-4276-b74c-04865c4503f8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8229ffb3-3949-471d-9371-431192881b4f">
+                    <propertyInstance Id="729530af-178c-48a4-9dec-af7fd9a5c56d" name="Inheritance" value="none">
+                      <elementDefinition Id="d4aab33d-aa91-4d0e-af94-c1001692986c" />
+                    </propertyInstance>
+                    <elementDefinition Id="9e54b905-01e2-47e0-9d31-b038b8860503" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="36d677b6-6349-405c-8ed4-438f3272f570">
+                    <propertyInstance Id="1d3f6273-3658-429c-b8f3-d638f323943c" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="4ebaec42-e693-49a6-9919-1eda260c1186" />
+                    </propertyInstance>
+                    <elementDefinition Id="a3595867-2713-40a4-84b7-e378c2d2b734" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5e26622d-addf-4806-8489-9e0a8a8b3f6e">
+                    <propertyInstance Id="9bae88a4-310e-4508-a2af-c4314782426f" name="Set" value="public">
+                      <elementDefinition Id="b4be5540-b131-4916-b089-606a3a4330f4" />
+                    </propertyInstance>
+                    <elementDefinition Id="a3d89f16-9a3c-41dc-9148-76422cdeef7e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b25adccf-a791-4d75-8ca3-a0782cd23d01" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a3b0c273-435c-426c-a69e-1f5a60d7eb4b" LastKnownName="ServiceHost" />
+            </type_NamedElement>
+          </property>
+          <property Id="3634c072-2884-4721-ba55-a62a78a8c462" name="cancellationTokenSource" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="acb45b04-d447-4c66-9289-125e15810694" handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3DcancellationTokenSource" tag="ViewCode">
+                <elementDefinition Id="a0f597a0-a9a1-4865-9ed3-3da951d27664" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="f63d7852-fbae-4c88-b87f-c59d03f06b92" name="field" profile="CSharpProfile">
+                <elementDefinition Id="cd58f1d1-2e81-4c21-a36c-5d4fce546c3b" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fb16e637-0bab-474f-b50a-0064c3d01340">
+                    <propertyInstance Id="56752318-fc0e-48a9-a1c6-0874917fbae3" name="ClrAttributes">
+                      <elementDefinition Id="e987de45-60cd-42b8-b16f-b2d680908f40" />
+                    </propertyInstance>
+                    <elementDefinition Id="77bd8006-01be-499e-a047-6edfdf7fc890" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b9b82954-1558-4ab2-ae09-262b70b001ef">
+                    <propertyInstance Id="949b6b72-3cab-4a94-93c3-41a5598186c6" name="IsConst" value="false">
+                      <elementDefinition Id="8fb67769-b9bb-4a07-a0d3-83fa66cb4f95" />
+                    </propertyInstance>
+                    <elementDefinition Id="a8e17cbe-2a5b-495f-a67d-7903f7902194" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9a93e53a-4bdc-4d58-a81e-4e2982284bbb">
+                    <propertyInstance Id="414320fa-58cc-4c30-823e-8a6b4761db6b" name="IsNullable" value="false">
+                      <elementDefinition Id="c1cd05e6-41f2-4c7f-a424-0b1a34247aef" />
+                    </propertyInstance>
+                    <elementDefinition Id="a66eeb7b-a5fc-42f8-bd60-e502ebcc5cb6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b647b24b-5167-46c0-811b-26bf03b944f7">
+                    <propertyInstance Id="e8475d38-1ae3-423c-aacb-fee1a3c14f19" name="IsVolatile" value="false">
+                      <elementDefinition Id="92a5cbe1-0722-47da-9096-52c0e3ccf9af" />
+                    </propertyInstance>
+                    <elementDefinition Id="6107c3b1-fe4e-40ad-a105-e131e152b7bd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="974a04ae-36fa-4bfe-9d79-86c2f7e5e0f7">
+                    <propertyInstance Id="d3b7584a-55f5-40f1-a459-5e60c2db5afe" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7c7f96ef-b90f-476e-ac2c-a6d7ff82776f" />
+                    </propertyInstance>
+                    <elementDefinition Id="3a50f666-920a-43e8-bddb-9effed90e40a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="119f3548-c0b7-4b11-aafa-0d8ee12d3544" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b1bcfe74-91f3-47db-95d6-32e5a02182b5" LastKnownName="CancellationTokenSource" />
+            </type_NamedElement>
+          </property>
+          <property Id="4761f440-a0f9-477b-a5dc-dd020efe835a" name="runCompleteEvent" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="c5931c59-38f2-4b68-873c-3ccc2bd8677d" handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3DrunCompleteEvent" tag="ViewCode">
+                <elementDefinition Id="31d9f4d4-ba0f-4cfd-aa7f-f4006c14750e" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="41c90a4f-de5d-45a1-ade6-a541f4fe61e2" name="field" profile="CSharpProfile">
+                <elementDefinition Id="cb97bcf6-1f78-4c8c-94a1-ed0ac80cfdc6" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2df90dc7-e4e6-4804-9227-d2fdb141474b">
+                    <propertyInstance Id="8e9a2f55-e3c8-42d8-80a9-32c20ab3070a" name="ClrAttributes">
+                      <elementDefinition Id="ad3e77ae-50b2-4283-bd7e-4e2c9527c609" />
+                    </propertyInstance>
+                    <elementDefinition Id="146318fc-3090-46a8-a6e7-9cbcdb0d47a2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="45bb11a2-7f71-4965-8f0e-4bc6e546e67d">
+                    <propertyInstance Id="ae09876a-a3eb-4e1a-8d42-d0671c307295" name="IsConst" value="false">
+                      <elementDefinition Id="37d9565b-af3f-4b8e-94cd-3e584634588c" />
+                    </propertyInstance>
+                    <elementDefinition Id="0c6e375c-f2b6-45bd-bb0d-83ff92de683c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3969180c-0d09-4261-aefa-baf4e741183b">
+                    <propertyInstance Id="9b2e9f3e-a1ad-43b7-8c1c-26c3cc01ff32" name="IsNullable" value="false">
+                      <elementDefinition Id="9a462e6e-c607-4661-8a1d-215b63d456bd" />
+                    </propertyInstance>
+                    <elementDefinition Id="3a4045f7-8129-48de-a5ae-568ba83cfe3e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="267fbfb1-0a51-495b-8a39-c663536f49dd">
+                    <propertyInstance Id="11a78437-0f3f-42f1-a02d-e9ecc85c12cf" name="IsVolatile" value="false">
+                      <elementDefinition Id="a606566a-d40a-4b4d-a875-039b044c9b83" />
+                    </propertyInstance>
+                    <elementDefinition Id="15caf5e2-3879-4977-a625-0b35913b3597" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0d82d0e1-4bf5-4e7a-b691-fc374c025a5d">
+                    <propertyInstance Id="603711aa-a11b-42f7-9376-f23f9ff12b6f" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="38766925-f638-45e6-96c8-4daaf46106d8" />
+                    </propertyInstance>
+                    <elementDefinition Id="2124c2ad-d51e-4164-a8a4-66116fcd7d11" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="2f4bff3f-aa85-4531-9c0f-f4000ba2bb6a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="52b2a19b-a983-4ff1-b0dd-c6896d13ffca" LastKnownName="ManualResetEvent" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="63e7aed7-5427-4acd-95e0-44983083b951" name="OnStart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="de406d18-6364-4bb0-b535-48e5ec691dd4" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3DOnStart" tag="ViewCode">
+                <elementDefinition Id="73182143-cb20-439e-9008-38dc9f262456" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="6c25ad18-6975-48e7-9069-8767fe7e09f9" name="method" profile="CSharpProfile">
+                <elementDefinition Id="c9733fa9-06d4-4dd3-a76a-2c0151bcdc94" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="33fd6d04-672b-4915-84c1-4565adccd4e0">
+                    <propertyInstance Id="dbdda364-8637-49fb-836a-1017b3f0dbb1" name="ClrAttributes">
+                      <elementDefinition Id="6ac08cad-3f9b-4202-befe-a9509973175b" />
+                    </propertyInstance>
+                    <elementDefinition Id="06f5a4ab-019c-4269-a6e6-940d71d93c4c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7181e45c-50bc-454f-9556-8eff0037ee86">
+                    <propertyInstance Id="ebc90852-5b9f-4127-8d43-bba5b591ba16" name="IsPartial" value="false">
+                      <elementDefinition Id="7320d29f-e716-4bf4-812c-94c6e2f59e69" />
+                    </propertyInstance>
+                    <elementDefinition Id="de01cdc8-6c8e-41f1-b713-10991b0b89d0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="848d096d-ca63-4e05-80b6-8716d5837634">
+                    <propertyInstance Id="048e5ddc-16ad-41a9-bad4-75b332ef4c1b" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d2b12cd2-8b9f-4211-8c00-1a3e942915c7" />
+                    </propertyInstance>
+                    <elementDefinition Id="9f3c70f0-eca7-4efd-90b1-4404a20a5790" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="13b76ab1-2dea-4a08-a0ed-acce7caf6be3">
+                    <propertyInstance Id="f67bcd72-9b62-4c87-808c-798ffe627fb8" name="Inheritance" value="none">
+                      <elementDefinition Id="3366e3b6-06f7-48c7-a538-0db58b208002" />
+                    </propertyInstance>
+                    <elementDefinition Id="647b8bd1-faef-4bf2-bda3-358cce20907e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f3d85706-74f9-4738-8f8c-a6edf0ae6709">
+                    <propertyInstance Id="9f6a0c15-3295-42fc-80ab-3feff5fdca44" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="8e48db49-f144-4191-b2bd-e90cff48ba6d" />
+                    </propertyInstance>
+                    <elementDefinition Id="48fb3568-4ad7-45a0-b669-320165a4ba08" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="af6c8b77-15f0-4a4e-b123-0f510a500eb6">
+                    <propertyInstance Id="cad3cd17-437f-48b1-a553-6a3c988b4169" name="params" value="false">
+                      <elementDefinition Id="db4b8e0a-ae7f-4d9f-b5d0-b42ba10cda59" />
+                    </propertyInstance>
+                    <elementDefinition Id="334e5fe6-a34d-42ee-abd6-0d0051449f59" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="a84cb14c-1816-4e86-81da-e2c54a4839eb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f12f495b-1a4b-4693-89c3-5a614205d4d8" direction="Return">
+                  <elementDefinition Id="190a0769-6de1-46e2-8e4e-dd04b5756d7e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3f59cb17-857c-44fe-819d-272c63bd3246" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8c2ca2de-21fd-4725-a7d5-ac0be59c0ccb" name="FindCertificate" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="ccb71472-1b53-4590-ac0f-03728d82ba2b" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DFindCertificate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreLocation)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreName)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DX509FindType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])" tag="ViewCode">
+                <elementDefinition Id="4449f03a-005b-44cc-9d5b-ad91c0bdadb4" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="dfdb4b1c-110a-451a-bd46-a21af9418c2a" name="method" profile="CSharpProfile">
+                <elementDefinition Id="3620aff4-fbf5-44c8-b706-30cf5d2b3a8b" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="000195ef-e728-4d31-a542-21879665481f">
+                    <propertyInstance Id="4592a23d-63b2-422b-9b55-9e10efa79f90" name="ClrAttributes">
+                      <elementDefinition Id="877710f4-8f7f-407c-80c9-905267e561b4" />
+                    </propertyInstance>
+                    <elementDefinition Id="95774818-82b3-4ee2-a07d-f7bfd654b628" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7e1222fd-0d67-4015-9c92-015b18b1ddac">
+                    <propertyInstance Id="3da1abaa-baa6-48f9-a509-00a57bcde1c1" name="IsPartial" value="false">
+                      <elementDefinition Id="08ac1b50-eb7c-4c69-a434-878133c3fd88" />
+                    </propertyInstance>
+                    <elementDefinition Id="ad6ba782-738c-4c01-947e-96d2f26ef636" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="683d6fd8-9cc2-4fd5-9888-7c295880c536">
+                    <propertyInstance Id="7e9ae7fd-1b73-41e7-ad51-6e5200ac7e57" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d6016cae-f43a-40d4-8932-7634a5131158" />
+                    </propertyInstance>
+                    <elementDefinition Id="c579c8d5-975f-4456-9b50-b9ceeff29ba2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9f6bbdee-6c2f-4604-bc74-2f29e139cea5">
+                    <propertyInstance Id="15d0e4e2-d18c-41fa-a3f1-bf71f59b2ae6" name="Inheritance" value="none">
+                      <elementDefinition Id="e1db9382-8a4a-403a-8ecc-68a09fa7386c" />
+                    </propertyInstance>
+                    <elementDefinition Id="b90f5cd7-17cf-4a9a-933f-0d545392d3c9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ac955987-333a-49da-87d8-ce8d10d0b558">
+                    <propertyInstance Id="8f1e0623-049c-4ced-b9c9-8521790fc5bb" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ae60f580-97e6-4920-9edd-cb00c8ec3262" />
+                    </propertyInstance>
+                    <elementDefinition Id="1074b2e4-b223-4732-95db-35b152f3a6f6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5a9e7e6a-9b65-49c1-b7db-aaff9a776635">
+                    <propertyInstance Id="7c2a1674-915d-44b8-8f96-6418e68d0d18" name="params" value="false">
+                      <elementDefinition Id="636cee4b-f371-4545-b443-f132358c99c4" />
+                    </propertyInstance>
+                    <elementDefinition Id="b26b3739-4a47-4c25-a26f-3304f2a96e0e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8df63332-800f-4b5c-ba77-dc790ffead96" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="95cfdc25-81e7-48cd-a262-0fef5c0c3dc2" direction="Return">
+                  <elementDefinition Id="d0839ae0-f558-4048-a349-118c6a5fbfe1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b675bac0-4f87-4e1d-a1ae-3c811d9842a6" LastKnownName="X509Certificate2" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9b72bf3f-0833-45a3-b48f-f28ec98bfcda" name="storeLocation" direction="In">
+                  <referencesInternal>
+                    <reference Id="01cdab0b-0164-4074-bac2-ca83a3754531" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DFindCertificate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreLocation)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreName)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DX509FindType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DstoreLocation" tag="ViewCode">
+                      <elementDefinition Id="c26f9243-9808-43cf-b8ed-de394bf03ac9" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="de35cae0-7c82-4188-a42d-b6c539d47d59" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7f9bff16-74f9-498b-9386-cfcff23d7773" LastKnownName="StoreLocation" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="07d6f8fc-63d4-467d-b2e1-7e10c16e40e3" name="storeName" direction="In">
+                  <referencesInternal>
+                    <reference Id="2c057055-e746-4abf-8a09-c3fc820de566" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DFindCertificate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreLocation)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreName)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DX509FindType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DstoreName" tag="ViewCode">
+                      <elementDefinition Id="3dc81128-3fda-48dd-ad22-e662e8f16c85" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="450c49d7-55d8-4688-80f7-422b674cb7e0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3cbf1f32-4873-408c-950b-696b4c7fe5a9" LastKnownName="StoreName" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cf698008-03cf-42b4-b2a9-b735b8338073" name="findType" direction="In">
+                  <referencesInternal>
+                    <reference Id="8089649c-d907-48c0-832a-af28ba832ea0" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DFindCertificate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreLocation)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreName)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DX509FindType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DfindType" tag="ViewCode">
+                      <elementDefinition Id="40dfc387-4d5c-4f96-8e64-60a3203e89fb" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="f63d1d84-bc8a-4141-86f2-b18991e757b5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2f8664cd-7c94-4402-8ea4-c247523a3891" LastKnownName="X509FindType" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bf1d59cf-8c49-41d8-b041-fe2ca3450367" name="searchCriteria" direction="In">
+                  <referencesInternal>
+                    <reference Id="8b80dee8-3ab1-4ca6-89df-d316e62611e6" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DFindCertificate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreLocation)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreName)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DX509FindType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DsearchCriteria" tag="ViewCode">
+                      <elementDefinition Id="77a8227c-a6bd-4439-8fee-c7cd48db05b4" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="04dd6eff-fb73-4cdd-8a35-e9daac6109cc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="452a3b6e-4c0f-48bc-9c9b-2c470fa23263" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9d5126a0-f7ab-42a2-b380-2f9928a0610e" name="ServiceHost_JobSubmissionRecieved" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="e72aabd4-aaea-4f9b-82a3-f7d927f6d424" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DServiceHost_JobSubmissionRecieved OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)])" tag="ViewCode">
+                <elementDefinition Id="6cf33d7d-b06d-4915-bee5-79a032dcbaaf" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9e5b4453-f789-437d-ba61-fb73b562a9e5" name="method" profile="CSharpProfile">
+                <elementDefinition Id="cb8f0f2a-5949-4462-ae4a-6b71b166b1ac" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="773f6733-5916-4882-9a83-fd00b074f755">
+                    <propertyInstance Id="c1cdc9f2-7d81-47e3-a4fb-48ac15b2c7d2" name="ClrAttributes">
+                      <elementDefinition Id="78868837-2761-447d-aa69-ba7ec5a9198d" />
+                    </propertyInstance>
+                    <elementDefinition Id="d920ae18-13a1-4928-8d82-fe7605d5ab15" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6f603c71-2e4e-4075-b05f-513d42f52ec9">
+                    <propertyInstance Id="1a9e1d2d-b3c7-4269-ad15-a848aab717a5" name="IsPartial" value="false">
+                      <elementDefinition Id="8c29052d-fd95-4534-b87c-d627224857b0" />
+                    </propertyInstance>
+                    <elementDefinition Id="89102166-d1bb-4a59-bd6e-6638c2e80306" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8d2c6b8e-e7b4-48cc-8210-b020020633f6">
+                    <propertyInstance Id="459400de-97d1-4b64-8acd-c44be7d1abd5" name="IsUnsafe" value="false">
+                      <elementDefinition Id="bee6c540-7de8-40b5-992e-76cf8119a58b" />
+                    </propertyInstance>
+                    <elementDefinition Id="7631aeff-5393-4b26-9d0b-22360c4226c3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="00f3e7f0-33aa-41e5-820e-bb85ad316110">
+                    <propertyInstance Id="25ffe8ac-ec48-4cd0-854e-3b1ed9c50be9" name="Inheritance" value="none">
+                      <elementDefinition Id="a7088537-4228-4f82-b0d8-3bb2238c40a9" />
+                    </propertyInstance>
+                    <elementDefinition Id="48fefb37-8553-4493-893c-966cf92e547b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5477fe4e-e1fc-461d-95bd-bc279cf1aae2">
+                    <propertyInstance Id="40156934-37ee-4575-980d-2c4c3e7aae5f" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="30ddb265-9924-4357-b414-41789b145b91" />
+                    </propertyInstance>
+                    <elementDefinition Id="26a51e1a-64df-4884-9528-207a3ccfcab7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="545b3785-120c-4284-bf4a-bcd833def2cb">
+                    <propertyInstance Id="5fabff9f-3117-4807-9f77-c8ec77a52024" name="params" value="false">
+                      <elementDefinition Id="a0eb3ebd-297c-48eb-b702-4e66942f98f9" />
+                    </propertyInstance>
+                    <elementDefinition Id="d4efac7b-3c06-40f0-930e-7649a8e818c6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="0ea37e5a-2c45-44cf-a554-aee70352900a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9ac22f95-84c2-4f07-b0b5-20cb1f7eadb7" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="6ff4baf6-e3d0-45e9-bfaf-1fc67708168f" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DServiceHost_JobSubmissionRecieved OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)]) ParameterIdentifier%3Dsender" tag="ViewCode">
+                      <elementDefinition Id="fe0a9869-82a9-4690-be15-dd80cc49c67a" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="ee98a447-65b7-4484-88b9-c4d984d35ad4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="452a3b6e-4c0f-48bc-9c9b-2c470fa23263" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="14421dfe-9055-4609-94d7-e73245d472ca" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="1a304f58-780f-4d56-b7c3-201cc239bd52" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DServiceHost_JobSubmissionRecieved OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FInterroleCommons%2Fbin%2FDebug%2FInterroleCommons.dll&quot; Namespace%3DInterroleCommons Type%3DJobSubmissionMessage)]) ParameterIdentifier%3De" tag="ViewCode">
+                      <elementDefinition Id="f60d3b71-6003-4802-9488-80c931fa3a99" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="b7f85aab-eb6e-47b2-a71a-9f0c9e465367" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="52bcad95-2093-4b5c-9f3f-ab8dbed17ed5" LastKnownName="JobSubmissionMessage" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="babf1183-1917-418b-9aed-788b5ee3a0fe" name="WaitForJobCompletion" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="34b52f9e-7380-462f-b717-f500e949a82c" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DWaitForJobCompletion OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DJobCreationResults)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DIJobSubmissionClient)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                <elementDefinition Id="bb19382e-e496-4c04-924c-74c5c23c1721" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="cedf0a8b-dc10-475e-9f9a-cc4dd6a09b92" name="method" profile="CSharpProfile">
+                <elementDefinition Id="40b7cd40-bdde-4ca4-8e4a-7608926438fc" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="74da8255-5975-4b5c-b93c-f43f5050124c">
+                    <propertyInstance Id="f9e3265a-0123-4dc8-ad19-c754df320b94" name="ClrAttributes">
+                      <elementDefinition Id="2442117b-b91c-4ccb-9a3f-ac6f9d575246" />
+                    </propertyInstance>
+                    <elementDefinition Id="5aa4f74c-b5ac-4688-b430-02129d265db8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="43600cec-4d52-420a-b68b-3679b6eb8a08">
+                    <propertyInstance Id="64efe8f8-46c7-4943-940c-2b7bb7857f03" name="IsPartial" value="false">
+                      <elementDefinition Id="29f0ca14-527e-4815-a688-6800c5cb4647" />
+                    </propertyInstance>
+                    <elementDefinition Id="09d7f20c-4c34-4fe0-a2ef-c82906480bb4" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8d1d0ccf-ba2d-4167-83b1-0fdff50fed6a">
+                    <propertyInstance Id="c264e756-574d-4dd0-9fd8-eb1a39b627ae" name="IsUnsafe" value="false">
+                      <elementDefinition Id="e91ff345-ef23-4f7c-8216-96a3b0d47c85" />
+                    </propertyInstance>
+                    <elementDefinition Id="30013e6b-2dcc-4be7-a017-0c27e89f1c76" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="91e2a5e3-40a3-48cf-8465-005140a58043">
+                    <propertyInstance Id="d4d754ff-d408-4e96-9018-ac89ef0da0dc" name="Inheritance" value="none">
+                      <elementDefinition Id="96aec4da-83b2-494d-8d2d-c0ba14257e07" />
+                    </propertyInstance>
+                    <elementDefinition Id="bedbfcfb-9729-4313-bc69-34d1ff31a7f8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="548451ba-b823-41d3-89a3-bea531cb3712">
+                    <propertyInstance Id="0c6719f0-159e-48e1-8c88-9dd1ab7152a1" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="2b2bda4f-8e5d-4280-a39b-a307f85f4eb7" />
+                    </propertyInstance>
+                    <elementDefinition Id="1977ae2f-d466-472c-a3c5-fbdb6b9ef84d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="30606731-3398-48f3-b27f-c8762268766d">
+                    <propertyInstance Id="6aca2a21-2668-48f7-9d1c-90290ce6033a" name="params" value="false">
+                      <elementDefinition Id="a0d43870-50c7-4c90-a95f-ace4b3c60c97" />
+                    </propertyInstance>
+                    <elementDefinition Id="76196355-583b-4475-8d31-862700acf467" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="82d4e714-a964-4bdb-8463-b530c1bef6da" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9eb739d5-39e8-4a97-a118-b34458afac7d" name="jobResults" direction="In">
+                  <referencesInternal>
+                    <reference Id="8436dd7c-0d4b-4afc-b88b-435c0f6f4e0f" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DWaitForJobCompletion OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DJobCreationResults)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DIJobSubmissionClient)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DjobResults" tag="ViewCode">
+                      <elementDefinition Id="ffe51dfa-ab42-42a3-a448-4bab427dc719" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="23b085cf-0fee-495b-9fc6-91535b437304" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b3df9f90-d06e-49a9-a0fd-1a591c75a683" LastKnownName="JobCreationResults" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="42c0efcc-08ff-4ce6-bc20-f59e45f654e1" name="client" direction="In">
+                  <referencesInternal>
+                    <reference Id="56fc4f46-1118-42ff-9b7b-c64d22996980" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DWaitForJobCompletion OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DJobCreationResults)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DIJobSubmissionClient)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dclient" tag="ViewCode">
+                      <elementDefinition Id="a086c9b5-f451-4dad-bb24-031e85a8078e" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="938e9101-e8e2-49db-8f87-e4336ef58e33" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2bac8e38-30e3-48a9-80cf-e2d0cc1de17b" LastKnownName="IJobSubmissionClient" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0d199f81-7407-4b20-93d7-cec2cf1dd39b" name="idUsuario" direction="In">
+                  <referencesInternal>
+                    <reference Id="1c0c4846-3766-4bd8-aa79-f080193363ac" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DWaitForJobCompletion OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DJobCreationResults)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DIJobSubmissionClient)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DidUsuario" tag="ViewCode">
+                      <elementDefinition Id="f5dd1088-f7dc-4c1e-9c39-57a931d1f616" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="ad0c4759-ebd3-4407-8202-66acc0844d28" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0821adf1-c0d2-47b2-b87d-e10cb789f0c8" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b3be2b81-4c49-4348-be86-faec199d64af" name="subIdUsuario" direction="In">
+                  <referencesInternal>
+                    <reference Id="a8b52440-9939-46a3-8fc5-4f2059f0672b" handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D(Name%3DWaitForJobCompletion OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DJobCreationResults)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DIJobSubmissionClient)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DsubIdUsuario" tag="ViewCode">
+                      <elementDefinition Id="ad779d28-3888-481e-b289-c43d77a61538" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="e37b916e-9c2f-4d5c-84cf-a074dc295632" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0821adf1-c0d2-47b2-b87d-e10cb789f0c8" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0a47fe66-357e-4cbd-b7bd-55701d764622" name="OnStop" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="7b80eca8-c7e2-43e3-a3bc-3aa1bd6d97e5" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3DOnStop" tag="ViewCode">
+                <elementDefinition Id="40b73279-4eca-4b74-b167-3c17302060db" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e75dda26-78ed-4c45-92c2-cd9df969a883" name="method" profile="CSharpProfile">
+                <elementDefinition Id="9d86fe01-25ae-4bea-8429-c2b5bc4cd1ef" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9f91c4ec-2711-4fed-8c8b-9fad19371a9d">
+                    <propertyInstance Id="2e9546c5-ad00-4bb9-9191-2c4ffd4e0596" name="ClrAttributes">
+                      <elementDefinition Id="4cec3850-a661-4474-95d2-ebf659353e84" />
+                    </propertyInstance>
+                    <elementDefinition Id="960e8b7d-0de5-4de3-bdd6-d18f0345a9f1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="63cc6889-a4de-451c-99dc-a63fcbb3f81d">
+                    <propertyInstance Id="3453b2db-2f7d-49eb-ad26-ade6efd36946" name="IsPartial" value="false">
+                      <elementDefinition Id="617a719c-7421-4395-a3ba-84a28eb96880" />
+                    </propertyInstance>
+                    <elementDefinition Id="db1db5dc-7e78-4a06-8f34-20af85844c16" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="16fcbd22-a04e-468d-af84-6e17f4a8a102">
+                    <propertyInstance Id="a9080586-1ee4-441f-9a77-40276b7a0bec" name="IsUnsafe" value="false">
+                      <elementDefinition Id="b9fb9853-0a7f-4368-b0f2-ee5d8c3d6445" />
+                    </propertyInstance>
+                    <elementDefinition Id="96d12810-9590-42c8-bfa1-3812a79e454a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c0d23a64-039d-4221-bd04-dbf8e971623f">
+                    <propertyInstance Id="879cd527-b156-4ae0-9837-ee3bbefc3f3d" name="Inheritance" value="none">
+                      <elementDefinition Id="4d759473-eddc-455d-a323-467da7addd69" />
+                    </propertyInstance>
+                    <elementDefinition Id="ef349725-0bee-4b06-9ff0-a3388936c25e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2d12b28f-4cbb-480b-bb48-9107a5ef194e">
+                    <propertyInstance Id="dcd114d6-fc89-40f1-95ba-11f9f8e6936b" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="96b73576-cf00-4c27-9f9e-0bf23093cc61" />
+                    </propertyInstance>
+                    <elementDefinition Id="82e9d17e-b80b-4cb3-ab2d-68b3db0af249" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dabd0818-d869-4ab3-bb5d-4a323de4027e">
+                    <propertyInstance Id="b560299e-e1d0-4c11-8f03-b68a2070a5dd" name="params" value="false">
+                      <elementDefinition Id="5a0d26a2-00a4-4cb6-abd9-5dc0a7cd5fbd" />
+                    </propertyInstance>
+                    <elementDefinition Id="dd1fa084-0891-4c5b-8742-25d8bc96852a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="f6647d0f-c420-400d-976a-5e8a808947e1" />
+          </operation>
+          <operation Id="35e72ba8-85dc-47ea-b294-351ed0099f32" name="Run" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="31c25176-d71c-431d-b6e0-9b6ded7c6623" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3DRun" tag="ViewCode">
+                <elementDefinition Id="e06afb23-9965-4ec0-9a89-3fa18b2e6a7d" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="1092aaec-f826-4353-a109-322e35f4597e" name="method" profile="CSharpProfile">
+                <elementDefinition Id="6c654e1e-8f5f-4983-8787-add1cfdd4801" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a5c2b2ea-7154-417a-952c-403154eb21a1">
+                    <propertyInstance Id="849fad37-94b8-4e43-a134-6993aa5243df" name="ClrAttributes">
+                      <elementDefinition Id="c0fd6655-bed4-4432-961b-c1f1ad90fbc8" />
+                    </propertyInstance>
+                    <elementDefinition Id="4fca2dba-193f-4f7c-be02-cc398e4f430a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="af6b2544-8e1d-4341-92db-53a8e1466e00">
+                    <propertyInstance Id="6cdbba56-2fd9-41a3-9bc3-01ccc82bdc45" name="IsPartial" value="false">
+                      <elementDefinition Id="4680cd25-4b7d-430e-a719-6d79d8ab29f4" />
+                    </propertyInstance>
+                    <elementDefinition Id="c7065979-5fad-44a1-b562-a1bb8b2579d9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dd2433f9-1500-4fab-98b6-90c5451f9041">
+                    <propertyInstance Id="b5960637-79da-4c3d-8055-0bca715c2e3c" name="IsUnsafe" value="false">
+                      <elementDefinition Id="55cfc205-38b3-4c1d-8bec-0198f1744e4d" />
+                    </propertyInstance>
+                    <elementDefinition Id="a5ddd7d7-fdf6-4ef6-8773-563a2017d6cd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="17625ea5-613c-4ffb-a806-34b9932c6888">
+                    <propertyInstance Id="fb25e22a-9d36-4ae7-b566-738d1d981c4d" name="Inheritance" value="none">
+                      <elementDefinition Id="3228ab8d-eebb-4065-9e08-6eeca9b9898d" />
+                    </propertyInstance>
+                    <elementDefinition Id="0391ef1f-ed0f-41d1-8949-96d3e9b3ccf7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5e92cfd8-2cdc-4105-a733-61c78d36c614">
+                    <propertyInstance Id="606d8842-096a-4bbd-a4b6-08cec5305a76" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="2c1964a4-00f5-4ceb-8fb9-b71e6fbaf272" />
+                    </propertyInstance>
+                    <elementDefinition Id="460f73f2-99c1-4e5f-9793-f11f450f9881" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="951529db-290c-41d5-a56e-c0ee6ce4fa09">
+                    <propertyInstance Id="ef03f837-8fd8-45c9-b10a-df5c7bd258d9" name="params" value="false">
+                      <elementDefinition Id="1f3ed0ea-e9e5-407d-bd73-20dd91f9d067" />
+                    </propertyInstance>
+                    <elementDefinition Id="b2547efc-48d2-4e52-8a1b-b89a996c0b55" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="02ef746e-b49c-43f0-b52a-aa3e24d053c1" />
+          </operation>
+          <operation Id="a1a4fcbd-d9c0-47b1-8508-761825ae87e3" name="StartServiceHost" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="3b4c6b04-52a5-48c6-b11b-d147dea9fc54" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3DStartServiceHost" tag="ViewCode">
+                <elementDefinition Id="b9c15cc2-4ff8-4449-aaf6-b79c60baa613" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="58772fba-aace-478d-81e1-3ba0b4e257d5" name="method" profile="CSharpProfile">
+                <elementDefinition Id="7cd34875-8a7b-4cb7-92fd-fd23a6135c41" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="77ce68ad-3529-4cf1-9ed2-c5ee8005c4c0">
+                    <propertyInstance Id="13891104-eebc-40b3-805d-b4841ff7b05d" name="ClrAttributes">
+                      <elementDefinition Id="e9922b84-d5a7-4b22-9412-4e001352df85" />
+                    </propertyInstance>
+                    <elementDefinition Id="686b40f2-c906-4dab-93ef-1683bba27783" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="68f03a2d-8598-48d9-b59f-8b7a77367f9b">
+                    <propertyInstance Id="0e2104c9-6622-4c6d-b75d-099b5a9a7bae" name="IsPartial" value="false">
+                      <elementDefinition Id="2cff321b-7a49-4601-9eef-35862e9ee83f" />
+                    </propertyInstance>
+                    <elementDefinition Id="1a3d3d07-19a1-4780-b849-259ff7c98135" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="8c105f61-43fd-4af0-be3a-9f93ffda9ffe">
+                    <propertyInstance Id="2b1360ae-e157-48e4-9900-c2f09ffa9eb8" name="IsUnsafe" value="false">
+                      <elementDefinition Id="430f5dac-80ab-4340-82e1-16a49bd08b45" />
+                    </propertyInstance>
+                    <elementDefinition Id="b816970c-a991-44da-a9e4-2df226a97e86" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="73f1e84e-6e54-4312-90fe-434e720f8e25">
+                    <propertyInstance Id="b878096d-1dc9-40d5-bce2-75e5d71989c2" name="Inheritance" value="none">
+                      <elementDefinition Id="63f6e169-f394-46c9-a119-4dd4aad7aaf0" />
+                    </propertyInstance>
+                    <elementDefinition Id="760fb16c-a9e8-4685-bbef-cc646364fd36" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="223faa74-9085-417e-8c06-d13c106a8133">
+                    <propertyInstance Id="55680b3e-9da0-45fc-80e6-a19ade01e249" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="402e97d3-7a61-4c2c-8954-84e0baf87353" />
+                    </propertyInstance>
+                    <elementDefinition Id="3f0f6a80-b43f-476a-928c-c3dec3966821" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a2d16086-4765-43f6-9656-22f030c32f30">
+                    <propertyInstance Id="7d87f74e-1e99-4891-a470-adc5a2fae306" name="params" value="false">
+                      <elementDefinition Id="7820e1ec-2d5c-4834-ac15-a856e580c938" />
+                    </propertyInstance>
+                    <elementDefinition Id="3613898a-3e1e-4f17-9e3c-da70af0bce9a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="61214550-8077-4794-bb94-af82ba6d71b9" />
+          </operation>
+          <operation Id="4e8b7479-6b15-4a06-a647-e859fa73dbdc" name="WorkerRole" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="a2dd9f94-1b9f-4888-86a8-edac451b8951" handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fcamila%2FDocuments%2FVisual Studio 2012%2FProjects%2FEmbrion%2FJobCreation%2Fbin%2FDebug%2FJobCreation.dll&quot; Namespace%3DJobCreation Type%3DWorkerRole Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="d6e1995f-6c99-4374-9ffa-fbae0b625e2e" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="21fcda0f-b43d-400b-8b7c-53e49e7c05eb" name="method" profile="CSharpProfile">
+                <elementDefinition Id="b1710637-2daa-4f8b-a985-22d61016f481" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7b8cc706-3c90-4cc6-b726-7d63d57a8237">
+                    <propertyInstance Id="ebdfc565-15b0-4d95-b899-271d2a372b23" name="ClrAttributes">
+                      <elementDefinition Id="f4a0767e-abcf-4156-8967-258fcf994784" />
+                    </propertyInstance>
+                    <elementDefinition Id="e168cb81-0e9e-45d3-aced-760244c0dd8c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d0bff5b8-b267-42e9-941e-72bfc6a9f338">
+                    <propertyInstance Id="02ae842a-9773-4726-8102-1f1b6ece2e74" name="IsPartial" value="false">
+                      <elementDefinition Id="efc3afa1-8f76-48c3-a4c6-ee43220369da" />
+                    </propertyInstance>
+                    <elementDefinition Id="ac84b4a3-e50c-45d9-b3f5-2076838ae2de" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="04d739c8-92e6-4a8f-a205-4b324c4c475d">
+                    <propertyInstance Id="9390664e-a4ff-4570-afea-491145949e23" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d90c67c1-c373-4260-b328-788da2e48efd" />
+                    </propertyInstance>
+                    <elementDefinition Id="4978236f-5fa6-4aa9-90f5-f0d5dff25d41" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d8c4cf29-341c-4ab2-afd4-17fb9dae0b74">
+                    <propertyInstance Id="d14fed4a-5dba-47ad-a407-9bba13017959" name="Inheritance" value="none">
+                      <elementDefinition Id="c2cec465-6c6d-4db2-bf75-efaddac8a1a4" />
+                    </propertyInstance>
+                    <elementDefinition Id="4903f069-0118-4fec-aebb-f5ea05eb1a13" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c25c0c8a-6a6a-43f6-8e47-a6187b5759f2">
+                    <propertyInstance Id="7c57935c-02c9-4cde-b136-e156f34d8e9a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="93d65d4d-7721-44e7-9680-ab86753aec92" />
+                    </propertyInstance>
+                    <elementDefinition Id="780d2c6a-2e1a-4d42-9ae5-971104a98049" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cc5d041a-eaf1-4aa0-9261-ccab0ccfd9d2">
+                    <propertyInstance Id="cce1a5a5-c98d-401a-a1cb-ca0f6109d81d" name="params" value="false">
+                      <elementDefinition Id="79f2d1af-31a3-4d22-ba42-743bd45246ea" />
+                    </propertyInstance>
+                    <elementDefinition Id="e3b83a7a-dc5a-4ee3-999a-0ee539c7e96b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="02c8a524-3430-401c-8a2f-82831ca93fe0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a3b0c273-435c-426c-a69e-1f5a60d7eb4b" name="ServiceHost" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::System::ServiceModel::ServiceHost">
+        <elementDefinition Id="640eef86-eb9b-48b1-822a-cb622f35e737" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b675bac0-4f87-4e1d-a1ae-3c811d9842a6" name="X509Certificate2" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::System::Security::Cryptography::X509Certificates::X509Certificate2">
+        <elementDefinition Id="4077d2c3-fd3e-4dc8-9384-0949fcab0a9e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7f9bff16-74f9-498b-9386-cfcff23d7773" name="StoreLocation" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::System::Security::Cryptography::X509Certificates::StoreLocation">
+        <elementDefinition Id="44d3892f-3496-450a-8d72-f2cd2273f3ef" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3cbf1f32-4873-408c-950b-696b4c7fe5a9" name="StoreName" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::System::Security::Cryptography::X509Certificates::StoreName">
+        <elementDefinition Id="4fa482dc-de33-4a46-8d39-3aefb4c06650" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2f8664cd-7c94-4402-8ea4-c247523a3891" name="X509FindType" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::System::Security::Cryptography::X509Certificates::X509FindType">
+        <elementDefinition Id="aa819b07-009f-43f1-916b-747aa7410044" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b3df9f90-d06e-49a9-a0fd-1a591c75a683" name="JobCreationResults" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Microsoft::Hadoop::Client::JobCreationResults">
+        <elementDefinition Id="b1a17497-595d-45b7-bcf0-48fd72ea43b4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2bac8e38-30e3-48a9-80cf-e2d0cc1de17b" name="IJobSubmissionClient" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Microsoft::Hadoop::Client::IJobSubmissionClient">
+        <elementDefinition Id="90ff1a8e-204f-48fb-90ea-1519d3425f08" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="962cf932-45b1-4838-924e-8f60227abe47" name="ModelingProject">
+    <elementDefinition Id="278ba22c-c801-4f76-9d45-9e47ff464410" />
+  </package>
+</logicalClassDesignerModel>

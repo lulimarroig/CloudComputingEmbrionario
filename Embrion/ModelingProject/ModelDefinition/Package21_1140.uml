@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f3b5350d-ca18-489f-b322-c31cb119477b"
+  name="Mustache"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="eb704a5d-229a-4cb4-87ce-fe3f5f362cd2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMustache"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="0642cd84-0da6-47aa-b083-c3804af0e18b"
+        name="Generator"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="adbb8704-c773-4a06-9b65-1e07dcf3ce8b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLu%2FDocuments%2FVisual Studio 2012%2FProjects%2Fembrion%2Fpackages%2Fmustache-sharp.0.2.8.1%2Flib%2Fnet40%2Fmustache-sharp.dll&quot; Namespace%3DMustache Type%3DGenerator"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="beb28df4-4700-4dbb-9e30-5c1653944b55"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5e6611aa-8e8b-443c-8862-a4ca26b39162">
+                <propertyInstance
+                  Id="1285e656-7ab2-49e9-9ded-3024fa589c94"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3f6d1c7-fa38-45ce-8119-9d27bbdd8ecb">
+                <propertyInstance
+                  Id="47b17892-ebe1-4427-92e0-fb55f2f79b70"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f4e0e54c-3ff7-4f50-842a-200cc246c627">
+                <propertyInstance
+                  Id="4f3700df-5ba8-4e93-94ec-06b83ffb4ed4"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ca5aad8d-2f2a-4d73-b929-a0190d0aa332">
+                <propertyInstance
+                  Id="ccdccabb-5dc4-43f6-9d78-accd36b65faf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c6769d3f-29bb-4fa6-983f-dfe3c004abcc">
+                <propertyInstance
+                  Id="cc8751e5-6b4d-48d1-9087-65b696c458b5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

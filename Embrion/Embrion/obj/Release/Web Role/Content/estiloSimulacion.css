@@ -1,0 +1,60 @@
+﻿body {
+    
+
+}
+
+div#sectionFour {
+  min-height: 500px;
+}
+
+.container {
+  font-style: normal !important;
+}
+
+.tableHeader {
+  background-color: #337ab7;
+  color: white;
+}
+
+.tableHeader:hover {
+  background-color: #337ab7 !important;
+  color: white !important;
+}
+
+.inputElement {
+    width : 100px;
+    text-align: right;
+}
+
+.selectElement {
+    width : 100px;
+    height : 26px;
+}
+
+.coordenada {
+    width: 50px;
+}
+
+.succesMsg {
+    font-size: x-large;
+    color: green;
+}
+
+.noResults {
+    margin-left: 35%;
+    color: gray;
+}
+
+.simulationLoader {
+    background-color: transparent;
+    height: 100px;
+    display: block;
+    padding: 30px 0px 0px 565px;
+}
+
+.resultsLoader {
+    background-color: transparent;
+    height: 100px;
+    display: block;
+    padding: 30px 0px 0px 565px;
+}

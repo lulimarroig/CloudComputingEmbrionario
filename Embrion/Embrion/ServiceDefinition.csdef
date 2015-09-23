@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="Embrion" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
+  <WebRole name="Web Role" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+      <Import moduleName="RemoteAccess" />
+    </Imports>
+    <LocalResources>
+      <LocalStorage name="Web Role.svclog" sizeInMB="1000" cleanOnRoleRecycle="false" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="StorageConnectionString" />
+    </ConfigurationSettings>
+  </WebRole>
+  <WorkerRole name="MessageProcessing" vmsize="Large">
+    <Imports>
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <ConfigurationSettings>
+      <Setting name="StorageConnectionString" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InternalEndpoint name="ClientInputServiceEndPoint" protocol="tcp" />
+    </Endpoints>
+  </WorkerRole>
+  <WorkerRole name="JobCreation" vmsize="Large">
+    <Imports>
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <Endpoints>
+      <InternalEndpoint name="JobSubmissionServiceEndPoint" protocol="tcp" />
+    </Endpoints>
+    <ConfigurationSettings>
+      <Setting name="StorageConnectionString" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Cami" storeLocation="CurrentUser" storeName="My" />
+    </Certificates>
+    <Runtime executionContext="elevated">
+    </Runtime>
+  </WorkerRole>
+  <WorkerRole name="InterroleCommons" vmsize="Small">
+    <Imports>
+      <Import moduleName="Diagnostics" />
+      <Import moduleName="RemoteAccess" />
+    </Imports>
+  </WorkerRole>
+</ServiceDefinition>

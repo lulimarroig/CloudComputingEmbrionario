@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="878b23ae-4307-40e6-931b-1f7826d0043a"
+  name="Client"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d91e4b5e-29fc-40b1-8a20-d1469abde091"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.Hadoop.Client"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b1a17497-595d-45b7-bcf0-48fd72ea43b4"
+        name="JobCreationResults"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="40a4e876-f5b9-49cc-8216-69db6e25e91c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLu%2FDocuments%2FVisual Studio 2012%2FProjects%2Fembrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DJobCreationResults"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f5976f44-99d8-47c8-b42b-c634cd2c78a1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c94c2eec-448d-4748-9d8b-3e9d3081425a">
+                <propertyInstance
+                  Id="03dde352-986d-462a-b681-2c10b13b650e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fa5db3d3-e496-4a10-a54a-e7fac1b920b6">
+                <propertyInstance
+                  Id="77852059-a3c9-4dc7-bca3-58136708b363"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e4ae47aa-d75f-4bcb-8e6f-0de4f369f21a">
+                <propertyInstance
+                  Id="919a29be-b395-45e1-a855-4e2be6ed411e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fe1ec7e6-ec8a-4813-abf4-2c675781fd65">
+                <propertyInstance
+                  Id="78092431-b9b3-46f6-9e9e-0a2d42ee4600"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="796200f0-2a03-41c1-9838-932430893b4e">
+                <propertyInstance
+                  Id="efb89d49-403e-4dff-8e7c-e4f58e16bfab"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="90ff1a8e-204f-48fb-90ea-1519d3425f08"
+        name="IJobSubmissionClient"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="6ce3cf5c-184a-4a5e-a7d2-18d484ae7b85"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLu%2FDocuments%2FVisual Studio 2012%2FProjects%2Fembrion%2Fpackages%2FMicrosoft.Hadoop.Client.1.4.0.0%2Flib%2Fnet40%2FMicrosoft.Hadoop.Client.dll&quot; Namespace%3DMicrosoft.Hadoop.Client Type%3DIJobSubmissionClient"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e8b0a832-f84d-4c57-bef0-54da69819840"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8198da47-aa4c-4328-a15e-08edd1a4b4bc">
+                <propertyInstance
+                  Id="51a50197-ed10-46ab-91a7-5eef8b8e46ac"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="709a767f-87cc-47b8-a26c-2298618b7714">
+                <propertyInstance
+                  Id="eeea438e-1aca-478e-a421-0e424b3b56e2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c11bd9a5-1ea4-4fa1-a70e-5e84d044492e">
+                <propertyInstance
+                  Id="a5a0e77b-7274-4f9d-b3f5-f18a9c74b952"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="412c5037-b278-4865-be5e-4fb7cbcbe453">
+                <propertyInstance
+                  Id="45f2b196-8201-437f-8a73-2d99a9fea692"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

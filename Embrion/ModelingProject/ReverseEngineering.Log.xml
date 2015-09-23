@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-02-24T12:35:13" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons' -  (Package)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::ClientInputMessage' -  (Class)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::ClientInputMessage::ClientInputMessage' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::ClientInputMessage::idUsuario' -  (Property)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::ClientInputMessage::message' -  (Property)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::IReceiveMessageFromClient' -  (Interface)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::IReceiveMessageFromClient::ReceiveClientInputMessage' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::IReceiveMessageFromClient::ReceiveClientInputMessage::message' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::SimulacionParameters' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::WorkerRole' -  (Class)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::WorkerRole::cancellationTokenSource' -  (Property)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::WorkerRole::OnStart' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::WorkerRole::OnStop' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::WorkerRole::Run' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::WorkerRole::runCompleteEvent' -  (Property)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::InterroleCommons::WorkerRole::WorkerRole' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing' -  (Package)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::ClientInputRecievedEventHandler' -  (Class)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::ClientInputRecievedEventHandler::Invoke' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::ClientInputRecievedEventHandler::Invoke::e' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::ClientInputRecievedEventHandler::Invoke::sender' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::ClientInputServiceHost' -  (Class)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::ClientInputServiceHost::ClientInputRecieved' -  (Property)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::ClientInputServiceHost::ClientInputServiceHost' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::ClientInputServiceHost::OnClientInputRecieved' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::ClientInputServiceHost::OnClientInputRecieved::e' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::ClientInputServiceHost::ReceiveClientInputMessage' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::ClientInputServiceHost::ReceiveClientInputMessage::sender' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole' -  (Class)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::blobClient' -  (Property)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::CompletedEvent' -  (Property)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::container' -  (Property)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::CrearMDL' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::CrearMDL::e' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::CrearMDL::generatorMDL' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::CrearMDL::parametros' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::CrearMDL::subid' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::CrearMDL::valores' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::OnStart' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::OnStop' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::RoleEnvironmentChanging' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::RoleEnvironmentChanging::e' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::RoleEnvironmentChanging::sender' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::Run' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::ServiceHost' -  (Property)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::ServiceHost_ClientInputRecieved' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::ServiceHost_ClientInputRecieved::e' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::ServiceHost_ClientInputRecieved::sender' -  (Parameter)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::StartServiceHost' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::storageAccount' -  (Property)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::MessageProcessing::WorkerRole::WorkerRole' -  (Operation)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Microsoft' -  (Package)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Microsoft::WindowsAzure' -  (Package)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Microsoft::WindowsAzure::ServiceRuntime' -  (Package)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Microsoft::WindowsAzure::ServiceRuntime::RoleEntryPoint' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Microsoft::WindowsAzure::ServiceRuntime::RoleEnvironmentChangingEventArgs' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Microsoft::WindowsAzure::Storage' -  (Package)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Microsoft::WindowsAzure::Storage::Blob' -  (Package)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Microsoft::WindowsAzure::Storage::Blob::CloudBlobClient' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Microsoft::WindowsAzure::Storage::Blob::CloudBlobContainer' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Microsoft::WindowsAzure::Storage::CloudStorageAccount' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Mustache' -  (Package)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::Mustache::Generator' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System' -  (Package)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::Double' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::Int64' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::Object' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::ServiceModel' -  (Package)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::ServiceModel::ServiceHost' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::Threading' -  (Package)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::Threading::CancellationTokenSource' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject::System::Threading::ManualResetEvent' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject::MessageProcessing::ClientInputServiceHost to ModelingProject::InterroleCommons::IReceiveMessageFromClient (InterfaceRealization)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject::InterroleCommons::WorkerRole to ModelingProject::Microsoft::WindowsAzure::ServiceRuntime::RoleEntryPoint (Generalization)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject::MessageProcessing::WorkerRole to ModelingProject::System::ServiceModel::ServiceHost (Association)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject::MessageProcessing::WorkerRole to ModelingProject::Microsoft::WindowsAzure::ServiceRuntime::RoleEntryPoint (Generalization)" />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="High" Text="(6) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="High" Text="(13) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-02-24T12:35:17" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="8d6d7c37-22ed-48e8-8bb5-cccf076944ac"
+  name="X509Certificates"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a72bf6ce-c5ad-4182-816d-825a854b6616"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Security.Cryptography.X509Certificates"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="4077d2c3-fd3e-4dc8-9384-0949fcab0a9e"
+        name="X509Certificate2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f453bca0-8cb3-4684-a263-345b5db06895"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DX509Certificate2"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4f257fba-a3ad-45bd-8068-ccc6cbe39b2b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bc1cd39b-7cce-4288-90f3-5dfdfdf57fa9">
+                <propertyInstance
+                  Id="b08c49db-4907-46e4-b541-6733c330e687"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="23b2953a-c893-4806-9ad7-da296a7ceea6">
+                <propertyInstance
+                  Id="01634a08-19ec-41a5-bf03-1438ccbd7704"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9186de6e-0067-422e-aaff-4def5e92f5e2">
+                <propertyInstance
+                  Id="7cda72b4-2f44-4ee4-a660-45aa3289e470"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df356863-c283-4d8e-bb34-bbcfbbc6dfd6">
+                <propertyInstance
+                  Id="472c122b-98ab-4eaf-aed4-91a02be35da8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="51958d62-acc3-443c-996a-e10cd03ac97b">
+                <propertyInstance
+                  Id="1d2661fe-ec21-4007-af03-ea4b608fb430"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="44d3892f-3496-450a-8d72-f2cd2273f3ef"
+        name="StoreLocation"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="fc88ea1d-321a-4f8f-b29c-39bb024cf5b7"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreLocation"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c864c3f1-416a-4899-b873-b1191c6f1a29"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f5905f72-4e56-46eb-aac7-84345c00510f">
+                <propertyInstance
+                  Id="509e13c1-a58a-40a8-a3d8-97a249517fe9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bbec4db8-1a0e-4b97-83de-561ed195b297">
+                <propertyInstance
+                  Id="70f4e05c-e3f4-4434-a391-a875600e3f3e"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bbd9ee81-226c-4940-90ec-f7620959c8dd">
+                <propertyInstance
+                  Id="4ae7dce5-9530-4ee1-9b8a-a2f9dd36eb8a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="4fa482dc-de33-4a46-8d39-3aefb4c06650"
+        name="StoreName"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="c0e590fd-eb94-4ef6-bc82-e517c8d6e6e5"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DStoreName"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9a299d3a-a888-4df7-96aa-555aa9c026d7"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e52ead4-18f2-45c8-aacb-01d4cc3e07f3">
+                <propertyInstance
+                  Id="0c29644c-5fc7-4bf0-b2ca-801c79d2adcc"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f2bccb9c-2166-49f0-bfd3-dcc9b550364d">
+                <propertyInstance
+                  Id="3c8161c4-17b4-4e45-9113-0ec937359539"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c9f3c54e-7c40-4f90-8cc3-f7b909f53330">
+                <propertyInstance
+                  Id="0fa08aea-c754-495d-8f00-a04fd3853a0e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="aa819b07-009f-43f1-916b-747aa7410044"
+        name="X509FindType"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="ea286c58-9b58-4c37-9665-d5ce55caa431"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Security.Cryptography.X509Certificates Type%3DX509FindType"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="65d7c878-cce4-4e87-b234-589989df1243"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c7949da0-7d6b-4b0b-95d1-f7a07d35d9b7">
+                <propertyInstance
+                  Id="2d528568-b3c4-4e94-917c-755618bf7b86"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0ad3d0c0-1390-4e3f-8816-ac1c261e337d">
+                <propertyInstance
+                  Id="040debbe-0790-4424-8db1-0c90f092c2e1"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b0e8f4ee-9846-4281-9d8c-f0151b373cb5">
+                <propertyInstance
+                  Id="0aa17940-fd73-4f5c-9573-91b6031ab5c8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

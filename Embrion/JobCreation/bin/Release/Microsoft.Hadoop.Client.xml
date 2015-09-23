@@ -1,0 +1,3021 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Hadoop.Client</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationAttemptDetails">
+            <summary>
+            Represents generic information about YARN Application Attempts.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ApplicationAttemptDetails.#ctor(Microsoft.Hadoop.Client.ApplicationAttemptGetResult,Microsoft.Hadoop.Client.ApplicationDetails)">
+            <summary>
+            Initializes a new instance of the ApplicationAttemptDetails class.
+            </summary>
+            <param name="attemptResult">
+            Result of a REST call, containing details about an application's attempt.
+            </param>
+            <param name="application">
+            The application with which this attempt is associated.
+            </param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ApplicationAttemptDetails.GetApplicationAttemptStateAsEnum">
+            <summary>
+            Gets the application' state as an enum.
+            </summary>
+            <returns>
+            Returns the application attempt' state as an enum.
+            </returns>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptDetails.ApplicationAttemptId">
+            <summary>
+            Gets the application attempt Id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptDetails.Host">
+            <summary>
+            Gets the host on which this attempt was initiated.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptDetails.State">
+            <summary>
+            Gets the state of the attempt.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptDetails.ApplicationMasterContainerId">
+            <summary>
+            Gets the container id of the application master initiating the attempt.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptDetails.DiagnosticInfo">
+            <summary>
+            Gets diagnostic information on this attempt.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptDetails.ParentApplication">
+            <summary>
+            Gets the parent application for this attempt.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationAttemptList">
+            <summary>
+            Represents a list of application attempts.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ApplicationAttemptList.#ctor(Microsoft.Hadoop.Client.ApplicationAttemptListResult,Microsoft.Hadoop.Client.ApplicationDetails)">
+            <summary>
+            Initializes a new instance of the ApplicationAttemptList class.
+            </summary>
+            <param name="applicationAttemptListResult">
+            Result of a REST call, containing list of application attempts.
+            </param>
+            <param name="parentApplication">
+            The parent ApplicationDetails object.
+            </param>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptList.ApplicationAttempts">
+            <summary>
+            Gets an enumeration of application attempts.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationDetails">
+            <summary>
+            Represents generic information about YARN Applications.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ApplicationDetails.#ctor(Microsoft.Hadoop.Client.ApplicationGetResult)">
+            <summary>
+            Initializes a new instance of the ApplicationDetails class.
+            </summary>
+            <param name="applicationResult">
+            Result of a REST call, containing details about an application.
+            </param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ApplicationDetails.GetApplicationStateAsEnum">
+            <summary>
+            Gets the application' state as an enum.
+            </summary>
+            <returns>
+            Returns the application' state as an enum.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ApplicationDetails.GetApplicationFinalStatusAsEnum">
+            <summary>
+            Gets the application' final status as an enum.
+            </summary>
+            <returns>
+            Returns the application' final status as an enum.
+            </returns>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationDetails.ApplicationId">
+            <summary>
+            Gets the application Id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationDetails.LatestApplicationAttemptId">
+            <summary>
+            Gets the latest application attempt Id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationDetails.Name">
+            <summary>
+            Gets the application name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationDetails.User">
+            <summary>
+            Gets the user who started the application.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationDetails.ApplicationType">
+            <summary>
+            Gets the type of this application (example: MAPREDUCE).
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationDetails.State">
+            <summary>
+            Gets the application state.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationDetails.FinalStatus">
+            <summary>
+            Gets the final application status.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationDetails.SubmissionTimeInUtc">
+            <summary>
+            Gets the application submission time in UTC.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationDetails.StartTimeInUtc">
+            <summary>
+            Gets the application start time in UTC.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationDetails.FinishTimeInUtc">
+            <summary>
+            Gets the application finish time in UTC.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationList">
+            <summary>
+            Represents a list of applications on an HDInsight cluster.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ApplicationList.#ctor(Microsoft.Hadoop.Client.ApplicationListResult)">
+            <summary>
+            Initializes a new instance of the ApplicationList class.
+            </summary>
+            <param name="applicationListResult">
+            Result of a REST call, containing list of applications.
+            </param>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationList.Applications">
+            <summary>
+            Gets an enumeration of applications.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.BasicAuthCredential">
+            <summary>
+            Provides Connection Credentials that can be used to connect to a
+            Hadoop cluster.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.IJobSubmissionClientCredential">
+            <summary>
+            Provides a base class for Hadoop Connections.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.BasicAuthCredential.Server">
+            <summary>
+            Gets or sets the Uri for the server to connect to.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.BasicAuthCredential.UserName">
+            <summary>
+            Gets or sets the UserName for the connection.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.BasicAuthCredential.Password">
+            <summary>
+            Gets or sets the password for the connection.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ClientBase">
+            <summary>
+            Represents the base of all Client objects.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.IJobSubmissionClientBase">
+            <summary>
+            Represents the base interface of a Job Submission Client.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.IHadoopClientBase">
+            <summary>
+            Represents the base interface of a Hadoop Client.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopClientBase.Cancel">
+            <summary>
+            Cancel's a pending operation.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopClientBase.AddLogWriter(Microsoft.WindowsAzure.Management.HDInsight.Logging.ILogWriter)">
+            <summary>
+            Adds a log writer to the client.
+            </summary>
+            <param name="logWriter">
+            The log writer.
+            </param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopClientBase.RemoveLogWriter(Microsoft.WindowsAzure.Management.HDInsight.Logging.ILogWriter)">
+            <summary>
+            Removes a log writer.
+            </summary>
+            <param name="logWriter">
+            The log writer.
+            </param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopClientBase.SetCancellationSource(System.Threading.CancellationTokenSource)">
+            <summary>
+            Allows a user to set a custom cancellation source.
+            </summary>
+            <param name="tokenSource">
+            The cancellation source.
+            </param>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.IHadoopClientBase.IgnoreSslErrors">
+            <summary>
+            Gets or sets a value indicating whether or not servicer side SSL errors should be ignored.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientBase.#ctor">
+            <summary>
+            Initializes a new instance of the ClientBase class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientBase.#ctor(System.Nullable{System.TimeSpan},Microsoft.WindowsAzure.Management.HDInsight.Framework.Core.Retries.IRetryPolicy)">
+            <summary>
+            Initializes a new instance of the ClientBase class.
+            </summary>
+            <param name="httpOperationTimeout">The HTTP operation timeout.</param>
+            <param name="retryPolicy">The retry policy.</param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientBase.Cancel">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientBase.SetCancellationSource(System.Threading.CancellationTokenSource)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientBase.AddLogWriter(Microsoft.WindowsAzure.Management.HDInsight.Logging.ILogWriter)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientBase.RemoveLogWriter(Microsoft.WindowsAzure.Management.HDInsight.Logging.ILogWriter)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientBase.PrepareQueryJob``1(``0)">
+            <summary>
+            Prepares a query job for execution.
+            </summary>
+            <param name="queryJob">The Query job to execute.</param>
+            <typeparam name="TJobType">The Job type.</typeparam>
+            <returns>Query job which is prepared for execution.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientBase.UploadQueryFile``1(``0,System.String)">
+            <summary>
+            Uploads the query text for query job into a file in storate.
+            </summary>
+            <typeparam name="TJobType">The Job type.</typeparam>
+            <param name="queryJob">The query job.</param>
+            <param name="queryText">The query text.</param>
+            <returns>Query job which is prepared for execution.</returns>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ClientBase.IgnoreSslErrors">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ClientBase.HttpOperationTimeout">
+            <summary>
+            Gets or sets the HTTP operation timeout.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ClientBase.RetryPolicy">
+            <summary>
+            Gets or sets the retry policy.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ClientBase.Context">
+            <summary>
+            Gets the Abstraction context to be used to control cancellation and log writing.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ClientBase.CancellationSource">
+            <summary>
+            Gets or sets the CancellationTokenSource to be used to control cancellation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ClientBase.CancellationToken">
+            <summary>
+            Gets the CancellationToken to be used to control cancellation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ClientBase.Logger">
+            <summary>
+            Gets the Logger to be used to log messages.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ClientLayer.IHadoopClientFactoryManager">
+            <summary>
+            Provides a manager for registering and creating hadoop clients.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientLayer.IHadoopClientFactoryManager.RegisterFactory``3">
+            <summary>
+            Method to register Hadoop Client factories.
+            </summary>
+            <typeparam name="TCredentials">The Type of credentials used by the factory to register.</typeparam>
+            <typeparam name="TServiceInterface">The client factory interface.</typeparam>
+            <typeparam name="TServiceImplementation">The concrete to be registered.</typeparam>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientLayer.IHadoopClientFactoryManager.UnregisterFactory``1">
+            <summary>
+            Removes a factory registration.
+            </summary>
+            <typeparam name="TCredentials">The Type of credentials used by the factory to remove.</typeparam>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientLayer.IHadoopClientFactoryManager.Create(Microsoft.Hadoop.Client.IJobSubmissionClientCredential,System.String)">
+            <summary>
+            Creates a new Hadoop Client given the credentials.
+            </summary>
+            <param name="credentials">
+            The credentials.
+            </param>
+            <param name="userAgentString">
+            Custome useragent string to pass.
+            </param>
+            <returns>
+            A new Hadoop client capable of communicating with a Hadoop cluster.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientLayer.IHadoopClientFactoryManager.CreateHadoopApplicationHistoryClient(Microsoft.Hadoop.Client.IJobSubmissionClientCredential)">
+            <summary>
+            Creates a new Hadoop Application History Client with the given credentials.
+            </summary>
+            <param name="credentials">
+            The credentials.
+            </param>
+            <returns>
+            A new Hadoop Application History client capable of communicating with a Hadoop cluster and listing application history.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientLayer.HadoopClientFactoryManager.RegisterFactory``3">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientLayer.HadoopClientFactoryManager.UnregisterFactory``1">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientLayer.HadoopClientFactoryManager.Create(Microsoft.Hadoop.Client.IJobSubmissionClientCredential)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientLayer.HadoopClientFactoryManager.Create(Microsoft.Hadoop.Client.IJobSubmissionClientCredential,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.IHadoopAbstractionContext`1">
+            <summary>
+            Represents an abstraction context for HadoopConnectionCredentials.
+            </summary>
+            <typeparam name="TCredentials">
+            The type of credentials to use.
+            </typeparam>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.IHadoopAbstractionContext`1.Credentials">
+            <summary>
+            Gets the connection credentials.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ClientLayer.IHadoopClientFactory`1">
+            <summary>
+            Provides a factor for creating Hadoop Clients.
+            </summary>
+            <typeparam name="T">
+            The type of connection credential supported by this factor.
+            </typeparam>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientLayer.IHadoopClientFactory`1.Create(`0)">
+            <summary>
+            Creates a new Hadoop client capable of connecting to Hadoop using the supplied credential.
+            </summary>
+            <param name="credential">
+            The credential to use.
+            </param>
+            <returns>
+            A new HadoopClient that can be used to communicate with Hadoop.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientLayer.IHadoopClientFactory`1.Create(`0,System.String)">
+            <summary>
+            Creates a new Hadoop client capable of connecting to Hadoop using the supplied credential and 
+            custom UserAgent. The custom userAgent is sent in addition to the default so the cluster can
+            log calls coming from different client SDK's.
+            </summary>
+            <param name="credential">
+            The credential to use.
+            </param>
+            <param name="customUserAgent">
+            The custom user agent to pass. Can be of format "agent1 agent2".</param>
+            <returns>
+            A new HadoopClient that can be used to communicate with Hadoop.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ClientLayer.IHadoopClientFactory`1.CreateHadoopApplicationHistoryClient(`0)">
+            <summary>
+            Creates a new Hadoop Application History client capable of retrieving application history from a Hadoop cluster.
+            </summary>
+            <param name="credential">
+            The credential to use.
+            </param>
+            <returns>
+            A new Hadoop Application History Client.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ClientLayer.IRemoteHadoopClientFactory">
+            <summary>
+            Provides a factory for creating Remote Hadoop Clients.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationContainerDetails">
+            <summary>
+            Represents generic information about containers of YARN Applications.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ApplicationContainerDetails.#ctor(Microsoft.Hadoop.Client.ApplicationContainerGetResult,Microsoft.Hadoop.Client.ApplicationAttemptDetails)">
+            <summary>
+            Initializes a new instance of the ApplicationContainerDetails class.
+            </summary>
+            <param name="containerResult">
+            Result of a REST call, containing details about a container.
+            </param>
+            <param name="parentApplicationAttempt">
+            The parent ApplicationAttemptDetails object to which the container is associated.
+            </param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ApplicationContainerDetails.GetApplicationContainerStateAsEnum">
+            <summary>
+            Gets the container' state as an enum.
+            </summary>
+            <returns>
+            Returns the container' state as an enum.
+            </returns>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerDetails.ContainerId">
+            <summary>
+            Gets the container Id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerDetails.NodeId">
+            <summary>
+            Gets the node on which this container was assigned.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerDetails.State">
+            <summary>
+            Gets the container State.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerDetails.ExitStatus">
+            <summary>
+            Gets the container' exit status.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerDetails.DiagnosticInfo">
+            <summary>
+            Gets the container' diagnostic information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerDetails.Priority">
+            <summary>
+            Gets the container' priority.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerDetails.AllocatedCores">
+            <summary>
+            Gets the number of cores allocated to this container.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerDetails.AllocatedMemoryInMegabytes">
+            <summary>
+            Gets the amount of memory in MB allocated to this container.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerDetails.StartTimeInUtc">
+            <summary>
+            Gets the container start time in UTC.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerDetails.FinishTimeInUtc">
+            <summary>
+            Gets the container finish time in UTC.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerDetails.ParentApplicationAttempt">
+            <summary>
+            Gets the application attempt to which this container was assigned.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationContainerList">
+            <summary>
+            Represents a list of application' containers.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.ApplicationContainerList.#ctor(Microsoft.Hadoop.Client.ApplicationContainerListResult,Microsoft.Hadoop.Client.ApplicationAttemptDetails)">
+            <summary>
+            Initializes a new instance of the ApplicationContainerList class.
+            </summary>
+            <param name="containerListResult">
+            Result of a REST call, containing list of application containers.
+            </param>
+            <param name="parentApplicationAttempt">
+            The parent ApplicationAttemptDetails object.
+            </param>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerList.Containers">
+            <summary>
+            Gets an enumeration of an application' containers.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ContentSummaryContainer">
+            <summary>
+            Content summary holder used for correct (de)serialization.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ContentSummaryContainer.Summary">
+            <summary>
+            Gets or sets the content summary.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.DirectoryEntryContainer">
+            <summary>
+            Directory entry holder used for correct (de)serialization.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryEntryContainer.Entry">
+            <summary>
+            Gets or sets the directory entry.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.DirectoryListing">
+            <summary>
+            Directory listing.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryListing.Entries">
+            <summary>
+            Gets or sets the file status.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ContentSummary">
+            <summary>
+            Content summary of a directory entry.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ContentSummary.DirectoryCount">
+            <summary>
+            Gets or sets the directory count.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ContentSummary.FileCount">
+            <summary>
+            Gets or sets the file count.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ContentSummary.Length">
+            <summary>
+            Gets or sets the length of a file.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ContentSummary.Quota">
+            <summary>
+            Gets or sets the quota.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ContentSummary.SpaceConsumed">
+            <summary>
+            Gets or sets total space consumed.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ContentSummary.SpaceQuota">
+            <summary>
+            Gets or sets the space quota.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.DirectoryEntry">
+            <summary>
+                Status of file/directory in HDFS.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryEntry.AccessTime">
+            <summary>
+            Gets or sets the access time.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryEntry.BlockSize">
+            <summary>
+            Gets or sets block size.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryEntry.Group">
+            <summary>
+            Gets or sets the group.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryEntry.Length">
+            <summary>
+            Gets or sets the length.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryEntry.ModificationTime">
+            <summary>
+            Gets or sets modification time.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryEntry.Owner">
+            <summary>
+            Gets or sets the owner.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryEntry.PathSuffix">
+            <summary>
+            Gets or sets the path suffix.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryEntry.Permission">
+            <summary>
+            Gets or sets the permission.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryEntry.Replication">
+            <summary>
+            Gets or sets the replication factor.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryEntry.EntryType">
+            <summary>
+            Gets or sets the type of directory entry.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.DirectoryEntryType">
+            <summary>
+            Type of directory entry.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.DirectoryEntryType.FILE">
+            <summary>
+            The file.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.DirectoryEntryType.DIRECTORY">
+            <summary>
+            The directory.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.DirectoryListingContainer">
+            <summary>
+            Directory listing holder used for correct (de)serialization.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.DirectoryListingContainer.Listing">
+            <summary>
+            Gets or sets the directory listing.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.HadoopApplicationHistoryClientFactory">
+            <summary>
+            Represents a Hadoop client that can provide information about completed applications.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopApplicationHistoryClientFactory.Connect(Microsoft.Hadoop.Client.IJobSubmissionClientCredential)">
+            <summary>
+            Creates a new instance of the Hadoop Client that can be used to obtain information on completed applications.
+            </summary>
+            <param name="credentials">
+            The connection credentials for the Hadoop instance.
+            </param>
+            <returns>
+            An Hadoop client implementation.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.HadoopApplicationHistoryRestClient">
+            <summary>
+            Represents a remote rest request to get application history.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.IHadoopApplicationHistoryRestClient">
+            <summary>
+            Provides REST implementation of a remote Hadoop Application History client.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryRestClient.ListCompletedApplicationsAsync">
+            <summary>
+            Lists completed applications.
+            </summary>
+            <returns>
+            A task that will provide an enumeration of completed applications.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryRestClient.ListCompletedApplicationsAsync(System.DateTime,System.DateTime)">
+            <summary>
+            Lists completed applications.
+            </summary>
+            <param name="submittedAfterInUtc">
+            Time in UTC after which a qualified application must have been submitted.
+            </param>
+            <param name="submittedBeforeInUtc">
+            Time in UTC before which a qualified application must have been submitted.
+            </param>
+            <returns>
+            A task that will provide an enumeration of completed applications.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryRestClient.GetApplicationDetailsAsync(System.String)">
+            <summary>
+            Gets details on the specified application.
+            </summary>
+            <param name="applicationId">
+            The application' identifier.
+            </param>
+            <returns>
+            A task which when completed, will provide details on the specified application.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryRestClient.ListApplicationAttemptsAsync(Microsoft.Hadoop.Client.ApplicationDetails)">
+            <summary>
+            Lists attempts made for the specified application.
+            </summary>
+            <param name="application">
+            The application for which attempts need to be listed.
+            </param>
+            <returns>
+            A task that will provide an enumeration of attempts made to run the specified application.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryRestClient.ListApplicationContainersAsync(Microsoft.Hadoop.Client.ApplicationAttemptDetails)">
+            <summary>
+            Lists containers for the specified application attempt.
+            </summary>
+            <param name="applicationAttempt">
+            The application attempt for which containers need to be listed.
+            </param>
+            <returns>
+            A task that will provide an enumeration of containers associated with the specified application attempt.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopApplicationHistoryRestClient.#ctor(Microsoft.Hadoop.Client.IHadoopApplicationHistoryRestReadClient)">
+            <summary>
+            Initializes a new instance of the HadoopApplicationHistoryRestClient class.
+            </summary>
+            <param name="readProxy">
+            The REST read client to use for performing requests.
+            </param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopApplicationHistoryRestClient.ListCompletedApplicationsAsync(System.DateTime,System.DateTime)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopApplicationHistoryRestClient.GetApplicationDetailsAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopApplicationHistoryRestClient.ListApplicationAttemptsAsync(Microsoft.Hadoop.Client.ApplicationDetails)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopApplicationHistoryRestClient.ListApplicationContainersAsync(Microsoft.Hadoop.Client.ApplicationAttemptDetails)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.IHadoopApplicationHistoryClient">
+            <summary>
+            Represents a Hadoop Application History Client.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryClient.ListCompletedApplicationsAsync">
+            <summary>
+            Lists completed applications.
+            </summary>
+            <returns>
+            A task that will provide an enumeration of completed applications.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryClient.ListCompletedApplicationsAsync(System.DateTime,System.DateTime)">
+            <summary>
+            Lists completed applications.
+            </summary>
+            <param name="submittedAfterInUtc">
+            Time in UTC after which a qualified application must have been submitted.
+            </param>
+            <param name="submittedBeforeInUtc">
+            Time in UTC before which a qualified application must have been submitted.
+            </param>
+            <returns>
+            A task that will provide an enumeration of completed applications.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryClient.GetApplicationDetailsAsync(System.String)">
+            <summary>
+            Gets details on the specified application.
+            </summary>
+            <param name="applicationId">
+            The application' identifier.
+            </param>
+            <returns>
+            A task which when completed, will provide details on the specified application.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryClient.ListApplicationAttemptsAsync(Microsoft.Hadoop.Client.ApplicationDetails)">
+            <summary>
+            Lists attempts for the specified application.
+            </summary>
+            <param name="application">
+            The application for which attempts need to be listed.
+            </param>
+            <returns>
+            A task which when completed, will provide an enumeration of attempts made to run the specified application.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryClient.ListApplicationContainersAsync(Microsoft.Hadoop.Client.ApplicationAttemptDetails)">
+            <summary>
+            Lists containers for the specified application attempt.
+            </summary>
+            <param name="applicationAttempt">
+            The application attempt for which containers need to be listed.
+            </param>
+            <returns>
+            A task which when completed, will provide an enumeration of containers associated with the specified application attempt.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryClient.ListCompletedApplications">
+            <summary>
+            Lists completed applications.
+            </summary>
+            <returns>
+            An enumeration of completed applications.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryClient.ListCompletedApplications(System.DateTime,System.DateTime)">
+            <summary>
+            Lists completed applications.
+            </summary>
+            <param name="submittedAfterInUtc">
+            Time in UTC after which a qualified application must have been submitted.
+            </param>
+            <param name="submittedBeforeInUtc">
+            Time in UTC before which a qualified application must have been submitted.
+            </param>
+            <returns>
+            An enumeration of completed applications.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryClient.GetApplicationDetails(System.String)">
+            <summary>
+            Gets details on the specified application.
+            </summary>
+            <param name="applicationId">
+            The application' identifier.
+            </param>
+            <returns>
+            Details on the specified application.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryClient.ListApplicationAttempts(Microsoft.Hadoop.Client.ApplicationDetails)">
+            <summary>
+            Lists attempts for the specified application.
+            </summary>
+            <param name="application">
+            The application for which attempts need to be listed.
+            </param>
+            <returns>
+            An enumeration of attempts made to run the specified application.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopApplicationHistoryClient.ListApplicationContainers(Microsoft.Hadoop.Client.ApplicationAttemptDetails)">
+            <summary>
+            Lists containers for the specified application attempt.
+            </summary>
+            <param name="applicationAttempt">
+            The application attempt for which containers need to be listed.
+            </param>
+            <returns>
+            An enumeration of containers associated with the specified application attempt.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationAttemptGetResult">
+            <summary>
+            Represents the result of a get application attempt REST call against a Hadoop cluster.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptGetResult.ApplicationAttemptId">
+            <summary>
+            Gets or sets the application attempt ID.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptGetResult.Host">
+            <summary>
+            Gets or sets the host on which this attempt was initiated.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptGetResult.State">
+            <summary>
+            Gets or sets the application attempt state.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptGetResult.ApplicationMasterContainerId">
+            <summary>
+            Gets or sets the container id of the application master.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptGetResult.DiagnosticInfo">
+            <summary>
+            Gets or sets the diagnostic information.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationAttemptListResult">
+            <summary>
+            Represents the result of list application attempts on an HDInsight cluster.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationAttemptListResult.ApplicationAttempts">
+            <summary>
+            Gets or sets the application attempts.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationGetResult">
+            <summary>
+            Represents the result of a get application REST call against a Hadoop cluster.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationGetResult.ApplicationId">
+            <summary>
+            Gets or sets the application ID.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationGetResult.ApplicationAttemptId">
+            <summary>
+            Gets or sets the application attempt ID.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationGetResult.Name">
+            <summary>
+            Gets or sets the application name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationGetResult.User">
+            <summary>
+            Gets or sets the application user.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationGetResult.ApplicationType">
+            <summary>
+            Gets or sets the application type.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationGetResult.State">
+            <summary>
+            Gets or sets the application state.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationGetResult.FinalStatus">
+            <summary>
+            Gets or sets the application status.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationGetResult.SubmissionTimeInMillisecondsSinceUnixEpoch">
+            <summary>
+            Gets or sets the application submission time in milliseconds since unix epoch.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationGetResult.StartTimeInMillisecondsSinceUnixEpoch">
+            <summary>
+            Gets or sets the application start time in milliseconds since unix epoch.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationGetResult.FinishTimeInMillisecondsSinceUnixEpoch">
+            <summary>
+            Gets or sets the application finish time in milliseconds since unix epoch.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationListResult">
+            <summary>
+            Represents the result of list applications on an HDInsight cluster.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationListResult.Applications">
+            <summary>
+            Gets or sets the application ID.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationContainerGetResult">
+            <summary>
+            Represents the result of a get application container REST call against a Hadoop cluster.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerGetResult.ContainerId">
+            <summary>
+            Gets or sets the container ID.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerGetResult.NodeId">
+            <summary>
+            Gets or sets the node on which this container was assigned.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerGetResult.State">
+            <summary>
+            Gets or sets the container state.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerGetResult.ExitStatus">
+            <summary>
+            Gets or sets the container' exit status.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerGetResult.Priority">
+            <summary>
+            Gets or sets the container priority.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerGetResult.AllocatedCores">
+            <summary>
+            Gets or sets the number of cores allocated to this container.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerGetResult.AllocatedMemoryInMegabytes">
+            <summary>
+            Gets or sets the amount of memory in MB allocated to this container.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerGetResult.DiagnosticInfo">
+            <summary>
+            Gets or sets the diagnostic information for this container.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerGetResult.StartTimeInMillisecondsSinceUnixEpoch">
+            <summary>
+            Gets or sets the container start time in milliseconds since unix epoch.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerGetResult.FinishTimeInMillisecondsSinceUnixEpoch">
+            <summary>
+            Gets or sets the container finish time in milliseconds since unix epoch.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationContainerListResult">
+            <summary>
+            Represents the result of list application containers on an HDInsight cluster.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.ApplicationContainerListResult.Containers">
+            <summary>
+            Gets or sets the container.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient">
+            <summary>
+                Represents a Hadoop storage client with asynchronous operations.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageClientBase">
+            <summary>
+            Represents the base interface of a Hadoop Storage Client.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageClientBase.IgnoreSslErrors">
+            <summary>
+            Gets or sets a value indicating whether or not SSL errors should be ignored.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageClientBase.Timeout">
+            <summary>
+            Gets or sets a maximum time span for storage commands.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.AppendAsync(System.IO.Stream,System.String)">
+            <summary>
+                Appends the content of the input stream to the file.
+            </summary>
+            <param name="content">Stream containing data to be appended.</param>
+            <param name="path">Path of the file.</param>
+            <returns>Returns true if operation completed successfully.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.CreateDirectoryAsync(System.String)">
+            <summary>
+                Creates directory for the given path.
+            </summary>
+            <param name="path">Path to directory.</param>
+            <returns>True if directory was successfully created, otherwise fasle.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.DeleteAsync(System.String,System.Nullable{System.Boolean})">
+            <summary>
+                Deletes a file or directory at the given path.
+            </summary>
+            <param name="path">The path to delete.</param>
+            <param name="recursive">
+                If path is a directory and set to true, the directory is deleted else throws an exception.
+                In case of a file the recursive can be set to either true or false.
+            </param>
+            <returns>True if delete is successful, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.DeleteAsync(System.String)">
+            <summary>
+                Deletes a file or directory at the given path. If directory is not empty exception will be thrown.
+            </summary>
+            <param name="path">The path to delete.</param>
+            <returns>True if delete is successful, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.ExistsAsync(System.String)">
+            <summary>
+                Checks whether given path exists in the file system.
+            </summary>
+            <param name="path">Path to check.</param>
+            <returns>True if the given path exists in the file system, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.GetDirectoryStatusAsync(System.String)">
+            <summary>
+                List the statuses of the files/directories in the given path if the path is a directory.
+            </summary>
+            <param name="path">Path to directory.</param>
+            <returns>
+                The statuses of the files/directories in the given path returns null if path does not exist in the file system.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.GetFileStatusAsync(System.String)">
+            <summary>
+                Return a file status data for the given path.
+            </summary>
+            <param name="path">The path we want information for.</param>
+            <returns>File status for the given path.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.ReadAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+                Opens data stream at indicated path.
+            </summary>
+            <param name="path">File name to open.</param>
+            <param name="offset">The starting byte position.</param>
+            <param name="length">The number of bytes to be processed. Null means entire file.</param>
+            <param name="bufferSize">The size of the buffer to be used.</param>
+            <returns>Stream of data.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.ReadAsync(System.String)">
+            <summary>
+                Opens data stream at indicated path. Whole file will be read.
+            </summary>
+            <param name="path">File name to open.</param>
+            <returns>Stream of data.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.ReadAsync(System.String,System.Nullable{System.Int32})">
+            <summary>
+                Opens data stream at indicated path. Starting offset can be set.
+            </summary>
+            <param name="path">File name to open.</param>
+            <param name="offset">The starting byte position.</param>
+            <returns>Stream of data.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.ReadAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+                Opens data stream at indicated path. Starting offset and length of stream can be set.
+            </summary>
+            <param name="path">File name to open.</param>
+            <param name="offset">The starting byte position.</param>
+            <param name="length">The number of bytes to be processed. Null means entire file.</param>
+            <returns>Stream of data.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.RenameAsync(System.String,System.String)">
+            <summary>
+                Renames file or directory at the given path.
+            </summary>
+            <param name="path">Source path.</param>
+            <param name="newPath">Destination path.</param>
+            <returns>True if rename is successful, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.WriteAsync(System.IO.Stream,System.String,System.Nullable{System.Boolean})">
+            <summary>
+                Writes the content of the input stream to a file on a file system.
+            </summary>
+            <param name="content">Stream containing data to be writen.</param>
+            <param name="path">Path of the file.</param>
+            <param name="overwrite">
+                If overwrite is set to true, the existing file will be overwritten.
+                If the file exists and overwrite is not set or it's set to false, an error will be thrown.
+            </param>
+            <returns>Path of the file created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageAsyncClient.WriteAsync(System.IO.Stream,System.String)">
+            <summary>
+                Writes the content of the input stream to a file on a file system. If file does not exists, exception will be thrown.
+            </summary>
+            <param name="content">Stream containing data to be writen.</param>
+            <param name="path">Path of the file.</param>
+            <returns>Path of the file created.</returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageClient">
+            <summary>
+            Interface representing storage client for Hadoop.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient">
+            <summary>
+                Represents a Hadoop storage client with synchronous operations.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.Append(System.IO.Stream,System.String)">
+            <summary>
+                Appends the content of the input stream to the file.
+            </summary>
+            <param name="content">Stream containing data to be appended.</param>
+            <param name="path">Path of the file.</param>
+            <returns>Returns true if operation completed successfully.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.CreateDirectory(System.String)">
+            <summary>
+                Creates directory for the given path.
+            </summary>
+            <param name="path">Path to directory.</param>
+            <returns>True if directory was successfully created, otherwise fasle.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.Delete(System.String,System.Nullable{System.Boolean})">
+            <summary>
+                Deletes a file or directory at the given path.
+            </summary>
+            <param name="path">The path to delete.</param>
+            <param name="recursive">
+                If path is a directory and set to true, the directory is deleted else throws an exception.
+                In case of a file the recursive can be set to either true or false.
+            </param>
+            <returns>True if delete is successful, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.Delete(System.String)">
+            <summary>
+                Deletes a file or directory at the given path. If directory is not empty exception will be thrown.
+            </summary>
+            <param name="path">The path to delete.</param>
+            <returns>True if delete is successful, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.Exists(System.String)">
+            <summary>
+                Checks whether given path exists in the file system.
+            </summary>
+            <param name="path">Path to check.</param>
+            <returns>True if the given path exists in the file system, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.GetDirectoryStatus(System.String)">
+            <summary>
+                List the statuses of the files/directories in the given path if the path is a directory.
+            </summary>
+            <param name="path">Path to directory.</param>
+            <returns>
+                The statuses of the files/directories in the given path returns null if path does not exist in the file system.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.GetFileStatus(System.String)">
+            <summary>
+                Return a file status data for the given path.
+            </summary>
+            <param name="path">The path we want information for.</param>
+            <returns>File status for the given path.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.Read(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+                Opens data stream at indicated path.
+            </summary>
+            <param name="path">File name to open.</param>
+            <param name="offset">The starting byte position.</param>
+            <param name="length">The number of bytes to be processed. Null means entire file.</param>
+            <param name="bufferSize">The size of the buffer to be used.</param>
+            <returns>Stream of data.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.Read(System.String)">
+            <summary>
+                Opens data stream at indicated path. Whole file will be read.
+            </summary>
+            <param name="path">File name to open.</param>
+            <returns>Stream of data.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.Read(System.String,System.Nullable{System.Int32})">
+            <summary>
+                Opens data stream at indicated path. Starting offset can be set.
+            </summary>
+            <param name="path">File name to open.</param>
+            <param name="offset">The starting byte position.</param>
+            <returns>Stream of data.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.Read(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+                Opens data stream at indicated path. Starting offset and length of stream can be set.
+            </summary>
+            <param name="path">File name to open.</param>
+            <param name="offset">The starting byte position.</param>
+            <param name="length">The number of bytes to be processed. Null means entire file.</param>
+            <returns>Stream of data.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.Rename(System.String,System.String)">
+            <summary>
+                Renames file or directory at the given path.
+            </summary>
+            <param name="path">Source path.</param>
+            <param name="newPath">Destination path.</param>
+            <returns>True if rename is successful, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.Write(System.IO.Stream,System.String,System.Nullable{System.Boolean})">
+            <summary>
+                Writes the content of the input stream to a file on a file system.
+            </summary>
+            <param name="content">Stream containing data to be writen.</param>
+            <param name="path">Path of the file.</param>
+            <param name="overwrite">
+                If overwrite is set to true, the existing file will be overwritten.
+                If the file exists and overwrite is not set or it's set to false, an error will be thrown.
+            </param>
+            <returns>Path of the file created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageSyncClient.Write(System.IO.Stream,System.String)">
+            <summary>
+                Writes the content of the input stream to a file on a file system. If file does not exists, exception will be thrown.
+            </summary>
+            <param name="content">Stream containing data to be writen.</param>
+            <param name="path">Path of the file.</param>
+            <returns>Path of the file created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageClientLayer.IHadoopStorageClientFactory.Create(Microsoft.Hadoop.Client.IStorageClientCredential)">
+            <summary>
+            Creates a new instance of a HadoopStorageClient.
+            </summary>
+            <param name="credential">
+            The connection credentials to use when connecting to the instance.
+            </param>
+            <returns>
+            A new instance of an HadoopStorageClient.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStoragePocoClient.IHadoopStoragePocoClient.GetDirectoryStatusAsync(System.String)">
+            <summary>
+                List the statuses of the files/directories in the given path if the path is a directory.
+            </summary>
+            <param name="path">Path to directory.</param>
+            <returns>
+                The statuses of the files/directories in the given path returns null if path does not exist in the file system.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStoragePocoClient.IHadoopStoragePocoClient.GetFileStatusAsync(System.String)">
+            <summary>
+                Return a file status data for the given path.
+            </summary>
+            <param name="path">The path we want information for.</param>
+            <returns>File status for the given path.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStoragePocoClient.IHadoopStoragePocoClient.ExistsAsync(System.String)">
+            <summary>
+                Checks whether given path exists in the file system.
+            </summary>
+            <param name="path">Path to check.</param>
+            <returns>True if the given path exists in the file system, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStoragePocoClient.IHadoopStoragePocoClient.CreateDirectoryAsync(System.String)">
+            <summary>
+                Creates directory for the given path.
+            </summary>
+            <param name="path">Path to directory.</param>
+            <returns>True if directory was successfully created, otherwise fasle.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStoragePocoClient.IHadoopStoragePocoClient.WriteAsync(System.IO.Stream,System.String,System.Nullable{System.Boolean})">
+            <summary>
+                Writes the content of the input stream to a file on a file system.
+            </summary>
+            <param name="content">Stream containing data to be writen.</param>
+            <param name="path">Path of the file.</param>
+            <param name="overwrite">
+                If overwrite is set to true, the existing file will be overwritten.
+                If the file exists and overwrite is not set or it's set to false, an error will be thrown.
+            </param>
+            <returns>Path of the file created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStoragePocoClient.IHadoopStoragePocoClient.AppendAsync(System.IO.Stream,System.String)">
+            <summary>
+                Appends the content of the input stream to the file.
+            </summary>
+            <param name="content">Stream containing data to be appended.</param>
+            <param name="path">Path of the file.</param>
+            <returns>Returns true if operation completed successfully.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStoragePocoClient.IHadoopStoragePocoClient.ReadAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+                Opens data stream at indicated path.
+            </summary>
+            <param name="path">File name to open.</param>
+            <param name="offset">The starting byte position.</param>
+            <param name="length">The number of bytes to be processed. Null means entire file.</param>
+            <param name="buffersize">The size of the buffer to be used.</param>
+            <returns>Stream of data.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStoragePocoClient.IHadoopStoragePocoClient.DeleteAsync(System.String,System.Nullable{System.Boolean})">
+            <summary>
+                Deletes a file or directory at the given path.
+            </summary>
+            <param name="path">The path to delete.</param>
+            <param name="recursive">If path is a directory and set to true, the directory is deleted else throws an exception.
+            In case of a file the recursive can be set to either true or false.</param>
+            <returns>True if delete is successful, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStoragePocoClient.IHadoopStoragePocoClient.RenameAsync(System.String,System.String)">
+            <summary>
+                Renames file or directory at the given path.
+            </summary>
+            <param name="path">Source path.</param>
+            <param name="newPath">Destination path.</param>
+            <returns>True if rename is successful, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStoragePocoClient.IHadoopStoragePocoClientFactory.Create(Microsoft.Hadoop.Client.IStorageClientCredential,System.Boolean,System.TimeSpan)">
+            <summary>
+            Creates a new instance of a HadoopStoragePoco client.
+            </summary>
+            <param name="credential">
+            The connection credentials to use when connecting to the instance.
+            </param>
+            <param name="ignoreSslErrors">
+            Specifies that server side SSL errors should be be ignored.
+            </param>
+            <param name="timeout">Maximum time span for storage commands.</param>
+            <returns>
+            A new instance of an HadoopStoragePoco client capable of talking to the 
+            specified cluster.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageRestClient.IHadoopStorageRestClient.ListStatus(System.String)">
+            <summary>
+                List the statuses of the files/directories in the given path if the path is a directory.
+            </summary>
+            <param name="path">Path to directory.</param>
+            <returns>
+                The statuses of the files/directories in the given path returns null if path does not exist in the file system.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageRestClient.IHadoopStorageRestClient.GetFileStatus(System.String)">
+            <summary>
+                Return a file status data above given path.
+            </summary>
+            <param name="path">The path we want information from.</param>
+            <returns>File status for given path.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageRestClient.IHadoopStorageRestClient.Exists(System.String)">
+            <summary>
+                Checks whether given path exists in the file system.
+            </summary>
+            <param name="path">Path to check.</param>
+            <returns>True if the given path exists in the file system, otherwise false.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageRestClient.IHadoopStorageRestClient.CreateDirectory(System.String)">
+            <summary>
+                Make the given directory and all non-existent parents into directories.
+                Existence of the directory hierarchy is not an error.
+            </summary>
+            <param name="path">Path to directory.</param>
+            <returns>Confirmation message with success indicator flag.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageRestClient.IHadoopStorageRestClient.Write(System.String,System.IO.Stream,System.Nullable{System.Boolean})">
+            <summary>
+                Writes the content of the input stream to a file on a file system.
+            </summary>
+            <param name="path">The file name to create and open.</param>
+            <param name="data">The Stream of data.</param>
+            <param name="overwrite">Specifies if existing file should be overwritten.</param>
+            <returns>Confirmation message and URI to file location.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageRestClient.IHadoopStorageRestClient.Write(System.String,System.IO.Stream)">
+            <summary>
+                Writes the content of the input stream to a file on a file system.
+            </summary>
+            <param name="path">The file name to create and open.</param>
+            <param name="data">The Stream of data.</param>
+            <returns>Confirmation message and URI to file location.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageRestClient.IHadoopStorageRestClient.Append(System.String,System.IO.Stream)">
+            <summary>
+                Append to an existing file.
+            </summary>
+            <param name="path">The existing file to be appended.</param>
+            <param name="data">The Stream of data.</param>
+            <returns>Confirmation message.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageRestClient.IHadoopStorageRestClient.Read(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int32})">
+            <summary>
+                Opens data stream at indicated path.
+            </summary>
+            <param name="path">File name to open.</param>
+            <param name="offset">The starting byte position.</param>
+            <param name="length">The number of bytes to be processed. Null means entire file.</param>
+            <param name="buffersize">The size of the buffer to be used.</param>
+            <returns>Redirected exact location of chosen file.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageRestClient.IHadoopStorageRestClient.Delete(System.String,System.Nullable{System.Boolean})">
+            <summary>
+                Delete file.
+            </summary>
+            <param name="path">The path to delete.</param>
+            <param name="recursive">
+                If path is a directory and set to true, the directory is deleted else throws an exception. In
+                case of a file the recursive can be set to either true or false.
+            </param>
+            <returns>Confirmation message with 'true' in message content if delete is successful, else 'false'.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageRestClient.IHadoopStorageRestClient.Rename(System.String,System.String)">
+            <summary>
+                Rename file.
+            </summary>
+            <param name="path">Source path.</param>
+            <param name="destination">Destination path.</param>
+            <returns>Confirmation message with success indicator flag.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopStorageRestClient.IHadoopStorageRestClientFactory.Create(Microsoft.Hadoop.Client.IStorageClientCredential,System.Boolean,System.TimeSpan)">
+            <summary>
+            Creates a new instance of a HadoopStorageRest client.
+            </summary>
+            <param name="credential">
+            The connection credentials to use when connecting to the instance.
+            </param>
+            <param name="ignoreSslErrors">
+            Specifies that server side SSL errors should be be ignored.
+            </param>
+            <param name="timeout">Maximum time span for storage commands.</param>
+            <returns>
+            A new instance of an HadoopStorageRest client.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.IStorageClientCredential">
+            <summary>
+            Base interface for credentials used by storage clients.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.QueryJobCreateParameters">
+            <summary>
+            Base class for all jobs that contain a query or command field.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.JobCreateParameters">
+            <summary>
+            Provides the details of an HDInsight jobDetails when creating the jobDetails.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.JobCreateParameters.#ctor">
+            <summary>
+            Initializes a new instance of the JobCreateParameters class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobCreateParameters.Files">
+            <summary>
+            Gets the resources for the jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobCreateParameters.StatusFolder">
+            <summary>
+            Gets or sets the status folder to use for the jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobCreateParameters.Callback">
+            <summary>
+            Gets or sets the callback URI to be called upon job completion.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobCreateParameters.EnableTaskLogs">
+            <summary>
+            Gets or sets a value indicating whether the job executor should persist task logs.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.QueryJobCreateParameters.RunAsFileJob">
+            <summary>
+            Gets or sets a value indicating whether the job should be submitted via the File parameter.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.QueryJobCreateParameters.File">
+            <summary>
+            Gets or sets the query file to use for this job.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.SqoopJobCreateParameters">
+            <summary>
+            Provides creation details for a new Sqoop job.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.SqoopJobCreateParameters.Command">
+            <summary>
+            Gets or sets the query to use for a sqoop job.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.HiveJobCreateParameters">
+            <summary>
+            Provides creation details for a new Hive jobDetails.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HiveJobCreateParameters.#ctor">
+            <summary>
+            Initializes a new instance of the HiveJobCreateParameters class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.HiveJobCreateParameters.JobName">
+            <summary>
+            Gets or sets the name of the jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.HiveJobCreateParameters.Query">
+            <summary>
+            Gets or sets the query to use for a hive jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.HiveJobCreateParameters.Defines">
+            <summary>
+            Gets the parameters for the jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.HiveJobCreateParameters.Arguments">
+            <summary>
+            Gets the arguments for the jobDetails.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.IHadoopClientExtensions">
+            <summary>
+            Extends an instance of Hadoop against which jobs can be submitted.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopClientExtensions.WaitForJobCompletionAsync(Microsoft.Hadoop.Client.IJobSubmissionClient,Microsoft.Hadoop.Client.JobCreationResults,System.TimeSpan,System.Threading.CancellationToken)">
+            <summary>
+            Method that waits for a jobDetails to complete.
+            </summary>
+            <param name="client">The Hadoop client to use.</param>
+            <param name="job">The jobDetails to wait for.</param>
+            <param name="duration">The duration to wait before timing out.</param>
+            <param name="cancellationToken">
+            The Cancellation Token for the request.
+            </param>
+            <returns>An awaitable task that represents the action.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopClientExtensions.WaitForJobCompletionAsync(Microsoft.Hadoop.Client.IJobSubmissionClient,System.String,System.TimeSpan,System.Threading.CancellationToken)">
+            <summary>
+            Method that waits for a jobDetails to complete.
+            </summary>
+            <param name="client">The Hadoop client to use.</param>
+            <param name="jobId">The id of the job to wait for.</param>
+            <param name="duration">The duration to wait before timing out.</param>
+            <param name="cancellationToken">
+            The Cancellation Token for the request.
+            </param>
+            <returns>An awaitable task that represents the action.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IHadoopClientExtensions.WaitForJobCompletion(Microsoft.Hadoop.Client.IJobSubmissionClient,Microsoft.Hadoop.Client.JobCreationResults,System.TimeSpan,System.Threading.CancellationToken)">
+            <summary>
+            Method that waits for a jobDetails to complete.
+            </summary>
+            <param name="client">The Hadoop client to use.</param>
+            <param name="job">The jobDetails to wait for.</param>
+            <param name="duration">The duration to wait before timing out.</param>
+            <param name="cancellationToken">
+            The Cancellation Token for the request.
+            </param>
+            <returns>The jobDetails's pigJobCreateParameters.</returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.Data.PayloadParsingExtensions">
+            <summary>
+            Class that provides extension methods for parsing jobDetails Submission response payloads. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Data.PayloadParsingExtensions.IsValidObject(Microsoft.WindowsAzure.Management.HDInsight.Framework.Core.Library.Json.JsonItem)">
+            <summary>
+            Method that determines if a json item is a valid json object.
+            </summary>
+            <param name="item">The json item to validate.</param>
+            <returns>A value indicating if the json item is an json object.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Data.PayloadParsingExtensions.IsValidArray(Microsoft.WindowsAzure.Management.HDInsight.Framework.Core.Library.Json.JsonItem)">
+            <summary>
+            Method that determins if a json item is a valid json array.
+            </summary>
+            <param name="item">The json item to validate.</param>
+            <returns>A value indicating if the json item is an array.</returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.JobCreateHttpResponse">
+            <summary>
+            Provides the base class for results returned from 
+            a job submission request against an HDInsight cluster.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobCreateHttpResponse.HttpStatusCode">
+            <summary>
+            Gets or sets the HttpStatusCode returned by the request (via the gateway).
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobCreateHttpResponse.ErrorCode">
+            <summary>
+            Gets or sets the error code returned by the request (via the gateway).
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.JobCreationResults">
+            <summary>
+            Provides the results from a jobDetails creation request.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobCreationResults.JobId">
+            <summary>
+            Gets or sets the JobId for the jobDetails that was created.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.JobDetails">
+            <summary>
+            Represents the detail results of an HadoopJob.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.JobDetailsBase">
+            <summary>
+            Represents the job results of an HadoopJob.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.JobDetailsBase.#ctor">
+            <summary>
+            Initializes a new instance of the JobDetailsBase class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobDetailsBase.ExitCode">
+            <summary>
+            Gets or sets the exit code for the job.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobDetailsBase.StatusDirectory">
+            <summary>
+            Gets or sets the status directory for the job.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobDetailsBase.Name">
+            <summary>
+            Gets or sets the name of the job.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobDetailsBase.Query">
+            <summary>
+            Gets or sets the query for the job (if it was a hive job).
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobDetailsBase.StatusCode">
+            <summary>
+            Gets or sets the status code for the job.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobDetailsBase.SubmissionTime">
+            <summary>
+            Gets or sets the time the job was submitted.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobDetailsBase.ErrorOutputPath">
+            <summary>
+            Gets or sets the error output path for the job.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobDetailsBase.LogicalOutputPath">
+            <summary>
+            Gets or sets the logical output path for the job results.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobDetailsBase.PhysicalOutputPath">
+            <summary>
+            Gets or sets the physical output path for the job results.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobDetailsBase.PercentComplete">
+            <summary>
+            Gets or sets the percentage completion of the job.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobDetailsBase.Callback">
+            <summary>
+            Gets or sets the uri to call when this job completes.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.JobList">
+            <summary>
+            Represents a list of jobs on an HDInsight cluster.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.JobList.#ctor">
+            <summary>
+            Initializes a new instance of the JobList class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobList.ContinuationToken">
+            <summary>
+            Gets or sets the continuation token returned by the request (if any).
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.JobList.Jobs">
+            <summary>
+            Gets the jobIds returned by the request.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.JobSubmissionClientFactory">
+            <summary>
+            Represents a Hadoop client that can be used to submit jobs to an Hadoop cluster.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.JobSubmissionClientFactory.Connect(Microsoft.Hadoop.Client.IJobSubmissionClientCredential)">
+            <summary>
+            Creates a new instance of the Hadoop Client that can be used to 
+            submit jobs to a Hadoop instance.
+            </summary>
+            <param name="credentials">
+            The connection credentials for the Hadoop instance.
+            </param>
+            <returns>
+            An Hadoop client implementation.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.JobSubmissionClientFactory.Connect(Microsoft.Hadoop.Client.IJobSubmissionClientCredential,System.String)">
+            <summary>
+            Creates a new instance of the Hadoop Client that can be used to 
+            submit jobs to a Hadoop instance.
+            </summary>
+            <param name="credentials">
+            The connection credentials for the Hadoop instance.
+            </param>
+            <param name="customUserAgent">
+            Custom user agent string if needed.
+            </param>
+            <returns>
+            An Hadoop client implementation.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.Data.PayloadConverterBase">
+            <summary>
+            Base class for Remote jobDetails Payload Conversions.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Data.PayloadConverterBase.SerializeMapReduceRequest(System.String,Microsoft.Hadoop.Client.MapReduceJobCreateParameters)">
+            <summary>
+            Creates the payload for a MapReduce request.
+            </summary>
+            <param name="userName">
+            The user name.
+            </param>
+            <param name="details">
+            The details.
+            </param>
+            <returns>
+            A string that represents the payload for the request.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Data.PayloadConverterBase.SerializeStreamingMapReduceRequest(System.String,Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters)">
+            <summary>
+            Creates the payload for a Streaming MapReduce request.
+            </summary>
+            <param name="userName">
+            The user name.
+            </param>
+            <param name="details">
+            The details.
+            </param>
+            <returns>
+            A string that represents the payload for the request.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Data.PayloadConverterBase.SerializeHiveRequest(System.String,Microsoft.Hadoop.Client.HiveJobCreateParameters)">
+            <summary>
+            Creates the payload for a Hive request.
+            </summary>
+            <param name="userName"> The user name.</param>
+            <param name="details"> The details.</param>
+            <returns>A string that represents the payload for the request.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Data.PayloadConverterBase.SerializePigRequest(System.String,Microsoft.Hadoop.Client.PigJobCreateParameters)">
+            <summary>
+            Creates the payload for a Pig request.
+            </summary>
+            <param name="userName"> The user name.</param>
+            <param name="details"> The details.</param>
+            <returns>A string that represents the payload for the request.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Data.PayloadConverterBase.SerializeSqoopRequest(System.String,Microsoft.Hadoop.Client.SqoopJobCreateParameters)">
+            <summary>
+            Creates the payload for a Sqoop request.
+            </summary>
+            <param name="userName"> The user name.</param>
+            <param name="details"> The details.</param>
+            <returns>A string that represents the payload for the request.</returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.RemoteHadoop.IRemoteHadoopJobSubmissionPocoClientFactory">
+            <summary>
+            Provides an interface for creating Remote Poco clients.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClientFactory">
+            <summary>
+            A factory used to create HadoopJobSubmissionPoco clients.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClientFactory.Create(Microsoft.Hadoop.Client.IJobSubmissionClientCredential,Microsoft.WindowsAzure.Management.HDInsight.IAbstractionContext,System.Boolean,System.String)">
+            <summary>
+            Creates a new instance of a HadoopJobSubmissionPoco client.
+            </summary>
+            <param name="credentials">
+            The connection credentials to use when connecting to the instance.
+            </param>
+            <param name="context">
+            The context which contains a cancelation token for the request.
+            </param>
+            <param name="ignoreSslErrors">
+            Specifies that server side SSL errors should be be ignored.
+            </param>
+            <param name="userAgentString">User agent string to pass.</param>
+            <returns>
+            A new instance of an HadoopJobSubmissionPoco client capable of talking to the 
+            specified cluster.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.RemoteHadoopClient">
+            <summary>
+            Represents a Hadoop client that can be used to submit jobs to an Hadoop cluster.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.IJobSubmissionClient">
+            <summary>
+            Represents an instance of Hadoop against which jobs can be submitted.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.IJobSubmissionSyncClient">
+            <summary>
+            Represents an instance of Hadoop against which jobs can be submitted (synchronously).
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.ListJobs">
+            <summary>
+            Lists the jobs currently on the server.
+            </summary>
+            <returns>
+            The list of jobs.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.GetJob(System.String)">
+            <summary>
+            Gets the pigJobCreateParameters about an individual jobDetails.
+            </summary>
+            <param name="jobId">
+            The jobId.
+            </param>
+            <returns>
+            The pigJobCreateParameters of an individual jobDetails by jobId.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.CreateMapReduceJob(Microsoft.Hadoop.Client.MapReduceJobCreateParameters)">
+            <summary>
+            Creates a Mapreduce jobDetails on the server.
+            </summary>
+            <param name="mapReduceJobCreateParameters">The Mapreduce jobDetails to create.</param>
+            <returns>The pigJobCreateParameters of the jobDetails after it is created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.CreateStreamingJob(Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters)">
+            <summary>
+            Creates a streaming Mapreduce jobDetails on the server.
+            </summary>
+            <param name="streamingMapReduceJobCreateParameters">The streaming Mapreduce jobDetails to create.</param>
+            <returns>The pigJobCreateParameters of the job after it is created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.CreateHiveJob(Microsoft.Hadoop.Client.HiveJobCreateParameters)">
+            <summary>
+            Creates a Hive jobDetails on the server.
+            </summary>
+            <param name="hiveJobCreateParameters">The Hive jobDetails to create.</param>
+            <returns>The pigJobCreateParameters of the jobDetails after it is created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.CreatePigJob(Microsoft.Hadoop.Client.PigJobCreateParameters)">
+            <summary>
+            Creates a Pig jobDetails on the server.
+            </summary>
+            <param name="pigJobCreateParameters">The Pig jobDetails to create.</param>
+            <returns>The pigJobCreateParameters of the jobDetails after it is created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.CreateSqoopJob(Microsoft.Hadoop.Client.SqoopJobCreateParameters)">
+            <summary>
+            Creates a Sqoop jobDetails on the server.
+            </summary>
+            <param name="sqoopJobCreateParameters">The Sqoop jobDetails to create.</param>
+            <returns>The sqoopJobCreateParameters of the jobDetails after it is created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.StopJob(System.String)">
+            <summary>
+            Stops the execution of a running jobDetails.
+            </summary>
+            <param name="jobId">The JobId.</param>
+            <returns>The pigJobCreateParameters of the jobDetails after it is stopped.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.GetJobOutput(System.String)">
+            <summary>
+            Gets the output from the execution of an individual jobDetails.
+            </summary>
+            <param name="jobId">
+            The jobId.
+            </param>
+            <returns>
+            The output of an individual jobDetails by jobId.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.GetJobErrorLogs(System.String)">
+            <summary>
+            Gets the error logs from the execution of an individual jobDetails.
+            </summary>
+            <param name="jobId">
+            The jobId.
+            </param>
+            <returns>
+            The error logs of an individual jobDetails by jobId.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.GetJobTaskLogSummary(System.String)">
+            <summary>
+            Gets the task logs from the execution of an individual jobDetails.
+            </summary>
+            <param name="jobId">
+            The jobId.
+            </param>
+            <returns>
+            The task logs of an individual jobDetails by jobId.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionSyncClient.DownloadJobTaskLogs(System.String,System.String)">
+            <summary>
+            Gets the task log summary from execution of a jobDetails.
+            </summary>
+            <param name="jobId">The JobId.</param>
+            <param name="targetDirectory">The target directory to download the jobDetails logs to.</param>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient">
+            <summary>
+            Provides Asynchronous operations against a Hadoop cluster.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.HandleClusterWaitNotifyEvent(Microsoft.Hadoop.Client.JobDetails)">
+            <summary>
+            Used to handle the notification events during waiting.
+            </summary>
+            <param name="jobDetails">
+            The jobDetails in its current state.
+            </param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.ListJobsAsync">
+            <summary>
+            Lists the jobs currently on the server.
+            </summary>
+            <returns>
+            The list of jobs.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.GetJobAsync(System.String)">
+            <summary>
+            Gets the pigJobCreateParameters about an individual jobDetails.
+            </summary>
+            <param name="jobId">
+            The jobId.
+            </param>
+            <returns>
+            The pigJobCreateParameters of an individual jobDetails by jobId.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.CreateMapReduceJobAsync(Microsoft.Hadoop.Client.MapReduceJobCreateParameters)">
+            <summary>
+            Creates a Mapreduce jobDetails on the server.
+            </summary>
+            <param name="mapReduceJobCreateParameters">The Mapreduce jobDetails to create.</param>
+            <returns>The pigJobCreateParameters of the jobDetails after it is created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.CreateStreamingJobAsync(Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters)">
+            <summary>
+            Creates a streaming Mapreduce jobDetails on the server.
+            </summary>
+            <param name="streamingMapReduceJobCreateParameters">The streaming Mapreduce jobDetails to create.</param>
+            <returns>The pigJobCreateParameters of the job after it is created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.CreateHiveJobAsync(Microsoft.Hadoop.Client.HiveJobCreateParameters)">
+            <summary>
+            Creates a Hive jobDetails on the server.
+            </summary>
+            <param name="hiveJobCreateParameters">The Hive jobDetails to create.</param>
+            <returns>The pigJobCreateParameters of the jobDetails after it is created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.CreatePigJobAsync(Microsoft.Hadoop.Client.PigJobCreateParameters)">
+            <summary>
+            Creates a Pig jobDetails on the server.
+            </summary>
+            <param name="pigJobCreateParameters">The Pig jobDetails to create.</param>
+            <returns>The pigJobCreateParameters of the jobDetails after it is created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.CreateSqoopJobAsync(Microsoft.Hadoop.Client.SqoopJobCreateParameters)">
+            <summary>
+            Creates a Sqoop jobDetails on the server.
+            </summary>
+            <param name="sqoopJobCreateParameters">The Sqoop jobDetails to create.</param>
+            <returns>The pigJobCreateParameters of the jobDetails after it is created.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.StopJobAsync(System.String)">
+            <summary>
+            Stops the execution of a running jobDetails.
+            </summary>
+            <param name="jobId">The JobId.</param>
+            <returns>A task to track the cancellation of the jobDetails.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.GetJobOutputAsync(System.String)">
+            <summary>
+            Gets the output from execution of a jobDetails.
+            </summary>
+            <param name="jobId">The JobId.</param>
+            <returns>The output from execution of a jobDetails.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.GetJobErrorLogsAsync(System.String)">
+            <summary>
+            Gets the error logs from execution of a jobDetails.
+            </summary>
+            <param name="jobId">The JobId.</param>
+            <returns>The output from execution of a jobDetails.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.GetJobTaskLogSummaryAsync(System.String)">
+            <summary>
+            Gets the task log summary from execution of a jobDetails.
+            </summary>
+            <param name="jobId">The JobId.</param>
+            <returns>
+            The task logs of an individual jobDetails by jobId.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.DownloadJobTaskLogsAsync(System.String,System.String)">
+            <summary>
+            Gets the task log summary from execution of a jobDetails.
+            </summary>
+            <param name="jobId">The JobId.</param>
+            <param name="targetDirectory">The target directory to download the jobDetails logs to.</param>
+            <returns>
+            The task logs of an individual jobDetails by jobId.
+            </returns>
+        </member>
+        <member name="E:Microsoft.Hadoop.Client.IJobSubmissionAsyncClient.JobStatusEvent">
+            <summary>
+            Event that is fired when the client provisions a cluster.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.IJobSubmissionClient.GetCustomUserAgent">
+            <summary>
+            Returns custom user agent to pass along with all job submissions.
+            </summary>
+            <returns>Custom user agent.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.HandleClusterWaitNotifyEvent(Microsoft.Hadoop.Client.JobDetails)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.ListJobsAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.GetJobAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.CreateMapReduceJobAsync(Microsoft.Hadoop.Client.MapReduceJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.CreateHiveJobAsync(Microsoft.Hadoop.Client.HiveJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.CreatePigJobAsync(Microsoft.Hadoop.Client.PigJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.StopJobAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.GetJobOutputAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.GetJobErrorLogsAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.DownloadJobTaskLogsAsync(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.CreateStreamingJobAsync(Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.ListCompletedApplicationsAsync(System.DateTime,System.DateTime)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.ListCompletedApplicationsAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.ListCompletedApplications(System.DateTime,System.DateTime)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.ListCompletedApplications">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.GetApplicationDetailsAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.GetApplicationDetails(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.ListApplicationAttemptsAsync(Microsoft.Hadoop.Client.ApplicationDetails)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.ListApplicationAttempts(Microsoft.Hadoop.Client.ApplicationDetails)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.ListApplicationContainersAsync(Microsoft.Hadoop.Client.ApplicationAttemptDetails)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.ListApplicationContainers(Microsoft.Hadoop.Client.ApplicationAttemptDetails)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.ListJobs">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.GetJob(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.CreateMapReduceJob(Microsoft.Hadoop.Client.MapReduceJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.CreateStreamingJob(Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.CreateHiveJob(Microsoft.Hadoop.Client.HiveJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.CreatePigJob(Microsoft.Hadoop.Client.PigJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.CreateSqoopJob(Microsoft.Hadoop.Client.SqoopJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.StopJob(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.GetJobOutput(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.GetJobErrorLogs(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.GetJobTaskLogSummary(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.DownloadJobTaskLogs(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.RemoteHadoopClient.UploadQueryFile``1(``0,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClient">
+            <summary>
+            Represents a HadoopJobSubmissionPocoClient.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClient.GetUserAgentString">
+            <summary>
+            Retruns the UserAgent string to use for all submissions by this client.
+            </summary>
+            <returns>Custom useragent string if present.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClient.ListJobs">
+            <summary>
+            Lists the jobs on a Hadoop server.
+            </summary>
+            <returns>
+            The list of jobs.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClient.GetJob(System.String)">
+            <summary>
+            Returns the pigJobCreateParameters about a single jobDetails.
+            </summary>
+            <param name="jobId">
+                The JobId.
+            </param>
+            <returns>
+            The pigJobCreateParameters of a jobDetails.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClient.SubmitMapReduceJob(Microsoft.Hadoop.Client.MapReduceJobCreateParameters)">
+            <summary>
+            Submits a Map Reduce jobDetails to the server.
+            </summary>
+            <param name="details">
+                The pigJobCreateParameters for the Map/Reduce jobDetails.
+            </param>
+            <returns>
+            The result of the jobDetails submission.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClient.SubmitHiveJob(Microsoft.Hadoop.Client.HiveJobCreateParameters)">
+            <summary>
+            Submits a Hive jobDetails to the server.
+            </summary>
+            <param name="details">
+                The pigJobCreateParameters for the Hive jobDetails.
+            </param>
+            <returns>
+            The result of the jobDetails submission.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClient.SubmitPigJob(Microsoft.Hadoop.Client.PigJobCreateParameters)">
+            <summary>
+            Submits a Pig jobDetails to the server.
+            </summary>
+            <param name="pigJobCreateParameters">
+                The pigJobCreateParameters for the Pig jobDetails.
+            </param>
+            <returns>
+            The result of the jobDetails submission.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClient.SubmitSqoopJob(Microsoft.Hadoop.Client.SqoopJobCreateParameters)">
+            <summary>
+            Submits a Sqoop jobDetails to the server.
+            </summary>
+            <param name="sqoopJobCreateParameters">
+                The sqoopJobCreateParameters for the Pig jobDetails.
+            </param>
+            <returns>
+            The result of the jobDetails submission.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClient.SubmitStreamingJob(Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters)">
+            <summary>
+            Submits a Streaming jobDetails to the server.
+            </summary>
+            <param name="pigJobCreateParameters">
+                The pigJobCreateParameters for the Streaming jobDetails.
+            </param>
+            <returns>
+            The result of the jobDetails submission.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.IHadoopJobSubmissionPocoClient.StopJob(System.String)">
+            <summary>
+            Stops the execution of a running jobDetails.
+            </summary>
+            <param name="jobId">The JobId.</param>
+            <returns>The pigJobCreateParameters of the jobDetails after it is stopped.</returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationState">
+            <summary>
+            Enum for the possible application states. This is tied to the state returned by Resource Manager.
+            DO NOT UPDATE/CHANGE unless the values returned from Resource Manager change. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationState.Unknown">
+            <summary>
+            Indicates that application state is not known.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationState.Finished">
+            <summary>
+            Indicates that the application has finished.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationState.Failed">
+            <summary>
+            Indicates that the application has failed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationState.Killed">
+            <summary>
+            Indicates that the application was killed.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationFinalStatus">
+            <summary>
+            Enum for the the final status of application if finished, as returned by the application itself. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationFinalStatus.Unknown">
+            <summary>
+            Indicates that application' final status is not known.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationFinalStatus.Undefined">
+            <summary>
+            Indicates that the application has not yet reported its final status. The application may still be running.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationFinalStatus.Succeeded">
+            <summary>
+            Indicates that the application has succeeded.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationFinalStatus.Failed">
+            <summary>
+            Indicates that the application has failed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationFinalStatus.Killed">
+            <summary>
+            Indicates that the application was killed.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationAttemptState">
+            <summary>
+            Enum for the possible application attempt states.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationAttemptState.Unknown">
+            <summary>
+            Indicates that application attempt state is not known.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationAttemptState.Finished">
+            <summary>
+            Indicates that the application attempt has finished.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationAttemptState.Failed">
+            <summary>
+            Indicates that the application has failed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationAttemptState.Killed">
+            <summary>
+            Indicates that the application was killed.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.ApplicationContainerState">
+            <summary>
+            Enum for the possible container states.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationContainerState.Unknown">
+            <summary>
+            Indicates that container state is not known.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.ApplicationContainerState.Complete">
+            <summary>
+            Indicates that the container has completed.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.RemoteHadoop.RemoteHadoopJobSubmissionPocoClient">
+            <summary>
+            Used to submit a jobDetails (plain old class objects) to a remote Hadoop cluster.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.RemoteHadoop.RemoteHadoopJobSubmissionPocoClient.#ctor(Microsoft.Hadoop.Client.BasicAuthCredential,Microsoft.WindowsAzure.Management.HDInsight.IAbstractionContext,System.Boolean,System.String)">
+            <summary>
+            Initializes a new instance of the RemoteHadoopJobSubmissionPocoClient class.
+            </summary>
+            <param name="credentials">
+            The credential to use to connect to the cluster.
+            </param>
+            <param name="context">
+            A context that contains a CancellationToken that can be used to cancel events.
+            </param>
+            <param name="ignoreSslErrros">
+            Specifies that server side SSL errors should be ignored.
+            </param>
+            <param name="userAgentString">UserAgent string to pass to all calls.</param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.RemoteHadoop.RemoteHadoopJobSubmissionPocoClient.GetUserAgentString">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.RemoteHadoop.RemoteHadoopJobSubmissionPocoClient.ListJobs">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.RemoteHadoop.RemoteHadoopJobSubmissionPocoClient.GetJob(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.RemoteHadoop.RemoteHadoopJobSubmissionPocoClient.SubmitMapReduceJob(Microsoft.Hadoop.Client.MapReduceJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.RemoteHadoop.RemoteHadoopJobSubmissionPocoClient.SubmitHiveJob(Microsoft.Hadoop.Client.HiveJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.RemoteHadoop.RemoteHadoopJobSubmissionPocoClient.SubmitPigJob(Microsoft.Hadoop.Client.PigJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.HadoopJobSubmissionPocoClient.RemoteHadoop.RemoteHadoopJobSubmissionPocoClient.SubmitStreamingJob(Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.Constants">
+            <summary>
+                Provides Hard codes for key values.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.Constants.HdfsProtocol">
+            <summary>
+                The protocol string to use when using a HDFS.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.Constants.HdfsProtocolSchemeName">
+            <summary>
+                The protocol scheme name to use when using a HDFS.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.Constants.PollingInterval">
+            <summary>
+                The interval to use when polling a Hadoop cluster.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.Constants.RetryCount">
+            <summary>
+                The number of times to retry when communicating with a Hadoop cluster.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.Constants.WabsProtocol">
+            <summary>
+                The protocol string to use when using a Windows Azure Blob Storage account.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.Constants.WabsProtocolSchemeName">
+            <summary>
+                The protocol scheme name to use when using a Windows Azure Blob Storage account.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.Constants.UnixEpoch">
+            <summary>
+                Represents Unix Epoch.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.JobStatusCode">
+            <summary>
+            Enum for the possible jobDetails states. These values are tied/sourced from Tempelton. 
+            DO NOT UPDATE/CHANGE unless the values returned from Tempelton have changed. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.JobStatusCode.Unknown">
+            <summary>
+            Indicates the jobDetails is running.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.JobStatusCode.Running">
+            <summary>
+            Indicates the jobDetails is running.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.JobStatusCode.Completed">
+            <summary>
+            Indicates the jobDetails has completed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.JobStatusCode.Failed">
+            <summary>
+            Indicates that the jobDetails has failed.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.JobStatusCode.Initializing">
+            <summary>
+            Indicates that the job is in an unknown state.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Hadoop.Client.JobStatusCode.Canceled">
+            <summary>
+            Indicates that the jobDetails is canceled.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.MapReduceJobCreateParameters">
+            <summary>
+            Provides creation details for a new MapReduce jobDetails.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.MapReduceJobCreateParameters.#ctor">
+            <summary>
+            Initializes a new instance of the MapReduceJobCreateParameters class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.MapReduceJobCreateParameters.JobName">
+            <summary>
+            Gets or sets the name of the jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.MapReduceJobCreateParameters.JarFile">
+            <summary>
+            Gets or sets the jar file to use for the jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.MapReduceJobCreateParameters.ClassName">
+            <summary>
+            Gets or sets the class name to use for the jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.MapReduceJobCreateParameters.LibJars">
+            <summary>
+            Gets the libjars to use for the jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.MapReduceJobCreateParameters.Defines">
+            <summary>
+            Gets the parameters for the jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.MapReduceJobCreateParameters.Arguments">
+            <summary>
+            Gets the arguments for the jobDetails.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.PigJobCreateParameters">
+            <summary>
+            Provides creation details for a new Pig jobDetails.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.PigJobCreateParameters.#ctor">
+            <summary>
+            Initializes a new instance of the PigJobCreateParameters class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.PigJobCreateParameters.Query">
+            <summary>
+            Gets or sets the query to use for a pig jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.PigJobCreateParameters.Arguments">
+            <summary>
+            Gets the arguments for the jobDetails.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.Storage.IStorageAbstraction">
+            <summary>
+            Provides a public interface for file abstraction.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Storage.IStorageAbstraction.Exists(System.Uri)">
+            <summary>
+            Determines if a file exists on the storage system.
+            </summary>
+            <param name="path">
+            The Uri to the file.
+            </param>
+            <returns>
+            A task object that can be awaited.  The result is true if the file exists, otherwise false.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Storage.IStorageAbstraction.Delete(System.Uri)">
+            <summary>
+            Removes a file from the storage system.
+            </summary>
+            <param name="path">
+            The Uri to the file.
+            </param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Storage.IStorageAbstraction.CreateContainerIfNotExists(System.String)">
+            <summary>
+            Creates a WASB container.
+            </summary>
+            <param name="containerName">
+            The name of the container.
+            </param>
+            <returns>
+            A task object that can be awaited.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Storage.IStorageAbstraction.Write(System.Uri,System.IO.Stream)">
+            <summary>
+            Writes the content of a stream to a file on the storage system.
+            </summary>
+            <param name="path">
+            The Uri to the file.
+            </param>
+            <param name="stream">
+            A stream containing the content to place in the file.
+            </param>
+            <returns>
+            A task object that can be awaited.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Storage.IStorageAbstraction.Read(System.Uri)">
+            <summary>
+            Reads the content of a file on the storage system into a stream.
+            </summary>
+            <param name="path">
+            The Uri to the file.
+            </param>
+            <returns>
+            A task object that can be awaited.  The result is a stream containing the content of the file on the storage system.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Storage.IStorageAbstraction.DownloadToFile(System.Uri,System.String)">
+            <summary>
+            Downloads the content of a file on the storage system into a local file.
+            </summary>
+            <param name="path">
+            The Uri to the file.
+            </param>
+            <param name="localFileName">
+            Full path of the local file.
+            </param>
+            <returns>
+            A task object that can be awaited and downloads the content of a blob to a local file.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Storage.IStorageAbstraction.List(System.Uri,System.Boolean)">
+            <summary>
+            Lists the contents of a given path on the storage system.
+            </summary>
+            <param name="path">
+            The Uri to the file.
+            </param>
+            <param name="recursive">
+            A flag indicating if the traversal should be recursive.
+            </param>
+            <returns>
+            A task object that can be awaited.  The result is the list of files located under the given path on the storage system.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.Storage.IWabStorageAbstractionFactory">
+            <summary>
+            Provides a factory for connecting to a Wab (Windows Azure Blob) storage account.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.Storage.IWabStorageAbstractionFactory.Create(Microsoft.Hadoop.Client.WindowsAzureStorageAccountCredentials)">
+            <summary>
+            Creates a new instance of the WabStroageAbstraction.
+            </summary>
+            <param name="credentials">
+            The credentials to be used to connect to the storage account.
+            </param>
+            <returns>
+            A new Windows Azure Storage Account abstraction object.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters">
+            <summary>
+            Provides creation details for a new Streaming job.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters.#ctor">
+            <summary>
+            Initializes a new instance of the StreamingMapReduceJobCreateParameters class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters.JobName">
+            <summary>
+            Gets or sets the name of the jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters.Mapper">
+            <summary>
+             Gets or sets the Mapper.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters.Reducer">
+            <summary>
+             Gets or sets the Reducer.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters.Combiner">
+            <summary>
+             Gets or sets the Combiner.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters.Input">
+            <summary>
+            Gets or sets the location of the input data in Hadoop.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters.Output">
+            <summary>
+            Gets or sets the Location in which to store the output data.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters.CommandEnvironment">
+            <summary>
+            Gets the command line environment for the mappers or the reducers.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters.Defines">
+            <summary>
+            Gets the parameters for the jobDetails.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.StreamingMapReduceJobCreateParameters.Arguments">
+            <summary>
+            Gets the arguments for the jobDetails.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.WaitJobStatusEventArgs">
+            <summary>
+                Provides event arguments for jobDetails Wait events.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WaitJobStatusEventArgs.#ctor(Microsoft.Hadoop.Client.JobDetails)">
+            <summary>
+                Initializes a new instance of the WaitJobStatusEventArgs class.
+            </summary>
+            <param name="jobDetails">The jobDetails being polled.</param>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.WaitJobStatusEventArgs.JobDetails">
+            <summary>
+                Gets the jobDetails being polled.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.WindowsAzureStorageAccountCredentials">
+            <summary>
+            Credentials to use when connecting to a Windows Azure Storage Account.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.WindowsAzureStorageAccountCredentials.Name">
+            <summary>
+            Gets or sets the Name of the Storage Account.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.WindowsAzureStorageAccountCredentials.Key">
+            <summary>
+            Gets or sets the Key for the Storage Account.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Hadoop.Client.WindowsAzureStorageAccountCredentials.ContainerName">
+            <summary>
+            Gets or sets the ContainerName being used in the Storage Account.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient">
+            <summary>
+            Represents a remote rest request to submit a Hadoop jobDetails.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.WebHCatRest.IHadoopJobSubmissionRestClient">
+            <summary>
+            Provides REST implementation of a remote Hadoop client.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.IHadoopJobSubmissionRestClient.GetUserAgentString">
+            <summary>
+            Retruns the UserAgent string to use for all submissions by this client.
+            </summary>
+            <returns>Custom user agent.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.IHadoopJobSubmissionRestClient.ListJobs">
+            <summary>
+            Lists all jobs on the system.
+            </summary>
+            <returns>
+            A list of all jobs on the system.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.IHadoopJobSubmissionRestClient.GetJob(System.String)">
+            <summary>
+            Returns the details of a specific jobDetails.
+            </summary>
+            <param name="jobId">
+            The jobId for the jobDetails to return.
+            </param>
+            <returns>
+            The jobDetails details.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.IHadoopJobSubmissionRestClient.SubmitMapReduceJob(System.String)">
+            <summary>
+            Submits a Map Reduce jobDetails to the server.
+            </summary>
+            <param name="payload">
+            The payload of the jobDetails to submit.
+            </param>
+            <returns>
+            The response of the jobDetails submission request.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.IHadoopJobSubmissionRestClient.SubmitHiveJob(System.String)">
+            <summary>
+            Submits a HiveJob to the server.
+            </summary>
+            <param name="payload">
+            The payload of the jobDetails to submit.
+            </param>
+            <returns>
+            The response of the jobDetails submission request.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.IHadoopJobSubmissionRestClient.SubmitStreamingMapReduceJob(System.String)">
+            <summary>
+            Submits a Streaming Map Reduce jobDetails to the server.
+            </summary>
+            <param name="payload">
+            The payload of the jobDetails to submit.
+            </param>
+            <returns>
+            The response of the job submission request.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.IHadoopJobSubmissionRestClient.SubmitPigJob(System.String)">
+            <summary>
+            Submits a Pig jobDetails to the server.
+            </summary>
+            <param name="payload">
+            The payload of the jobDetails to submit.
+            </param>
+            <returns>
+            The response of the jobDetails submission request.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.IHadoopJobSubmissionRestClient.SubmitSqoopJob(System.String)">
+            <summary>
+            Submits a Sqoop_ jobDetails to the server.
+            </summary>
+            <param name="payload">
+            The payload of the jobDetails to submit.
+            </param>
+            <returns>
+            The response of the jobDetails submission request.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.IHadoopJobSubmissionRestClient.StopJob(System.String)">
+            <summary>
+            Stops the execution of a running jobDetails.
+            </summary>
+            <param name="jobId">The JobId.</param>
+            <returns>
+            The response of the jobDetails cancellation request.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.#ctor(Microsoft.Hadoop.Client.BasicAuthCredential,Microsoft.WindowsAzure.Management.HDInsight.IAbstractionContext,System.Boolean,System.String)">
+            <summary>
+            Initializes a new instance of the HadoopRemoteJobSubmissionRestClient class.
+            </summary>
+            <param name="credentials">
+            The credentials to use to connect to the server.
+            </param>
+            <param name="context">
+            A CancellationToken that can be used to cancel events.
+            </param>
+            <param name="ignoreSslErrors">
+            Specifies that server side SSL error should be ignored.
+            </param>
+            <param name="userAgentString">UserAgent string to pass to all calls.</param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.GetUserAgentString">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.ListJobs">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.GetJob(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.SubmitMapReduceJob(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.SubmitHiveJob(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.SubmitStreamingMapReduceJob(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.SubmitPigJob(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.SubmitSqoopJob(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.StopJob(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.MakeAsyncGetRequest(System.Uri)">
+            <summary>
+            Makes a HTTP GET request to the remote cluster.
+            </summary>
+            <param name="relativeUri">The relative uri for the request.</param>
+            <returns>The response message from the remote cluster.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.MakeAsyncJobSubmissionRequest(System.Uri,System.String)">
+            <summary>
+            Makes a request to the remote cluster to submit a jobDetails.
+            </summary>
+            <param name="relativeUri">The relative uri to send the requst to.</param>
+            <param name="payload">The jobDetails configuration payload.</param>
+            <returns>The response message from the remote cluster.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.MakeAsyncJobCancellationRequest(System.Uri)">
+            <summary>
+            Makes a request to the remote cluster to submit a jobDetails.
+            </summary>
+            <param name="relativeUri">The relative uri to send the requst to.</param>
+            <returns>The response message from the remote cluster.</returns>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.ProvideStandardHeaders(Microsoft.WindowsAzure.Management.HDInsight.Framework.Core.Library.WebRequest.IHttpClientAbstraction)">
+            <summary>
+            Provides the basic authorization for a connection.
+            </summary>
+            <param name="httpClient">
+            The HttpClient to which authorization should be added.
+            </param>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.WebHCatRest.HadoopRemoteJobSubmissionRestClient.SendRequestWithErrorChecking(Microsoft.WindowsAzure.Management.HDInsight.Framework.Core.Library.WebRequest.IHttpClientAbstraction,System.Net.HttpStatusCode)">
+            <summary>
+            Sends a HttpCLient request, while checking for errors on the return value.
+            </summary>
+            <param name="httpClient">The HttpCLient instance to send.</param>
+            <param name="expectedStatusCode">The status code expected for a succesful response.</param>
+            <returns>The HttpResponse, after it has been checked for errors.</returns>
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.InversionOfControl.HadoopJobSubmissionRegistrar">
+            <summary>
+            Registers Hadoop Client services with the Service Locator.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Hadoop.Client.InversionOfControl.HadoopJobSubmissionRegistrar.Register(Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocationRuntimeManager,Microsoft.WindowsAzure.Management.HDInsight.Framework.ServiceLocation.IServiceLocator)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.Hadoop.Client.LocalHadoopConnectionCredentials">
+            <summary>
+            Provides a class for managing a "local" (command line based) Hadoop connection.
+            </summary>
+        </member>
+    </members>
+</doc>

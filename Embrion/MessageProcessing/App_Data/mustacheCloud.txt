@@ -1,0 +1,157 @@
+ITERATIONS = {{iteraciones}}
+{{#newline}}
+TIME_STEP = {{timeStep}}
+{{#newline}}
+
+SURFACE_GRID_DENSITY = 10000
+{{#newline}}
+ACCURATE_3D_REACTIONS = TRUE
+{{#newline}}
+CENTER_MOLECULES_ON_GRID = FALSE
+{{#newline}}
+MICROSCOPIC_REVERSIBILITY = OFF
+{{#newline}}
+
+NOTIFICATIONS
+{
+{{#newline}}
+   PROBABILITY_REPORT = ON
+   {{#newline}}
+   DIFFUSION_CONSTANT_REPORT = BRIEF
+   {{#newline}}
+   FILE_OUTPUT_REPORT = OFF
+   {{#newline}}
+   FINAL_SUMMARY = ON
+   {{#newline}}
+   ITERATION_REPORT = ON
+   {{#newline}}
+   PARTITION_LOCATION_REPORT = OFF
+   {{#newline}}
+   VARYING_PROBABILITY_REPORT = ON
+   {{#newline}}
+   PROGRESS_REPORT = ON
+   {{#newline}}
+   RELEASE_EVENT_REPORT = ON
+   {{#newline}}
+   MOLECULE_COLLISION_REPORT = OFF
+   {{#newline}}
+}
+{{#newline}}
+
+WARNINGS
+{
+{{#newline}}
+   DEGENERATE_POLYGONS = WARNING
+   {{#newline}}
+   NEGATIVE_DIFFUSION_CONSTANT = WARNING
+   {{#newline}}
+   MISSING_SURFACE_ORIENTATION = ERROR
+   {{#newline}}
+   NEGATIVE_REACTION_RATE = WARNING
+   {{#newline}}
+   USELESS_VOLUME_ORIENTATION = WARNING
+   {{#newline}}
+   HIGH_REACTION_PROBABILITY = IGNORED
+   {{#newline}}
+   LIFETIME_TOO_SHORT = WARNING
+   {{#newline}}
+   LIFETIME_THRESHOLD = 50
+   {{#newline}}
+   MISSED_REACTIONS = WARNING
+   {{#newline}}
+   MISSED_REACTION_THRESHOLD = 0.001
+   {{#newline}}
+}
+{{#newline}}
+
+PARTITION_X = [ [-1.5 TO 1.5 STEP 0.1] ]
+{{#newline}}
+PARTITION_Y = [ [-1.5 TO 1.5 STEP 0.1] ]
+{{#newline}}
+PARTITION_Z = [ [-1.5 TO 1.5 STEP 0.1] ]
+{{#newline}}
+
+{{box.nombre}} BOX
+{
+{{#newline}}
+    CORNERS = {{box.corners}}
+	{{#newline}}
+	{{#if box.aspectRatio}} ASPECT_RATIO = {{box.aspectRatio}} {{/if}}
+	{{#newline}}
+}
+{{#newline}}
+
+DEFINE_MOLECULES
+{
+{{#newline}}
+	{{#each moleculas.defineMoleculas}}
+		{{nombre}} { 
+		{{#newline}}
+			DIFFUSION_CONSTANT = {{diffusion3D}}
+			{{#newline}}
+			{{#if diffusion2D}} DIFFUSION_CONSTANT_2D = {{diffusion2D}} {{/if}}
+			{{#newline}}
+		}
+		{{#newline}}
+	{{/each}}
+}
+{{#newline}}
+
+{{#if hayReacciones}}
+	DEFINE_REACTIONS
+	{{#newline}}
+	{
+	{{#newline}}
+		{{#each reacciones}}
+			{{reaccion}} {{#if rate}}[{{rate}}]{{/if}}{{#if nombre}}:{{nombre}}{{/if}}
+			{{#newline}}
+		{{/each}}
+	}
+	{{#newline}}
+{{/if}}
+
+INSTANTIATE Scene OBJECT
+{
+{{#newline}}
+  {{box.nombre}} OBJECT {{box.nombre}} {}
+  {{#newline}}
+  {{#each moleculas.defineMoleculas}}
+		{{nombre}}_rel RELEASE_SITE
+		{{#newline}}
+		  {
+		  {{#newline}}
+		   SHAPE = Scene.{{box.nombre}}
+		   {{#newline}}
+		   MOLECULE = {{nombre}}
+		   {{#newline}}
+		   NUMBER_TO_RELEASE = {{cantidad}}
+		   {{#newline}}
+		   RELEASE_PROBABILITY = 1
+		   {{#newline}}
+		  }
+		  {{#newline}}
+  {{/each}}
+}
+{{#newline}}
+
+
+sprintf(seed,"%g",SEED)
+{{#newline}}
+VIZ_OUTPUT
+{
+{{#newline}}
+  MODE = JOINED
+  {{#newline}}
+  FILENAME = "./viz_data/seed_" & seed & "/Scene"
+  {{#newline}}
+  MOLECULES {{#newline}}
+  {
+  {{#newline}}
+    NAME_LIST { {{moleculas.nameList}} }
+	{{#newline}}
+    ITERATION_NUMBERS {ALL_DATA @ ALL_ITERATIONS}
+	{{#newline}}
+  }
+  {{#newline}}
+}
+{{#newline}}

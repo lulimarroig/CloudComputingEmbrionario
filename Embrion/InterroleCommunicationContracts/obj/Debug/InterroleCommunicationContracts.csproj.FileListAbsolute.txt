@@ -1,0 +1,5 @@
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\InterroleCommunicationContracts\bin\Debug\InterroleCommunicationContracts.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\InterroleCommunicationContracts\bin\Debug\InterroleCommunicationContracts.pdb
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\InterroleCommunicationContracts\obj\Debug\InterroleCommunicationContracts.csprojResolveAssemblyReference.cache
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\InterroleCommunicationContracts\obj\Debug\InterroleCommunicationContracts.dll
+C:\Users\camila\Documents\Visual Studio 2012\Projects\Embrion\InterroleCommunicationContracts\obj\Debug\InterroleCommunicationContracts.pdb
